@@ -15,7 +15,7 @@ export function CopyCommand({ command }: { command: string }) {
           setTimeout(() => setCopied(false), 1500);
         }}
       >
-        {copied ? "Copied" : "Copy"}
+        {copied ? "Copiado" : "Copiar"}
       </button>
     </div>
   );

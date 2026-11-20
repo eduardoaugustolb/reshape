@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "vendor": "bun scripts/vendor-examples.mjs",
-    "predev": "bun run vendor",
+    "predev": "bun run vendor && bun run package:skill",
     "dev": "next dev",
-    "prebuild": "bun run vendor",
+    "prebuild": "bun run vendor && bun run package:skill",
     "build": "next build",
     "preview": "bun run build && wrangler dev",
     "deploy": "bun run build && wrangler deploy",
     "lint": "eslint",
-    "media": "bun scripts/record-media.ts"
+    "media": "bun scripts/record-media.ts",
+    "package:skill": "tar -czf public/reshape/reshape-skill.tar.gz -C ../skills reshape"
   },
   "dependencies": {
     "next": "16.4.3",

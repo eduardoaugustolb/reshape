@@ -22,11 +22,11 @@ export function Nav({ items }: { items: NavItem[] }) {
   }, [items]);
 
   return (
-    <nav className="nav" aria-label="On this page">
+    <nav className="nav" aria-label="Nesta página">
       <div className="nav__inner">
         <a href="#top" className="nav__brand">
           <span className="mark" aria-hidden="true"><i /><i /><i /></span>
-          reanimate
+          ReShape
         </a>
         <ul>
           {items.map((i) => (

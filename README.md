@@ -1,3 +1,9 @@
+# ReShape
+
+Skill para modelar, esculpir e revisar ativos 3D no Blender com comparação visual por vistas e validação de malha conforme o destino. O ponto de entrada é [skills/reshape/SKILL.md](skills/reshape/SKILL.md). Para instalar no Codex, copie a pasta `skills/reshape` para `~/.agents/skills/reshape` e invoque `$reshape` com o briefing ou a referência. A edição via MCP depende de um Blender conectado.
+
+A Reanimate original é a base do método e seu material está abaixo.
+
 <h1 align="center">reanimate</h1>
 
 <p align="center"><b>Reverse-engineer animations you like. Build your own on top.</b><br>A Claude Code skill that works from a live site, a screen recording, an mp4, a gif or a Lottie file.</p>
