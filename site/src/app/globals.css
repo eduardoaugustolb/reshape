@@ -68,14 +68,6 @@ p code, li code, td code { background: #f0f0ee; padding: 1px 5px; border-radius:
 .nav a:hover, .nav a[aria-current="true"] { color: var(--fg); }
 .nav__brand { display: flex; align-items: center; gap: 10px; color: var(--fg) !important; font-weight: 500; }
 
-/* the mark: a square that moves, with onion-skin frames trailing behind it */
-.mark { width: 30px; height: 14px; position: relative; flex: none; }
-.mark i { position: absolute; top: 2px; left: 0; width: 10px; height: 10px; border-radius: 2.5px; background: var(--fg); animation: mark 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite; }
-.mark i:nth-child(1) { opacity: 0.15; animation-delay: -0.24s; }
-.mark i:nth-child(2) { opacity: 0.35; animation-delay: -0.12s; }
-@keyframes mark { 0%, 12% { transform: translateX(0); } 50%, 62% { transform: translateX(20px); } 100% { transform: translateX(0); } }
-@media (prefers-reduced-motion: reduce) { .mark i { animation: none; } .mark i:nth-child(1) { transform: translateX(10px); } .mark i:nth-child(3) { transform: translateX(20px); } }
-
 /* ---------- header ---------- */
 
 .masthead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
@@ -226,18 +218,42 @@ body { background: #faf7f2; }
 .reshape .lede { margin-top: 22px; max-width: 36rem; font-size: 1.075rem; }
 .reshape .section__head h2 { font-size: 1.05rem; }
 .reshape .figure__caption { display: block; font-size: .875rem; }
-.reshape .mark i {
-  background: transparent;
-  border: 1.5px solid var(--accent);
-  border-radius: 50% 50% 44% 44%;
-  transform-origin: center bottom;
-  animation-name: shape-mark;
-  animation-iteration-count: 2;
-  animation-fill-mode: forwards;
+.masthead__brand { display: flex; align-items: center; gap: 6px; }
+.masthead__brand .sculpt-mark { display: none; }
+@media (max-width: 1180px) {
+  .reshape .masthead { align-items: center; }
+  .masthead__brand .sculpt-mark { display: block; width: 25px; height: 23px; }
 }
-@keyframes shape-mark {
-  0%, 14%, 100% { transform: translateX(0) scaleX(.76); }
-  52%, 68% { transform: translateX(18px) scaleX(1.2); }
+.sculpt-mark { width: 34px; height: 31px; flex: none; }
+.sculpt-mark__stone { fill: #ad624b; stroke: var(--accent); stroke-width: 1.1; }
+.sculpt-mark__detail, .sculpt-mark__chisel, .sculpt-mark__chips {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+.sculpt-mark__detail { stroke: #f8d7c3; }
+.sculpt-mark__chisel, .sculpt-mark__chips { opacity: 0; stroke: var(--accent); }
+@media (prefers-reduced-motion: no-preference) {
+  .sculpt-mark__stone { animation: carve-bust 2.4s ease-in-out both; }
+  .sculpt-mark__detail { animation: reveal-bust 2.4s ease both; }
+  .sculpt-mark__chisel { animation: move-chisel 2.4s ease-in-out both; }
+  .sculpt-mark__chips { animation: scatter-chips 2.4s ease-out both; }
+}
+@keyframes carve-bust {
+  0%, 20% { d: path("M10 29C7 29 6 27 6 24C6 22 6 21 6 18C6 16 6 14 6 11C6 6 6 3 11 3C16 3 23 3 25 5C26 8 27 11 27 14C27 15 27 15 27 16C27 18 28 19 28 20C28 22 28 23 28 24C29 26 29 29 26 29Z"); }
+}
+@keyframes reveal-bust { 0%, 68% { opacity: 0; } }
+@keyframes move-chisel {
+  0% { opacity: 0; transform: translate(28px, 7px); }
+  18%, 30% { opacity: 1; transform: translate(25px, 11px); }
+  52% { opacity: 1; transform: translate(24px, 18px); }
+  68% { opacity: 1; transform: translate(22px, 22px); }
+  86%, 100% { opacity: 0; transform: translate(29px, 20px); }
+}
+@keyframes scatter-chips {
+  0%, 32% { opacity: 0; }
+  44% { opacity: 1; }
+  66%, 100% { opacity: 0; transform: translate(4px, 4px); }
 }
 .reshape :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
@@ -292,7 +308,6 @@ body { background: #faf7f2; }
 .study__play { text-decoration: underline; text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   .study__render { transition: none; }
-  .reshape .mark i { animation: none; }
 }
 
 .checks { margin-top: 20px; }

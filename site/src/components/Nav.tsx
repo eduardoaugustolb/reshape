@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { SculptMark } from "./SculptMark";
 
 export type NavItem = { id: string; label: string };
 
@@ -25,7 +26,7 @@ export function Nav({ items }: { items: NavItem[] }) {
     <nav className="nav" aria-label="Nesta página">
       <div className="nav__inner">
         <a href="#top" className="nav__brand">
-          <span className="mark" aria-hidden="true"><i /><i /><i /></span>
+          <SculptMark />
           ReShape
         </a>
         <ul>

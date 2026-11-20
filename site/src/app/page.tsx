@@ -1,3 +1,4 @@
+import { SculptMark } from "@/components/SculptMark";
 import { CopyCommand } from "@/components/CopyCommand";
 import { Nav, type NavItem } from "@/components/Nav";
 import { SculptComparison, SculptPasses } from "@/components/SculptStudy";
@@ -25,7 +26,7 @@ export default function Home() {
 
       <main className="main">
         <header className="masthead">
-          <span>ReShape <span className="masthead__context">· skill para Blender</span></span>
+          <span className="masthead__brand"><SculptMark /><span>ReShape <span className="masthead__context">· skill para Blender</span></span></span>
           <a href="#instalacao">Instalar</a>
         </header>
 
