@@ -9,6 +9,7 @@ const sections: NavItem[] = [
   { id: "metodo", label: "Como funciona" },
   { id: "comparacao", label: "Comparar vistas" },
   { id: "validacao", label: "Validação" },
+  { id: "skills", label: "Catálogo de skills" },
   { id: "instalacao", label: "Instalar" },
 ];
 
@@ -63,10 +64,26 @@ export default function Home() {
           </dl>
         </section>
 
+        <section id="skills" className="section">
+          <div className="section__head"><h2>Catálogo de skills</h2></div>
+          <p>Use a ReShape para conduzir a modelagem e acrescente as skills da região e do estilo que o modelo pede.</p>
+          <dl className="checks">
+            <div>
+              <dt>Anatomia</dt>
+              <dd>36 skills com marcos anatômicos, vistas de revisão e critérios de reprovação. Use <code>$reshape-anatomia-cabeca</code> para a cabeça inteira, <code>$reshape-anatomia-face</code> para integrar os traços ou <code>$reshape-anatomia-olhos</code> para revisar olhos e pálpebras.</dd>
+            </div>
+            <div>
+              <dt>Estilos</dt>
+              <dd><code>$reshape-estilos</code> define como construir e avaliar realismo, semirrealismo, low-poly, cartoon, chibi, cel shading, argila e miniaturas. Combine decisões de forma e acabamento, como proporções cartoon com planos facetados.</dd>
+            </div>
+          </dl>
+          <p>O catálogo completo acompanha o <a href="#instalacao">pacote de instalação</a>, no arquivo <code>reshape/references/anatomia.md</code>.</p>
+        </section>
+
         <section id="instalacao" className="section">
           <div className="section__head"><h2>Instalar</h2></div>
-          <p>Baixe a skill e extraia o pacote na pasta de skills do Codex. Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao seu agente.</p>
-          <a className="download" href="/reshape/reshape-skill.tar.gz" download>Baixar ReShape</a>
+          <p>O pacote inclui a ReShape, a skill de estilos e as 36 skills de anatomia. Baixe e extraia na pasta de skills do Codex. Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao seu agente.</p>
+          <a className="download" href="/reshape/reshape-skill.tar.gz" download>Baixar pacote ReShape</a>
           <CopyCommand command={INSTALL} />
           <p>No Codex, invoque <code>$reshape</code> junto com o briefing, a imagem ou o arquivo que você quer revisar.</p>
           <div className="prompts">
