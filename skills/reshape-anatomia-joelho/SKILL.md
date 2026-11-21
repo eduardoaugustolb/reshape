@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figure 8.16, femur and patella](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb). Locate the patella anterior to the distal femur.
+- [OpenStax Figure 9.19, knee joint](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-6-anatomy-of-selected-synovial-joints). Inspect the relation of patella, condyles, and tibia.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Seat the patella in front of the distal femur and relate it to the tibial tuberosity through the patellar ligament. Model lateral volumes and the posterior fossa.
+
+## Evidence to capture
+
+Save matching extended and flexed views if rigged. Compare front patellar travel and posterior fold depth separately.
 
 ## Review and rejection
 

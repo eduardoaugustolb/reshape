@@ -16,6 +16,11 @@ This catalog covers surface anatomy and visible oral structures. Each skill cite
 
 ## Head and neck
 
+- [Tongue and oral floor](../../reshape-anatomia-lingua/SKILL.md) · `$reshape-anatomia-lingua`
+- [Dentition and gingiva](../../reshape-anatomia-dentes/SKILL.md) · `$reshape-anatomia-dentes`
+- [Lips and vermilion](../../reshape-anatomia-labios/SKILL.md) · `$reshape-anatomia-labios`
+- [Eyelids and canthi](../../reshape-anatomia-palpebras/SKILL.md) · `$reshape-anatomia-palpebras`
+- [Globe and corneal profile](../../reshape-anatomia-globo-ocular/SKILL.md) · `$reshape-anatomia-globo-ocular`
 - [Skull and cranial vault](../../reshape-anatomia-cranio/SKILL.md) · `$reshape-anatomia-cranio`
 - [Forehead and eyebrows](../../reshape-anatomia-testa-sobrancelhas/SKILL.md) · `$reshape-anatomia-testa-sobrancelhas`
 - [Eyes and eyelids](../../reshape-anatomia-olhos/SKILL.md) · `$reshape-anatomia-olhos`
@@ -29,6 +34,7 @@ This catalog covers surface anatomy and visible oral structures. Each skill cite
 
 ## Trunk
 
+- [Scapula and shoulder blade](../../reshape-anatomia-escapula/SKILL.md) · `$reshape-anatomia-escapula`
 - [Chest and breasts](../../reshape-anatomia-peito/SKILL.md) · `$reshape-anatomia-peito`
 - [Back and surface landmarks of the spine](../../reshape-anatomia-costas/SKILL.md) · `$reshape-anatomia-costas`
 - [Abdomen and flanks](../../reshape-anatomia-abdome/SKILL.md) · `$reshape-anatomia-abdome`
@@ -38,6 +44,8 @@ This catalog covers surface anatomy and visible oral structures. Each skill cite
 
 ## Upper limb
 
+- [Fingernails and toenails](../../reshape-anatomia-unhas/SKILL.md) · `$reshape-anatomia-unhas`
+- [Thumb and opposition](../../reshape-anatomia-polegar/SKILL.md) · `$reshape-anatomia-polegar`
 - [Shoulder and axilla](../../reshape-anatomia-ombro-axila/SKILL.md) · `$reshape-anatomia-ombro-axila`
 - [Upper arm](../../reshape-anatomia-braco/SKILL.md) · `$reshape-anatomia-braco`
 - [Elbow](../../reshape-anatomia-cotovelo/SKILL.md) · `$reshape-anatomia-cotovelo`

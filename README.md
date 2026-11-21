@@ -19,7 +19,7 @@ From the repository root, copy ReShape and its companion skills into the Codex s
 
 ```sh
 mkdir -p ~/.agents/skills
-cp -R skills/reshape skills/reshape-estilos skills/reshape-anatomia-* ~/.agents/skills/
+cp -R skills/reshape skills/reshape-estilos skills/reshape-style-* skills/reshape-anatomia-* ~/.agents/skills/
 ```
 
 To edit through MCP, open Blender and connect the Blender MCP server to your agent. Invoke `$reshape` in Codex with your brief or reference.
@@ -40,9 +40,9 @@ Deliver the editable mesh, comparative views, and documented validation results.
 
 ## Anatomy and style
 
-The [anatomy catalog](skills/reshape/references/anatomia.md) includes 36 skills, from the whole body to individual features and joints. Each skill gives construction rules, inspection views, rejection criteria, and anatomy sources. Use `$reshape-anatomia-face` to integrate facial features or `$reshape-anatomia-nariz` to review a nose.
+The [anatomy catalog](skills/reshape/references/anatomia.md) includes 44 skills, from the whole body to individual features and joints. Each skill gives construction rules, inspection views, rejection criteria, and anatomy sources. Use `$reshape-anatomia-face` to integrate facial features or `$reshape-anatomia-nariz` to review a nose.
 
-Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) to define silhouette, geometry, and finish for styles such as realism, low-poly, cartoon, chibi, and cel shading. The skills use US English. Invocation names are the same in both versions of the site.
+Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) to choose among 10 specialized modeling styles, each with visual references and approval checks. For example, use `$reshape-style-faceted-low-poly` to review faceted geometry or `$reshape-style-cel-shading` to review shadow bands and linework. The skills use US English. Invocation names are the same in both versions of the site.
 
 ## Website
 

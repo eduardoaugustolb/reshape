@@ -8,9 +8,19 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figures 8.7 and 8.8, hand diagram and radiograph](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb). Check the phalangeal order and joint positions against the skin creases.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Use three phalanges for long fingers and two for the thumb in typical anatomy. Place joints, pads, and nail beds on the axis of each digit.
+
+## Evidence to capture
+
+Inspect one isolated profile per suspect digit and a whole-hand view. In rig review, compare each joint through grip and confirm intended contacts only.
 
 ## Review and rejection
 
@@ -19,6 +29,12 @@ Check joint sequence from the side and, where applicable, in a closed fist. Comp
 Reject these defects when they conflict with the documented target. Identical segments, nails outside their beds, or intersections during flexion.
 
 Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
+
+## Regional skills
+
+Read the relevant regional skills for local criteria.
+
+- [Fingernails and toenails](../reshape-anatomia-unhas/SKILL.md)
 
 ## Anatomy sources
 

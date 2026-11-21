@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [Photon-counting CT review, external ear 3D figure](https://pmc.ncbi.nlm.nih.gov/articles/PMC11630884/). Locate the concha, helix, antihelix, and tragus as separate reliefs.
+- [3D auricle measurement study, landmarks and measurement diagrams](https://pmc.ncbi.nlm.nih.gov/articles/PMC11087560/). Use projection and depth diagrams to choose the appropriate comparison view.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Establish attachment and projection. Model the helix and antihelix as distinct ridges around the concha. Place the tragus, antitragus, and lobule from the target.
+
+## Evidence to capture
+
+Capture a lateral view orthogonal to the auricle and a rear view that shows its separation from the head. Confirm conchal depth in three-quarter view.
 
 ## Review and rejection
 

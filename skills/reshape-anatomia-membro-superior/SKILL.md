@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figure 8.3, pectoral girdle](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle). Follow the bony attachment from trunk to humerus.
+- [OpenStax Figures 8.5–8.7, upper limb bones](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb). Trace the joint centers through elbow and wrist into the hand.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Define humeral and forearm axes and locate the joints before building volumes. Coordinate scapula, clavicle, and hand with the pose. Account for the movement of radius around ulna in pronation.
+
+## Evidence to capture
+
+Capture the complete chain in front and back at rest and pose. Verify hand orientation propagates through the forearm and that the shoulder remains integrated.
 
 ## Review and rejection
 

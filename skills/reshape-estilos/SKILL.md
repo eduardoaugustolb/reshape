@@ -19,19 +19,20 @@ Record five decisions in the spec and cite the relevant brief or reference:
 
 If references conflict, identify which reference governs each decision. A technical polygon limit and a faceted visual style have separate acceptance criteria. If likeness matters, identify the relationships that carry it before exaggerating.
 
-## Style-specific construction and review
+## Specialized style skills
 
-| Style | Build | Inspect and reject |
-|---|---|---|
-| Realistic | Establish plausible scale, thickness, and transitions. Ground organic forms in anatomical support and verify joins and clearances in objects. Add microdetail after resolving masses, planes, and edges. | Compare landmarks and profiles in equivalent views. Reject incompatible volumes, thickness, artificial junctions, or detail that conceals bad form under specific lighting. |
-| Semi-realistic | Preserve recognizable structure and landmarks. Decide which planes, edges, or volume relationships to simplify or emphasize and apply that logic across related regions. | Compare simplification across regions and views. Reject unintended changes in visual language, such as one naturalistic hand with joints exaggerated only on the other. |
-| Faceted low-poly | Distribute faces to support silhouettes and plane changes in required views. Choose edges and normals deliberately. Reserve geometry for contours, meaningful curves, and deformation. | Inspect under neutral light and in motion where rigged. Reject arbitrary facets that cause dents, broken silhouettes, or flicker. Measure exported triangles when there is a budget. |
-| Smooth low-poly | Prioritize silhouette and deformation. Decide where to use smooth normals, hard edges, and normal maps supported by the target. | Inspect the export under intended lighting. Reject ragged silhouettes outside tolerance, normal artifacts, and collapsing joints. Check mesh and map separately. |
-| Cartoon | Exaggerate size relationships and curves that support gesture, expression, and readability. Design negative spaces, junctions, and direction of masses before finishing. | Inspect the silhouette at intended size in multiple views. Reject unreadable features, inconsistent exaggeration, or joints that work only in the primary view. |
-| Chibi | Set the head-to-body relationship and compression of torso and limbs from the target. Preserve support and the integration of neck, hands, and feet even with sparse detail. | Check profile, stance, and pose. Reject unsupported heads, unintended fused limbs, or expressions that disappear at small scale. |
-| Anime and cel shading | Build geometry to support features and outlines. Treat anime proportions, stepped lighting, and linework as independent choices. Document the camera range of view-dependent solutions. | Inspect eyes, nose, and mouth in profile and three-quarter views. Test outlines and shading at intended angles. Reject double lines, unstable shading bands, or unreadable required views. |
-| Clay or handcrafted | Model continuous masses, edges, and irregularity appropriate to material scale. Place tool marks where the process or finish calls for them. | Inspect under soft and grazing light. Reject uniform noise, tool marks that obscure planes, or unintentionally disconnected joins. |
-| Miniature or toy | Design masses, thicknesses, and divisions that read at final size. Model joins or seams required by the design. For printing, verify against the requested process and scale. | Inspect the silhouette at intended size and junctions up close. Reject detail that vanishes, incoherent supports, or thickness below manufacturing requirements. |
+- [Realistic modeling](../reshape-style-realistic/SKILL.md) · `$reshape-style-realistic`
+- [Semi-realistic modeling](../reshape-style-semi-realistic/SKILL.md) · `$reshape-style-semi-realistic`
+- [Faceted low-poly modeling](../reshape-style-faceted-low-poly/SKILL.md) · `$reshape-style-faceted-low-poly`
+- [Smooth low-poly modeling](../reshape-style-smooth-low-poly/SKILL.md) · `$reshape-style-smooth-low-poly`
+- [Cartoon modeling](../reshape-style-cartoon/SKILL.md) · `$reshape-style-cartoon`
+- [Chibi modeling](../reshape-style-chibi/SKILL.md) · `$reshape-style-chibi`
+- [Anime-style modeling](../reshape-style-anime/SKILL.md) · `$reshape-style-anime`
+- [Cel-shaded rendering for 3D models](../reshape-style-cel-shading/SKILL.md) · `$reshape-style-cel-shading`
+- [Clay and handcrafted modeling](../reshape-style-clay/SKILL.md) · `$reshape-style-clay`
+- [Miniature and toy modeling](../reshape-style-miniature-toy/SKILL.md) · `$reshape-style-miniature-toy`
+
+Choose one or more skills, then name which rule controls each area. For example, combine cartoon proportions, faceted low-poly geometry, and cel shading. For anime characters, use the anime modeling skill for form and the cel-shading skill for lighting and lines.
 
 ## Review readability before approval
 

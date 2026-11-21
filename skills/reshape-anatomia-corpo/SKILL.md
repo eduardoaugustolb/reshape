@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figure 8.2, front and rear skeletons](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle). Trace the axial line and the shoulder and pelvic attachments.
+- [OpenStax Figure 7.20, vertebral column](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column). Use its profile to check the axis through torso and neck.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Block out the rib cage and pelvis on their respective axes. Connect them through the spine and anchor the limbs to their girdles. In a standing pose, identify the contact points and use them to judge weight distribution.
+
+## Evidence to capture
+
+Save full-body overlays of the shoulder, pelvis, knee, and ankle landmarks and a profile with the contact plane marked. Compare the major axes before opening any regional skill.
 
 ## Review and rejection
 

@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figures 8.7 and 8.8, wrist and hand](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb). Compare the diagram and radiograph for the base of the hand.
+- [OpenStax forearm muscle plates](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs). Study the direction of superficial tendons crossing the wrist.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Transition the distal radius and ulna into the carpal base. Differentiate radial and ulnar borders and match tendon relief to the pose.
+
+## Evidence to capture
+
+Check both radial and ulnar silhouettes with the hand attached. In rig review compare neutral, flexion, and extension in profile.
 
 ## Review and rejection
 

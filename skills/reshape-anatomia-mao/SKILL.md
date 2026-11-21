@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figures 8.7 and 8.8, wrist and hand](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb). Trace metacarpal layout and how the thumb base differs.
+- [OpenStax intrinsic hand muscle plates](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs). Locate the thenar and hypothenar masses relative to the palm.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Build the palm arch and thickness around the metacarpals. Integrate the thenar and hypothenar eminences. Place the thumb from its base and check the gap between thumb and index finger.
+
+## Evidence to capture
+
+Capture dorsal, palmar, and thumb-side views with the complete silhouette. Add a grip and opposition if required, inspecting web space and digit contact.
 
 ## Review and rejection
 
@@ -24,6 +35,7 @@ Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view a
 
 Read the relevant regional skills for local criteria.
 
+- [Thumb and opposition](../reshape-anatomia-polegar/SKILL.md)
 - [Fingers and fingernails](../reshape-anatomia-dedos-mao/SKILL.md)
 - [Wrist](../reshape-anatomia-punho/SKILL.md)
 

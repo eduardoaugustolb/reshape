@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figures 7.4, 7.5, and 7.9, multiview skull](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull). Follow the relative positions of orbit, jaw, and occiput.
+- [Digital Reality Lab head scan sample gallery](https://www.digitalrealitylab.com/sample-model/). Compare the back of the head with the face and locate the ear and neck attachment on a surface model.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Build the cranial vault and its posterior volume. Connect the zygomatic bones, maxilla, and mandible, seat the ears laterally, and join the neck beneath the cranial base.
+
+## Evidence to capture
+
+Capture an overhead silhouette plus profile. Compare posterior mass and the depth of the facial wedge. Recapture the ear and neck joints before signing off.
 
 ## Review and rejection
 

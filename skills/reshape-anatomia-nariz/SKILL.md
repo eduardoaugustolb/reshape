@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [StatPearls, External Nasal Anatomy illustration](https://www.ncbi.nlm.nih.gov/sites/books/NBK558970/). Identify the transition from bone to cartilage and the support beneath the tip and alae.
+- [FaceBase nasal landmarks](https://www.facebase.org/resources/human/facial_norms/notes/). Use the protocol for alare and other nasal points when lining up reference photographs.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Blend the root and bridge into the face. Distinguish the upper support, cartilaginous tip, alae, and columella. Recess the nostrils and give their margins thickness.
+
+## Evidence to capture
+
+Save front, profile, and underside crops. Mark alar margins and columella in the underside view and tip projection in profile. Record missing underside evidence if the reference does not show it.
 
 ## Review and rejection
 

@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figure 8.5, humerus and elbow](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb). Find the epicondyles and posterior landmarks.
+- [OpenStax Figure 9.17, elbow joint](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-6-anatomy-of-selected-synovial-joints). Compare lateral and medial organization of the hinge region.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Locate the epicondyles and olecranon. Reserve the anterior fossa and model how the posterior relief changes in flexion.
+
+## Evidence to capture
+
+Inspect paired profiles with the same camera in extension and flexion if rigged. Note whether the posterior point and anterior fold trade prominence without collapse.
 
 ## Review and rejection
 

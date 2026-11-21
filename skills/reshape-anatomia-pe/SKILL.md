@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figures 8.19 and 8.20, bones and arches of the foot](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb). Read the medial and lateral views to locate heel, arch, and forefoot.
+- [OpenStax Figure 11.34, intrinsic foot muscles](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs). Compare dorsal and plantar support layers.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Block in the calcaneus, midfoot, and metatarsal heads. Build the longitudinal arch and forefoot transition to match the target's foot and stance.
+
+## Evidence to capture
+
+Save a sole view and a medial profile against the ground plane. In rig review, compare flat contact with heel lift without shifting the camera.
 
 ## Review and rejection
 

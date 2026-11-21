@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [FaceBase 3D Facial Norms landmark examples](https://www.facebase.org/resources/human/facial_norms/notes/). Identify labeled surface points and read the protocol for choosing each point.
+- [OpenStax Figure 11.7, facial muscles](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back). Study how eyelid and mouth regions connect through the cheek.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Block out the orbits, zygomatic bones, maxillary projection, chin, and mandible before refining individual features. Match the orbital, cheek, and mouth transitions in the target.
+
+## Evidence to capture
+
+Save an aligned sheet marking canthi and mouth corners. Compare the nasal base and chin projection in profile. Keep any expression-dependent shifts explicit.
 
 ## Review and rejection
 

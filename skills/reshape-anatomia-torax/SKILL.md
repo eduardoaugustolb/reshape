@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figure 7.32, thoracic cage](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage). Trace the sternum, lower costal margin, and rib angles.
+- [OpenStax Figure 8.3, pectoral girdle](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle). Compare anterior and posterior relationships between the cage, clavicles, and scapulae.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Build depth between sternum and spine. Place the costal margin, clavicles, and anterior, lateral, and posterior planes. Layer surface tissues according to the pose.
+
+## Evidence to capture
+
+Capture profile for rib cage depth and rear three-quarter for scapular placement. Check the chest volume with arms in the pose required by the brief.
 
 ## Review and rejection
 

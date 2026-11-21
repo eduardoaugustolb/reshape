@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figures 7.4 and 7.5, skull](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull). Review anterior chin placement and lateral mandibular angle.
+- [OpenStax Figure 9.15, temporomandibular joint](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-6-anatomy-of-selected-synovial-joints). Study the joint position and the change between closed and open configurations.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Model the body, angle, and ramus as a continuous structure. Relate the chin, lower lip, and masseter region to the observed lateral contour.
+
+## Evidence to capture
+
+Save matching side views in rest and the widest required open pose. Mark chin, angle, and joint so a changing camera cannot conceal a misplaced pivot.
 
 ## Review and rejection
 

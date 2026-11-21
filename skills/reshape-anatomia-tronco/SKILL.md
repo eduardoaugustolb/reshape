@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figure 7.32, thoracic cage](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage). Locate the sternum and the exterior boundary of the rib cage.
+- [OpenStax Figure 8.12, pelvis](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis). Locate the iliac crests and sacrum as the lower mass.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Block out the rib cage and pelvis separately and connect their axes through the spine and abdominal tissues. In side bending, look for compression on one side and lengthening on the other.
+
+## Evidence to capture
+
+Save front and side silhouettes with axes for both masses. In the posed asset, trace the lengthened flank and the compressed flank separately.
 
 ## Review and rejection
 

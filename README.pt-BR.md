@@ -19,7 +19,7 @@ Na raiz do repositório, copie a pasta da skill para o diretório de skills do C
 
 ```sh
 mkdir -p ~/.agents/skills
-cp -R skills/reshape skills/reshape-estilos skills/reshape-anatomia-* ~/.agents/skills/
+cp -R skills/reshape skills/reshape-estilos skills/reshape-style-* skills/reshape-anatomia-* ~/.agents/skills/
 ```
 
 Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao agente. No Codex, invoque `$reshape` com o briefing ou a referência.
@@ -44,7 +44,7 @@ O [catálogo de anatomia](skills/reshape/references/anatomia.md) reúne skills p
 
 ## Estilos de modelagem
 
-Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) para definir regras de silhueta, geometria e acabamento em estilos como realista, low-poly, cartoon, chibi e cel shading.
+Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) para escolher entre 10 skills especializadas, cada uma com referências visuais e critérios de aprovação. Use `$reshape-style-faceted-low-poly` para geometria facetada ou `$reshape-style-cel-shading` para sombras em faixas e contornos.
 
 ## Site
 

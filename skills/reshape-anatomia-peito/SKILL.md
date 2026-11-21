@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figure 11.23, muscles that move the humerus](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs). Find the pectoral sweep and its relationship to the upper arm.
+- [OpenStax Figure 27.17, anatomy of the breast](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system). Study cross-sectional tissue layering against the chest wall.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Establish the chest wall and its relationship to the arm through pectoralis major. Model breast tissue over the chest wall with a base and contour appropriate to pose and support.
+
+## Evidence to capture
+
+Review an untextured three-quarter view using the target's support and pose. Confirm continuity into chest wall and axilla in a profile crop.
 
 ## Review and rejection
 

@@ -8,9 +8,20 @@ description: >-
 
 Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
+## Visual references
+
+- [OpenStax Figures 8.12 and 8.13, pelvis and hip bone](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis). Locate iliac crest, acetabulum, and sacrum from both sides of the structure.
+- [OpenStax Figure 8.16, femur and patella](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb). Locate the greater trochanter relative to the femoral head.
+
+Use the figures to locate structures. Compare external forms and pose against the subject reference.
+
 ## Modeling
 
 Place the sacrum, iliac crests, and anterior iliac spines. Use the acetabulum for the hip joint center and the greater trochanter as a lateral femoral landmark where visible.
+
+## Evidence to capture
+
+Save front and rear views with left and right iliac landmarks marked and a profile showing the pelvic tilt. In rig review, track hip rotation around the target pivot.
 
 ## Review and rejection
 
