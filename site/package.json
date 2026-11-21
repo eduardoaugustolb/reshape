@@ -12,7 +12,7 @@
     "deploy": "bun run build && wrangler deploy",
     "lint": "eslint",
     "media": "bun scripts/record-media.ts",
-    "package:skill": "tar -czf public/reshape/reshape-skill.tar.gz -C ../skills reshape"
+    "package:skill": "cd ../skills && tar -czf ../site/public/reshape/reshape-skill.tar.gz reshape reshape-estilos reshape-anatomia-*"
   },
   "dependencies": {
     "next": "16.4.3",

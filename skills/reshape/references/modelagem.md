@@ -2,7 +2,7 @@
 
 ## Operar o Blender
 
-Dê preferência aos recursos nativos de inspeção e captura do MCP e às operações interativas de Edit Mode e Sculpt Mode quando disponíveis. Descubra se há viewport, captura e capacidade de edição antes de escolher a via. Alguns conectores expõem edição apenas via execução de Python. Nessa situação, use a ponte para operações locais e verificáveis sobre a malha, com seleção, objeto ativo, modo e escopo explícitos. Confira o resultado no viewport a cada alteração de forma. Python também pode executar medições, configurar câmeras de teste e capturar evidências. Uma execução bem-sucedida só prova que a operação rodou. Sem canal para observar a geometria ou realizar a correção necessária, registre a limitação e preserve a última versão verificada.
+Use os recursos nativos do MCP para inspecionar e capturar quando estiverem disponíveis. A edição pode ser interativa ou feita inteiramente com Python via Blender MCP. O script pode criar geometria, deslocar vértices, remodelar regiões e aplicar operações nativas do Blender. Antes de cada operação, confirme o objeto ativo, a seleção, o modo e o escopo. Separe construção de massa, correção regional e acabamento em operações que possam ser inspecionadas e revertidas. Abra a captura ao final de cada passagem. Se o resultado falhar, ajuste a geometria que causa o problema e recapture antes de detalhar. Salvar o arquivo, receber sucesso na execução e obter uma malha fechada são evidências técnicas. A aprovação visual vem das vistas inspecionadas.
 
 ## Escolher uma construção
 

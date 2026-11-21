@@ -10,7 +10,7 @@ Na raiz do repositório, copie a pasta da skill para o diretório de skills do C
 
 ```sh
 mkdir -p ~/.agents/skills
-cp -R skills/reshape ~/.agents/skills/
+cp -R skills/reshape skills/reshape-estilos skills/reshape-anatomia-* ~/.agents/skills/
 ```
 
 Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao agente. No Codex, invoque `$reshape` com o briefing ou a referência.
@@ -28,6 +28,14 @@ $reshape Revise as transições dos ombros nesta malha e confira a deformação 
 4. Verifique a malha conforme o destino. Para rig, confira a deformação. Para impressão, confira fechamento e espessura. Para tempo real, confira o custo no destino.
 
 A entrega inclui a malha editável, as vistas comparativas e o estado da validação. O [guia da skill](skills/reshape/SKILL.md) detalha cada etapa.
+
+## Anatomia humana
+
+O [catálogo de anatomia](skills/reshape/references/anatomia.md) reúne skills por região, desde corpo inteiro até olhos, orelha, nariz, mãos e pés. Cada skill traz regras de construção, vistas de revisão, motivos de reprovação e fontes anatômicas. Use `$reshape-anatomia-face` para uma face inteira ou `$reshape-anatomia-nariz` para uma revisão localizada.
+
+## Estilos de modelagem
+
+Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) para definir regras de silhueta, geometria e acabamento em estilos como realista, low-poly, cartoon, chibi e cel shading.
 
 ## Site
 

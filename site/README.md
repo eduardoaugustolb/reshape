@@ -10,7 +10,7 @@ bun run dev
 bun run build
 ```
 
-O build gera `out/` e inclui um pacote para download montado diretamente de `../skills/reshape/`. As imagens WebP em `public/reshape/` mostram o bloqueio, os volumes e a superfície em vistas fixas.
+O build gera `out/` e inclui um pacote para download montado diretamente das pastas da ReShape e das skills de anatomia e estilo em `../skills/`. As imagens WebP em `public/reshape/` mostram o bloqueio, os volumes e a superfície em vistas fixas.
 
 ## Hospedar
 
