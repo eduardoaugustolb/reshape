@@ -13,6 +13,15 @@ export function siteMetadata(locale: Locale): Metadata {
   const title = t("ReShape · Modelagem e escultura no Blender", "ReShape · Modeling and sculpting in Blender");
   const description = t("Modele, compare vistas e valide a malha de ativos 3D no Blender com a ReShape.", "Model, compare views, and validate 3D meshes in Blender with ReShape.");
   const path = t("/pt-br/", "/");
+  const sharingImage = {
+    url: "/reshape/og.jpg",
+    width: 1200,
+    height: 630,
+    alt: t(
+      "ReShape para Blender, com um vaso de terracota e sua malha 3D",
+      "ReShape for Blender, with a terracotta vase and its 3D wireframe",
+    ),
+  };
   return {
     metadataBase: siteUrl ? new URL(siteUrl) : undefined,
     title,
@@ -29,9 +38,9 @@ export function siteMetadata(locale: Locale): Metadata {
       locale: t("pt_BR", "en_US"),
       siteName: "ReShape",
       type: "website",
-      images: siteUrl ? [{ url: "/reshape/surface-three-quarter.webp", width: 720, height: 580, alt: t("Vaso de terracota esculpido", "Sculpted terracotta vase") }] : undefined,
+      images: siteUrl ? [sharingImage] : undefined,
     },
-    twitter: { card: "summary_large_image", title, description, images: siteUrl ? ["/reshape/surface-three-quarter.webp"] : undefined },
+    twitter: { card: "summary_large_image", title, description, images: siteUrl ? [sharingImage] : undefined },
   };
 }
 
