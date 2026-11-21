@@ -1,5 +1,6 @@
 "use client";
 
+import { PauseIcon, PlayIcon } from "@phosphor-icons/react/ssr";
 import { translate, type Locale } from "@/i18n";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -82,7 +83,8 @@ export function SculptPasses({ locale }: { locale: Locale }) {
             }}>{label}</button>
           ))}
         </div>
-        <button className="study__play" type="button" hidden={reduced} onClick={() => setPlaying(!playing)}>
+        <button className="study__play icon-action" type="button" hidden={reduced} onClick={() => setPlaying(!playing)}>
+          {playing ? <PauseIcon aria-hidden="true" /> : <PlayIcon aria-hidden="true" />}
           {playing ? t("Pausar", "Pause") : t("Reproduzir", "Play")}
         </button>
       </div>

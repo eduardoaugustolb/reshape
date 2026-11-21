@@ -263,7 +263,7 @@ body { background: #faf7f2; }
 }
 .masthead__actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px 12px; }
 .masthead__actions button { color: var(--muted); cursor: pointer; }
-@media (prefers-reduced-motion: reduce) { .masthead__actions button { display: none; } }
+@media (prefers-reduced-motion: reduce) { .masthead__actions .icon-action[type="button"] { display: none; } }
 .reshape :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 .study__frame {
@@ -341,3 +341,6 @@ body { background: #faf7f2; }
 }
 .download:hover { background: #6d3022; }
 .reshape .cmd span { min-width: 0; overflow-wrap: anywhere; }
+
+.icon-action:not([hidden]) { display: inline-flex; align-items: center; gap: .4em; }
+.icon-action > svg { width: 1.15em; height: 1.15em; flex: none; }

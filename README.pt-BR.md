@@ -1,11 +1,17 @@
-# ReShape
+<p align="center"><img src="site/public/reshape/icon.svg" width="64" height="64" alt=""></p>
 
-[English](README.md)
-ReShape é uma skill para modelar, esculpir e revisar ativos 3D no Blender. Ela trabalha a partir de imagens, texto ou de uma malha existente e usa o Blender MCP quando disponível.
+<h1 align="center">ReShape</h1>
 
-![Vaso de terracota com sulcos em vista de três quartos](site/public/reshape/surface-three-quarter.webp)
+<p align="center"><strong>Crie, esculpa e revise modelos 3D no Blender com o Codex e o Blender MCP.</strong></p>
+<p align="center">Parta de uma imagem, de um briefing ou de uma malha existente. Compare as mesmas vistas a cada rodada para decidir o que corrigir.</p>
+<p align="center"><a href="#instalação-no-codex">Instalar</a> · <a href="skills/reshape/references/anatomia.md">Anatomia</a> · <a href="skills/reshape-estilos/SKILL.md">Estilos</a> · <a href="#site">Site</a> · <a href="README.md" lang="en-US">English</a></p>
 
-As instruções das skills estão em inglês dos EUA. O site oferece português e inglês.
+| Bloqueio | Volumes | Superfície |
+| :---: | :---: | :---: |
+| ![Vaso facetado no bloqueio](site/public/reshape/base-three-quarter.webp) | ![Vaso com transições suaves no ombro e no gargalo](site/public/reshape/volume-three-quarter.webp) | ![Vaso com sulcos na superfície](site/public/reshape/surface-three-quarter.webp) |
+| Estabeleça a silhueta. | Refine o ombro e o gargalo. | Esculpa e confira os sulcos. |
+
+*O mesmo vaso em três passagens, com câmera e luz fixas.*
 
 ## Instalação no Codex
 

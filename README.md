@@ -1,10 +1,17 @@
-# ReShape
+<p align="center"><img src="site/public/reshape/icon.svg" width="64" height="64" alt=""></p>
 
-[Português (Brasil)](README.pt-BR.md)
+<h1 align="center">ReShape</h1>
 
-ReShape is a Codex skill for modeling, sculpting, and reviewing 3D assets in Blender. Start with an image, a written brief, or an existing mesh, and use Blender MCP when available.
+<p align="center"><strong>Model, sculpt, and review 3D assets in Blender with Codex and Blender MCP.</strong></p>
+<p align="center">Start from an image, a brief, or an existing mesh. Compare matching views each round to decide what to correct.</p>
+<p align="center"><a href="#install-in-codex">Install</a> · <a href="skills/reshape/references/anatomia.md">Anatomy</a> · <a href="skills/reshape-estilos/SKILL.md">Styles</a> · <a href="#website">Website</a> · <a href="README.pt-BR.md" lang="pt-BR">Português (Brasil)</a></p>
 
-![Terracotta vase with carved grooves in three-quarter view](site/public/reshape/surface-three-quarter.webp)
+| Blockout | Volumes | Surface |
+| :---: | :---: | :---: |
+| ![Faceted vase blockout](site/public/reshape/base-three-quarter.webp) | ![Vase with refined shoulder and neck transitions](site/public/reshape/volume-three-quarter.webp) | ![Vase with carved surface grooves](site/public/reshape/surface-three-quarter.webp) |
+| Establish the silhouette. | Refine the shoulder and neck. | Sculpt and check the grooves. |
+
+*The same vase across three modeling passes, with camera and lighting held fixed.*
 
 ## Install in Codex
 

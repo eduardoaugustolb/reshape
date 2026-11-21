@@ -1,13 +1,22 @@
 "use client";
 
+import { BookOpenIcon, CheckSquareIcon, DownloadSimpleIcon, ListChecksIcon, SplitHorizontalIcon } from "@phosphor-icons/react/ssr";
 import { useEffect, useState } from "react";
 import { SculptMark } from "./SculptMark";
 
-export type NavItem = { id: string; label: string };
+const icons = {
+  metodo: ListChecksIcon,
+  comparacao: SplitHorizontalIcon,
+  validacao: CheckSquareIcon,
+  skills: BookOpenIcon,
+  instalacao: DownloadSimpleIcon,
+};
+
+export type NavItem = { id: keyof typeof icons; label: string };
 
 // Sticky table of contents; highlights the section currently in view.
 export function Nav({ items, label }: { items: NavItem[]; label: string }) {
-  const [active, setActive] = useState(items[0]?.id);
+  const [active, setActive] = useState<string>(items[0]?.id);
 
   useEffect(() => {
     const sections = items.map((i) => document.getElementById(i.id)).filter((el): el is HTMLElement => !!el);
@@ -30,11 +39,17 @@ export function Nav({ items, label }: { items: NavItem[]; label: string }) {
           ReShape
         </a>
         <ul>
-          {items.map((i) => (
-            <li key={i.id}>
-              <a href={`#${i.id}`} aria-current={active === i.id ? "true" : undefined}>{i.label}</a>
-            </li>
-          ))}
+          {items.map((item) => {
+            const Icon = icons[item.id];
+            return (
+              <li key={item.id}>
+                <a className="icon-action" href={`#${item.id}`} aria-current={active === item.id ? "true" : undefined}>
+                  <Icon aria-hidden="true" />
+                  {item.label}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </nav>

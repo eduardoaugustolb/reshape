@@ -15,6 +15,7 @@
     "package:skill": "cd ../skills && tar -czf ../site/public/reshape/reshape-skill.tar.gz reshape reshape-estilos reshape-anatomia-*"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "next": "16.4.3",
     "react": "19.3.0",
     "react-dom": "19.3.0",

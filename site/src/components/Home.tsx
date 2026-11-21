@@ -1,3 +1,4 @@
+import { CubeFocusIcon, DownloadSimpleIcon, TranslateIcon } from "@phosphor-icons/react/ssr";
 import { HeaderMotion } from "@/components/HeaderMotion";
 import { translate, type Locale } from "@/i18n";
 import { SculptMark } from "@/components/SculptMark";
@@ -32,8 +33,8 @@ export default function Home({ locale }: { locale: Locale }) {
           <span className="masthead__brand"><SculptMark /><span>ReShape <span className="masthead__context">{t("· skill para Blender", "· Blender skill")}</span></span></span>
           <div className="masthead__actions">
             <HeaderMotion locale={locale} />
-            <a href={t("/", "/pt-br/")} hrefLang={t("en-US", "pt-BR")} lang={t("en-US", "pt-BR")}>{t("English", "Português")}</a>
-            <a href="#instalacao">{t("Instalar", "Install")}</a>
+            <a className="icon-action" href={t("/", "/pt-br/")} hrefLang={t("en-US", "pt-BR")} lang={t("en-US", "pt-BR")}><TranslateIcon aria-hidden="true" />{t("English", "Português")}</a>
+            <a className="icon-action" href="#instalacao"><DownloadSimpleIcon aria-hidden="true" />{t("Instalar", "Install")}</a>
           </div>
         </header>
 
@@ -56,7 +57,7 @@ export default function Home({ locale }: { locale: Locale }) {
         </section>
 
         <section id="comparacao" className="section">
-          <div className="section__head"><h2>{t("Comparar vistas", "Compare views")}</h2></div>
+          <div className="section__head"><h2 className="icon-action"><CubeFocusIcon aria-hidden="true" />{t("Comparar vistas", "Compare views")}</h2></div>
           <p>{t("Alterne a câmera nas duas versões do vaso. Observe a mudança na boca, na relação entre o gargalo e o corpo e no desenho dos sulcos.", "Switch the camera on both versions of the vase. Look for changes in the opening, the relationship between the neck and body, and the shape of the grooves.")}</p>
           <SculptComparison locale={locale} />
         </section>
@@ -89,7 +90,7 @@ export default function Home({ locale }: { locale: Locale }) {
         <section id="instalacao" className="section">
           <div className="section__head"><h2>{t("Instalar", "Install")}</h2></div>
           <p>{t("O pacote inclui a ReShape, a skill de estilos e as 36 skills de anatomia em inglês. Baixe e extraia na pasta de skills do Codex. Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao seu agente.", "The package contains ReShape, its modeling styles skill, and all 36 anatomy skills in US English. Download and extract it to the Codex skills folder. To edit through MCP, open Blender and connect the Blender MCP server to your agent.")}</p>
-          <a className="download" href="/reshape/reshape-skill.tar.gz" download>{t("Baixar pacote ReShape", "Download ReShape package")}</a>
+          <a className="download icon-action" href="/reshape/reshape-skill.tar.gz" download><DownloadSimpleIcon aria-hidden="true" />{t("Baixar pacote ReShape", "Download ReShape package")}</a>
           <CopyCommand command={INSTALL} locale={locale} />
           <p>{t("No Codex, invoque ", "In Codex, invoke ")}<code>$reshape</code>{t(" junto com o briefing, a imagem ou o arquivo que você quer revisar.", " with the brief, image, or file you want to review.")}</p>
           <div className="prompts">
