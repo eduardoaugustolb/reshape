@@ -12,7 +12,7 @@
     "deploy": "bun run build && wrangler deploy",
     "lint": "eslint",
     "media": "bun scripts/record-media.ts",
-    "package:skill": "cd ../skills && tar -czf ../site/public/reshape/reshape-skill.tar.gz reshape reshape-estilos reshape-style-* reshape-anatomia-*"
+    "package:skill": "cd ../skills && tar -czf ../site/public/reshape/reshape-skill.tar.gz reshape reshape-styles reshape-style-* reshape-anatomy-*"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

@@ -4,7 +4,7 @@
 
 <p align="center"><strong>Crie, esculpa e revise modelos 3D no Blender com o Codex e o Blender MCP.</strong></p>
 <p align="center">Parta de uma imagem, de um briefing ou de uma malha existente. Compare as mesmas vistas a cada rodada para decidir o que corrigir.</p>
-<p align="center"><a href="#instalação-no-codex">Instalar</a> · <a href="skills/reshape/references/anatomia.md">Anatomia</a> · <a href="skills/reshape-estilos/SKILL.md">Estilos</a> · <a href="#site">Site</a> · <a href="README.md" lang="en-US">English</a></p>
+<p align="center"><a href="#instalação-no-codex">Instalar</a> · <a href="skills/reshape/references/anatomy.md">Anatomia</a> · <a href="skills/reshape-styles/SKILL.md">Estilos</a> · <a href="#site">Site</a> · <a href="README.md" lang="en-US">English</a></p>
 
 | Bloqueio | Volumes | Superfície |
 | :---: | :---: | :---: |
@@ -19,7 +19,7 @@ Na raiz do repositório, copie a pasta da skill para o diretório de skills do C
 
 ```sh
 mkdir -p ~/.agents/skills
-cp -R skills/reshape skills/reshape-estilos skills/reshape-style-* skills/reshape-anatomia-* ~/.agents/skills/
+cp -R skills/reshape skills/reshape-styles skills/reshape-style-* skills/reshape-anatomy-* ~/.agents/skills/
 ```
 
 Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao agente. No Codex, invoque `$reshape` com o briefing ou a referência.
@@ -40,11 +40,11 @@ A entrega inclui a malha editável, as vistas comparativas e o estado da valida�
 
 ## Anatomia humana
 
-O [catálogo de anatomia](skills/reshape/references/anatomia.md) reúne skills por região, desde corpo inteiro até olhos, orelha, nariz, mãos e pés. Cada skill traz regras de construção, vistas de revisão, motivos de reprovação e fontes anatômicas. Use `$reshape-anatomia-face` para uma face inteira ou `$reshape-anatomia-nariz` para uma revisão localizada.
+O [catálogo de anatomia](skills/reshape/references/anatomy.md) reúne skills por região, desde corpo inteiro até olhos, orelha, nariz, mãos e pés. Cada skill traz regras de construção, vistas de revisão, motivos de reprovação e fontes anatômicas. Use `$reshape-anatomy-face` para uma face inteira ou `$reshape-anatomy-nose` para uma revisão localizada.
 
 ## Estilos de modelagem
 
-Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) para escolher entre 10 skills especializadas, cada uma com referências visuais e critérios de aprovação. Use `$reshape-style-faceted-low-poly` para geometria facetada ou `$reshape-style-cel-shading` para sombras em faixas e contornos.
+Use [`$reshape-styles`](skills/reshape-styles/SKILL.md) para escolher entre 10 skills especializadas, cada uma com referências visuais e critérios de aprovação. Use `$reshape-style-faceted-low-poly` para geometria facetada ou `$reshape-style-cel-shading` para sombras em faixas e contornos.
 
 ## Site
 

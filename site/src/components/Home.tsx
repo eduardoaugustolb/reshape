@@ -77,14 +77,14 @@ export default function Home({ locale }: { locale: Locale }) {
           <dl className="checks">
             <div>
               <dt>{t("Anatomia", "Anatomy")}</dt>
-              <dd>{t("44 skills com marcos anatômicos, vistas de revisão e critérios de reprovação. Use ", "44 skills with anatomical landmarks, inspection views, and rejection criteria. Use ")}<code>$reshape-anatomia-cabeca</code>{t(" para a cabeça inteira, ", " for the whole head, ")}<code>$reshape-anatomia-face</code>{t(" para integrar os traços ou ", " to integrate facial features, or ")}<code>$reshape-anatomia-olhos</code>{t(" para revisar olhos e pálpebras.", " to review eyes and eyelids.")}</dd>
+              <dd>{t("44 skills com marcos anatômicos, vistas de revisão e critérios de reprovação. Use ", "44 skills with anatomical landmarks, inspection views, and rejection criteria. Use ")}<code>$reshape-anatomy-head</code>{t(" para a cabeça inteira, ", " for the whole head, ")}<code>$reshape-anatomy-face</code>{t(" para integrar os traços ou ", " to integrate facial features, or ")}<code>$reshape-anatomy-eyes</code>{t(" para revisar olhos e pálpebras.", " to review eyes and eyelids.")}</dd>
             </div>
             <div>
               <dt>{t("Estilos", "Styles")}</dt>
-              <dd><code>$reshape-estilos</code>{t(" define como construir e avaliar realismo, semirrealismo, low-poly, cartoon, chibi, cel shading, argila e miniaturas. Combine decisões de forma e acabamento, como proporções cartoon com planos facetados.", " defines how to model and review realism, semi-realism, low-poly, cartoon, chibi, cel shading, clay, and miniatures. Combine form and finish choices, such as cartoon proportions with faceted planes.")}</dd>
+              <dd><code>$reshape-styles</code>{t(" define como construir e avaliar realismo, semirrealismo, low-poly, cartoon, chibi, cel shading, argila e miniaturas. Combine decisões de forma e acabamento, como proporções cartoon com planos facetados.", " defines how to model and review realism, semi-realism, low-poly, cartoon, chibi, cel shading, clay, and miniatures. Combine form and finish choices, such as cartoon proportions with faceted planes.")}</dd>
             </div>
           </dl>
-          <p>{t("O catálogo completo acompanha o ", "The complete catalog is in the ")}<a href="#instalacao">{t("pacote de instalação", "installation package")}</a>{t(", no arquivo ", " at ")}<code>reshape/references/anatomia.md</code>.</p>
+          <p>{t("O catálogo completo acompanha o ", "The complete catalog is in the ")}<a href="#instalacao">{t("pacote de instalação", "installation package")}</a>{t(", no arquivo ", " at ")}<code>reshape/references/anatomy.md</code>.</p>
         </section>
 
         <section id="instalacao" className="section">

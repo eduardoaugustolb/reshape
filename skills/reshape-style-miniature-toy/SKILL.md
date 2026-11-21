@@ -5,7 +5,7 @@ description: Model or review small-scale figures, toy props, and printable visua
 
 # Miniature and toy modeling
 
-Use [ReShape](../reshape/SKILL.md) for evidence-based approval and [the styles overview](../reshape-estilos/SKILL.md) for mixed briefs.
+Use [ReShape](../reshape/SKILL.md) for evidence-based approval and [the styles overview](../reshape-styles/SKILL.md) for mixed briefs.
 
 ## Visual references
 
