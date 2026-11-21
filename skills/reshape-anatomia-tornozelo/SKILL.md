@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-tornozelo
 description: >-
-  Modele ou revise maléolos, junção da perna com o tálus e tendão calcâneo em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the malleoli, talar junction, and Achilles tendon in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Tornozelo
+# Ankle
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Use os maléolos medial e lateral como marcos distintos da tíbia e da fíbula. Integre a articulação com o dorso do pé e o tendão posterior.
+Use the medial and lateral malleoli as distinct tibial and fibular landmarks. Blend the joint into the dorsum of the foot and posterior tendon.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira frente e ambos os perfis para altura e projeção dos maléolos. Teste dorsiflexão e flexão plantar se houver rig.
+Inspect front and both sides for malleolar height and projection. Test dorsiflexion and plantar flexion if rigged.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Maléolos espelhados sem respaldo no alvo, tornozelo em anel ou calcanhar que se desprende.
+Reject these defects when they conflict with the documented target. Unjustified mirrored malleoli, a ring-shaped ankle, or a heel that detaches.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.4, ossos do membro inferior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
-- [OpenStax cap. 11, músculos da cintura pélvica e membros inferiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
-- [OpenStax cap. 9, articulações sinoviais](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)
+- [OpenStax, Bones of the lower limb (8.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
+- [OpenStax, Pelvic girdle and lower limb muscles (ch. 11)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
+- [OpenStax, Synovial joints (ch. 9)](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)

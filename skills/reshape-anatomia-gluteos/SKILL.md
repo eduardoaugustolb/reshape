@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-gluteos
 description: >-
-  Modele ou revise massas glúteas, sacro e prega glútea em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the gluteal masses, sacrum, and gluteal fold in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Glúteos e transição posterior do quadril
+# Gluteal region
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Apoie a massa posterior no conjunto pelve–fêmur e relacione a porção lateral à região do trocânter. Modele a prega com base nos tecidos e na pose observados.
+Support the posterior mass on the pelvis and femur and relate the lateral mass to the greater trochanter. Sculpt the fold to match the observed tissue and pose.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira traseira e perfil. Em rig, compare apoio unilateral e flexão do quadril com a referência de pose.
+Inspect rear and side views. For rigging, compare single-leg support and hip flexion against pose references.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Duas esferas isoladas, prega gravada como linha fixa ou massa sem continuidade para a coxa.
+Reject these defects when they conflict with the documented target. Two isolated spheres, a fixed etched fold, or a mass that fails to blend into the thigh.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.3, pelve](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
-- [OpenStax §8.4, ossos do membro inferior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
-- [OpenStax cap. 11, músculos da cintura pélvica e membros inferiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
+- [OpenStax, Pelvis (8.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
+- [OpenStax, Bones of the lower limb (8.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
+- [OpenStax, Pelvic girdle and lower limb muscles (ch. 11)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)

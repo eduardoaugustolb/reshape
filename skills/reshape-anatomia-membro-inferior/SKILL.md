@@ -1,41 +1,41 @@
 ---
 name: reshape-anatomia-membro-inferior
 description: >-
-  Modele ou revise cadeia pelve, coxa, joelho, perna, tornozelo e pé em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the pelvis, thigh, knee, lower leg, ankle, and foot as a chain in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Membro inferior inteiro
+# Whole lower limb
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Ancore a coxa no acetábulo, marque o eixo de joelho e tornozelo e determine o contato do pé antes de refinar músculos.
+Anchor the thigh at the acetabulum, locate knee and ankle axes, and establish foot contact before refining muscles.
 
-## Revisão e reprovação
+## Review and rejection
 
-Compare frente, costas e perfil em apoio. Se houver rig, teste uma pose flexionada e confirme contato, direção do joelho e suporte.
+Inspect standing front, rear, and side views. If rigged, test a flexed pose and check ground contact and knee alignment.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Pé girado em relação à cadeia sem justificativa, joelho invertido ou apoio em flutuação.
+Reject these defects when they conflict with the documented target. A foot twisted out of the chain without justification, a reversed knee, or floating support.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Pelve e quadris](../reshape-anatomia-pelve/SKILL.md)
-- [Coxa](../reshape-anatomia-coxa/SKILL.md)
-- [Joelho](../reshape-anatomia-joelho/SKILL.md)
-- [Perna e panturrilha](../reshape-anatomia-perna/SKILL.md)
-- [Tornozelo](../reshape-anatomia-tornozelo/SKILL.md)
-- [Pé inteiro](../reshape-anatomia-pe/SKILL.md)
+- [Pelvis and hips](../reshape-anatomia-pelve/SKILL.md)
+- [Thigh](../reshape-anatomia-coxa/SKILL.md)
+- [Knee](../reshape-anatomia-joelho/SKILL.md)
+- [Lower leg and calf](../reshape-anatomia-perna/SKILL.md)
+- [Ankle](../reshape-anatomia-tornozelo/SKILL.md)
+- [Whole foot](../reshape-anatomia-pe/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.3, pelve](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
-- [OpenStax §8.4, ossos do membro inferior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
-- [OpenStax cap. 11, músculos da cintura pélvica e membros inferiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
-- [OpenStax cap. 9, articulações sinoviais](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)
+- [OpenStax, Pelvis (8.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
+- [OpenStax, Bones of the lower limb (8.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
+- [OpenStax, Pelvic girdle and lower limb muscles (ch. 11)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
+- [OpenStax, Synovial joints (ch. 9)](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)

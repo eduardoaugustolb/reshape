@@ -233,28 +233,37 @@ body { background: #faf7f2; }
 }
 .sculpt-mark__detail { stroke: #f8d7c3; }
 .sculpt-mark__chisel, .sculpt-mark__chips { opacity: 0; stroke: var(--accent); }
+/* The profile unfolds back into the block before the cycle restarts. */
 @media (prefers-reduced-motion: no-preference) {
-  .sculpt-mark__stone { animation: carve-bust 2.4s ease-in-out both; }
-  .sculpt-mark__detail { animation: reveal-bust 2.4s ease both; }
-  .sculpt-mark__chisel { animation: move-chisel 2.4s ease-in-out both; }
-  .sculpt-mark__chips { animation: scatter-chips 2.4s ease-out both; }
+  .sculpt-mark__stone { animation: carve-bust 5s ease-in-out infinite; }
+  .sculpt-mark__detail { animation: reveal-bust 5s ease infinite; }
+  .sculpt-mark__chisel { animation: move-chisel 5s ease-in-out infinite; }
+  .sculpt-mark__chips { animation: scatter-chips 5s ease-out infinite; }
+  html[data-pause-header] .sculpt-mark path { animation-play-state: paused; }
 }
 @keyframes carve-bust {
-  0%, 20% { d: path("M10 29C7 29 6 27 6 24C6 22 6 21 6 18C6 16 6 14 6 11C6 6 6 3 11 3C16 3 23 3 25 5C26 8 27 11 27 14C27 15 27 15 27 16C27 18 28 19 28 20C28 22 28 23 28 24C29 26 29 29 26 29Z"); }
+  0%, 10%, 94%, 100% { d: path("M10 29C7 29 6 27 6 24C6 22 6 21 6 18C6 16 6 14 6 11C6 6 6 3 11 3C16 3 23 3 25 5C26 8 27 11 27 14C27 15 27 15 27 16C27 18 28 19 28 20C28 22 28 23 28 24C29 26 29 29 26 29Z"); }
+  42%, 72% { d: path("M10 29C7 29 6 27 7 24C7 21 12 20 13 18C11 16 10 14 10 11C10 6 13 3 17 3C21 3 24 5 24 9C24 11 28 12 27 14C27 15 24 14 24 16C25 19 23 20 20 20C20 22 21 23 25 24C28 25 29 29 26 29Z"); }
 }
-@keyframes reveal-bust { 0%, 68% { opacity: 0; } }
+@keyframes reveal-bust {
+  0%, 32%, 85%, 100% { opacity: 0; }
+  44%, 72% { opacity: 1; }
+}
 @keyframes move-chisel {
-  0% { opacity: 0; transform: translate(28px, 7px); }
-  18%, 30% { opacity: 1; transform: translate(25px, 11px); }
-  52% { opacity: 1; transform: translate(24px, 18px); }
-  68% { opacity: 1; transform: translate(22px, 22px); }
-  86%, 100% { opacity: 0; transform: translate(29px, 20px); }
+  0%, 100% { opacity: 0; transform: translate(28px, 7px); }
+  12% { opacity: 1; transform: translate(25px, 11px); }
+  23% { opacity: 1; transform: translate(24px, 18px); }
+  33% { opacity: 1; transform: translate(22px, 22px); }
+  45% { opacity: 0; transform: translate(29px, 20px); }
 }
 @keyframes scatter-chips {
-  0%, 32% { opacity: 0; }
-  44% { opacity: 1; }
-  66%, 100% { opacity: 0; transform: translate(4px, 4px); }
+  0%, 17%, 100% { opacity: 0; transform: translate(0, 0); }
+  24% { opacity: 1; }
+  40% { opacity: 0; transform: translate(4px, 4px); }
 }
+.masthead__actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px 12px; }
+.masthead__actions button { color: var(--muted); cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .masthead__actions button { display: none; } }
 .reshape :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 .study__frame {

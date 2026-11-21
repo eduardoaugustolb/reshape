@@ -1,36 +1,36 @@
 ---
 name: reshape-anatomia-boca
 description: >-
-  Modele ou revise lábios, comissuras, filtro e abertura oral em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the lips, mouth corners, philtrum, and oral opening in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Boca e lábios
+# Mouth and lips
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Apoie os lábios sobre a curvatura dentoalveolar. Modele espessura, filtro, linha de contato e comissuras em continuidade com bochechas e queixo.
+Support the lips on the curve of the underlying dental and alveolar structures. Model lip thickness, the philtrum, the contact line, and corners in continuity with cheeks and chin.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira frente, perfil e três quartos. Se houver rig, teste fechamento, sorriso e abertura, observando comissuras e contato com a dentição.
+Check front, profile, and three-quarter views. If rigged, test closure, smiling, and opening, inspecting the mouth corners and tooth contact.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Lábios planos, comissuras perfuradas ou uma abertura pintada em modelo que precisa abrir a boca.
+Reject these defects when they conflict with the documented target. Flat lips, pierced mouth corners, or a painted opening on a model that must open its mouth.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Dentes, gengivas e língua](../reshape-anatomia-dentes-lingua/SKILL.md)
-- [Mandíbula e queixo](../reshape-anatomia-mandibula/SKILL.md)
+- [Teeth, gums, and tongue](../reshape-anatomia-dentes-lingua/SKILL.md)
+- [Mandible and chin](../reshape-anatomia-mandibula/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §23.3, boca, dentes e língua](https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus)
-- [OpenStax §11.3, músculos axiais](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
-- [Weinberg et al., 3D Facial Norms Database, estudo original](https://pubmed.ncbi.nlm.nih.gov/26492185/)
+- [OpenStax, Mouth, teeth, and tongue (23.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus)
+- [OpenStax, Axial muscles (11.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
+- [Weinberg et al., 3D Facial Norms Database, original study](https://pubmed.ncbi.nlm.nih.gov/26492185/)

@@ -1,38 +1,38 @@
 ---
 name: reshape-anatomia-torax
 description: >-
-  Modele ou revise caixa torácica, esterno e junções com costas e ombros em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the rib cage, sternum, and junctions with the back and shoulders in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Tórax inteiro
+# Whole thorax
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Construa profundidade da caixa torácica entre esterno e coluna. Posicione margem costal, clavículas e planos anterior, lateral e posterior. Sobreponha os tecidos superficiais na pose.
+Build depth between sternum and spine. Place the costal margin, clavicles, and anterior, lateral, and posterior planes. Layer surface tissues according to the pose.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira perfil para a profundidade e costas para escápulas. Compare margem costal em frente e três quartos.
+Check depth in profile and the scapulae from behind. Compare the costal margin in front and three-quarter views.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Peito plano de perfil, margem costal em degrau ou escápulas sem acomodação na caixa torácica.
+Reject these defects when they conflict with the documented target. A flat chest in profile, an abrupt step at the costal margin, or scapulae that fail to sit on the rib cage.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Peito e mamas](../reshape-anatomia-peito/SKILL.md)
-- [Ombro e axila](../reshape-anatomia-ombro-axila/SKILL.md)
-- [Costas e coluna superficial](../reshape-anatomia-costas/SKILL.md)
-- [Abdome e flancos](../reshape-anatomia-abdome/SKILL.md)
+- [Chest and breasts](../reshape-anatomia-peito/SKILL.md)
+- [Shoulder and axilla](../reshape-anatomia-ombro-axila/SKILL.md)
+- [Back and surface landmarks of the spine](../reshape-anatomia-costas/SKILL.md)
+- [Abdomen and flanks](../reshape-anatomia-abdome/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.4, caixa torácica](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage)
-- [OpenStax cap. 8, cintura escapular](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-chapter-review)
-- [OpenStax §11.5, músculos da cintura escapular e membros superiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
+- [OpenStax, Thoracic cage (7.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage)
+- [OpenStax, Pectoral girdle (ch. 8)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-chapter-review)
+- [OpenStax, Shoulder girdle and upper limb muscles (11.5)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)

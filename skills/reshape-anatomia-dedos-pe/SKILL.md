@@ -1,28 +1,28 @@
 ---
 name: reshape-anatomia-dedos-pe
 description: >-
-  Modele ou revise hálux, dedos laterais, falanges e unhas em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the hallux, lateral toes, phalanges, and nails in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Dedos do pé
+# Toes
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Posicione o hálux com duas falanges e os demais dedos típicos com três. Modele o eixo de cada dedo a partir do respectivo metatarso e respeite o contorno e as variações do alvo.
+Use two phalanges for the hallux and typically three for the other toes. Establish each toe's axis from its metatarsal and follow the target's contour and variation.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira superfície dorsal e planta. Na pose de impulsão, quando aplicável, examine a dobra nas articulações metatarsofalângicas e o apoio dos dedos.
+Inspect the dorsum and sole. If push-off applies, check the bend at the metatarsophalangeal joints and toe contact.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Dedos como tubos iguais, hálux sem ligação com o primeiro metatarso ou erro de contato plantar.
+Reject these defects when they conflict with the documented target. Identical tubular toes, a hallux disconnected from the first metatarsal, or incorrect sole contact.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.4, ossos do membro inferior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
-- [OpenStax cap. 11, músculos da cintura pélvica e membros inferiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
+- [OpenStax, Bones of the lower limb (8.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
+- [OpenStax, Pelvic girdle and lower limb muscles (ch. 11)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)

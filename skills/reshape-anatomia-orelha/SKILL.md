@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-orelha
 description: >-
-  Modele ou revise pavilhão auricular, hélice, anti-hélice, concha e lóbulo em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the auricle, helix, antihelix, concha, and lobule in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Orelha externa
+# External ear
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Estabeleça implantação e projeção. Modele hélice e anti-hélice como relevos distintos em torno da concha. Situe tragus, antitragus e lóbulo com base no alvo.
+Establish attachment and projection. Model the helix and antihelix as distinct ridges around the concha. Place the tragus, antitragus, and lobule from the target.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira lateral, frente e traseira para ver projeção, profundidade da concha e junção com o crânio.
+Check lateral, front, and rear views for projection, conchal depth, and the juncture with the head.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Pavilhão plano com sulcos desenhados, concha invertida ou borda sem ligação com a base.
+Reject these defects when they conflict with the documented target. A flat auricle with grooves drawn on it, an inverted concha, or an outer rim detached from the base.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [A three-dimensional algorithm for precise measurement of human auricle parameters, estudo com TC](https://pmc.ncbi.nlm.nih.gov/articles/PMC11087560/)
+- [A three-dimensional algorithm for precise measurement of human auricle parameters, CT study](https://pmc.ncbi.nlm.nih.gov/articles/PMC11087560/)
 - [Comprehensive Review of External and Middle Ear Anatomy on Photon-Counting CT](https://pmc.ncbi.nlm.nih.gov/articles/PMC11630884/)
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)

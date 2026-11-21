@@ -1,39 +1,39 @@
 ---
 name: reshape-anatomia-tronco
 description: >-
-  Modele ou revise integração de tórax, dorso, abdome e pelve em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the integration of thorax, back, abdomen, and pelvis in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Tronco inteiro
+# Whole trunk
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Construa duas massas, torácica e pélvica, com coluna e tecidos abdominais conectando seus eixos. Em flexão lateral, observe compressão em um lado e expansão no outro.
+Block out the rib cage and pelvis separately and connect their axes through the spine and abdominal tissues. In side bending, look for compression on one side and lengthening on the other.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira frente, costas e perfil da caixa torácica à pelve. Em pose, compare flancos e deslocamento dos marcos ósseos.
+Inspect front, back, and side from the rib cage to pelvis. Compare the flanks and movement of bony landmarks in the posed model.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Cintura em junta abrupta, pelve invertida ou caixas independentes sem continuidade dos flancos.
+Reject these defects when they conflict with the documented target. An abrupt waist joint, reversed pelvis, or independent masses with disconnected flanks.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Tórax inteiro](../reshape-anatomia-torax/SKILL.md)
-- [Costas e coluna superficial](../reshape-anatomia-costas/SKILL.md)
-- [Abdome e flancos](../reshape-anatomia-abdome/SKILL.md)
-- [Pelve e quadris](../reshape-anatomia-pelve/SKILL.md)
+- [Whole thorax](../reshape-anatomia-torax/SKILL.md)
+- [Back and surface landmarks of the spine](../reshape-anatomia-costas/SKILL.md)
+- [Abdomen and flanks](../reshape-anatomia-abdome/SKILL.md)
+- [Pelvis and hips](../reshape-anatomia-pelve/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.4, caixa torácica](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage)
-- [OpenStax §7.3, coluna vertebral](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
-- [OpenStax §11.4, parede abdominal e tórax](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax)
-- [OpenStax §8.3, pelve](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
+- [OpenStax, Thoracic cage (7.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage)
+- [OpenStax, Vertebral column (7.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
+- [OpenStax, Abdominal wall and thorax (11.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax)
+- [OpenStax, Pelvis (8.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)

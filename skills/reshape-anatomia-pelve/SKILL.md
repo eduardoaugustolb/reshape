@@ -1,36 +1,36 @@
 ---
 name: reshape-anatomia-pelve
 description: >-
-  Modele ou revise cintura pélvica, cristas ilíacas e junção com o fêmur em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the pelvic girdle, iliac crests, and hip connection to the femur in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Pelve e quadris
+# Pelvis and hips
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Posicione sacro, cristas e espinhas ilíacas anteriores. Use o acetábulo para o centro articular e o trocânter maior como referência lateral do fêmur, quando visível.
+Place the sacrum, iliac crests, and anterior iliac spines. Use the acetabulum for the hip joint center and the greater trochanter as a lateral femoral landmark where visible.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira frente, lateral e costas. Em rig, teste flexão e abdução sem separar quadril e coxa.
+Inspect front, side, and back. If rigged, check hip flexion and abduction without separating the hip and thigh.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Pivô deslocado para fora da pelve, pélvis sem espessura ou degrau na transição para a coxa.
+Reject these defects when they conflict with the documented target. A joint pivot outside the pelvis, a pelvis without depth, or a step into the thigh.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Glúteos e transição posterior do quadril](../reshape-anatomia-gluteos/SKILL.md)
-- [Coxa](../reshape-anatomia-coxa/SKILL.md)
+- [Gluteal region](../reshape-anatomia-gluteos/SKILL.md)
+- [Thigh](../reshape-anatomia-coxa/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.3, pelve](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
-- [OpenStax §8.4, ossos do membro inferior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
-- [OpenStax cap. 9, articulações sinoviais](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)
+- [OpenStax, Pelvis (8.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
+- [OpenStax, Bones of the lower limb (8.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
+- [OpenStax, Synovial joints (ch. 9)](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)

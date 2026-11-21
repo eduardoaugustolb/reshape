@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-mandibula
 description: >-
-  Modele ou revise linha mandibular, mento e articulação da mandíbula em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the jawline, chin, and jaw joint in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Mandíbula e queixo
+# Mandible and chin
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Modele corpo, ângulo e ramo mandibular como estrutura contínua. Relacione mento, lábio inferior e masseter ao contorno lateral observado.
+Model the body, angle, and ramus as a continuous structure. Relate the chin, lower lip, and masseter region to the observed lateral contour.
 
-## Revisão e reprovação
+## Review and rejection
 
-Compare perfil e vista inferior. Para rig, observe a mandíbula deslocar-se e girar na abertura ampla, com a arcada inferior acompanhando.
+Compare side and underside views. For rigging, check that the jaw rotates and translates in a wide opening and that the lower dental arch follows.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Queixo avulso, ângulo sem ramo ou abertura que descola o maxilar inferior da região da articulação.
+Reject these defects when they conflict with the documented target. A separate chin, a mandibular angle without a ramus, or an opening that detaches the jaw from the joint region.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
-- [OpenStax cap. 9, articulações sinoviais](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)
-- [OpenStax §11.3, músculos axiais](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Synovial joints (ch. 9)](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)
+- [OpenStax, Axial muscles (11.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)

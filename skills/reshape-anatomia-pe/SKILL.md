@@ -1,35 +1,35 @@
 ---
 name: reshape-anatomia-pe
 description: >-
-  Modele ou revise calcanhar, arcos, metatarsos, antepé e apoio em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the heel, arches, metatarsals, forefoot, and contact in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Pé inteiro
+# Whole foot
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Bloqueie calcâneo, mediopé e cabeças metatarsais. Construa o arco longitudinal e a passagem ao antepé, seguindo o apoio e o tipo de pé da referência.
+Block in the calcaneus, midfoot, and metatarsal heads. Build the longitudinal arch and forefoot transition to match the target's foot and stance.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira vistas plantar, dorsal e medial em apoio. Em rig, teste a elevação do calcanhar mantendo a leitura do antepé.
+Check plantar, dorsal, and medial views in stance. If rigged, raise the heel and assess contact and forefoot form.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Planta plana por conveniência, calcanhar sem massa ou apoio penetrando o plano de chão.
+Reject these defects when they conflict with the documented target. An arbitrarily flat sole, a heel without mass, or a foot penetrating the ground plane.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Tornozelo](../reshape-anatomia-tornozelo/SKILL.md)
-- [Dedos do pé](../reshape-anatomia-dedos-pe/SKILL.md)
+- [Ankle](../reshape-anatomia-tornozelo/SKILL.md)
+- [Toes](../reshape-anatomia-dedos-pe/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.4, ossos do membro inferior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
-- [OpenStax cap. 11, músculos da cintura pélvica e membros inferiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
+- [OpenStax, Bones of the lower limb (8.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
+- [OpenStax, Pelvic girdle and lower limb muscles (ch. 11)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)

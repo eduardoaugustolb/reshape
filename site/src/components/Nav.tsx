@@ -6,7 +6,7 @@ import { SculptMark } from "./SculptMark";
 export type NavItem = { id: string; label: string };
 
 // Sticky table of contents; highlights the section currently in view.
-export function Nav({ items }: { items: NavItem[] }) {
+export function Nav({ items, label }: { items: NavItem[]; label: string }) {
   const [active, setActive] = useState(items[0]?.id);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export function Nav({ items }: { items: NavItem[] }) {
   }, [items]);
 
   return (
-    <nav className="nav" aria-label="Nesta página">
+    <nav className="nav" aria-label={label}>
       <div className="nav__inner">
         <a href="#top" className="nav__brand">
           <SculptMark />

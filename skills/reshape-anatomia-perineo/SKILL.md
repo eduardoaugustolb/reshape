@@ -1,30 +1,30 @@
 ---
 name: reshape-anatomia-perineo
 description: >-
-  Modele ou revise modelos anatômicos, educativos ou clínicos da região perineal e genitais externos em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review educational or clinical models of the perineum and external genital anatomy in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Períneo e genitais externos
+# Perineum and external genital anatomy
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Defina a região em relação a púbis, ísquios e cóccix. Modele somente as estruturas requeridas pelo alvo documentado, com adequada distinção entre superfície externa e anatomia interna quando visível em corte.
+Define the region against the pubis, ischia, and coccyx. Model the structures required by the documented target and distinguish the external surface from internal anatomy where a section exposes it.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira implantação, continuidade de tecidos e posição relativa das aberturas aplicáveis em vistas anatômicas adequadas. Documente variações com referência específica.
+Check attachment, tissue continuity, and the relative position of relevant openings in appropriate anatomical views. Document variants using specific references.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Estruturas com implantação incompatível com a pelve, aberturas fundidas ou detalhes sem referência apresentados como anatomia verificada.
+Reject these defects when they conflict with the documented target. Structures inconsistent with pelvic attachment, merged openings, or unreferenced details labeled as verified anatomy.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.3, pelve](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
-- [OpenStax §11.4, parede abdominal e tórax](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax)
-- [OpenStax §27.2, anatomia mamária e vulva](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system)
-- [OpenStax §27.1, genitais externos](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system)
+- [OpenStax, Pelvis (8.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
+- [OpenStax, Abdominal wall and thorax (11.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax)
+- [OpenStax, Breast and vulvar anatomy (27.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system)
+- [OpenStax, External genital anatomy (27.1)](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system)

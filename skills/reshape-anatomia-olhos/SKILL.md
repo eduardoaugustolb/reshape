@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-olhos
 description: >-
-  Modele ou revise globo, córnea, pálpebras, cantos e órbita em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the eyeball, cornea, lids, canthi, and orbit in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Olhos e pálpebras
+# Eyes and eyelids
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Assente o globo na órbita e modele a leve projeção da córnea se a escala justificar. Envolva o globo com margens palpebrais de espessura visível, unidas nos cantos medial e lateral.
+Seat the globe in the orbit and model the slight corneal projection if the scale warrants it. Wrap the lids around the globe with readable margins that join at the medial and lateral canthi.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira em frente e três quartos se o olhar converge no alvo pretendido. Em rig, abra, feche e desvie o olhar para detectar folga ou invasão das pálpebras.
+Check in front and three-quarter views that the eyes aim at the intended target. If rigged, test opening, closing, and gaze shifts for gaps or penetration.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Globos colados à face, margens cortando a córnea ou pálpebras que deixam lacuna no fechamento previsto.
+Reject these defects when they conflict with the documented target. Globes pasted onto the face, lids clipping the cornea, or gaps when the eyes should be closed.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
-- [Orbital Anatomy for the Surgeon, revisão anatômica](https://pmc.ncbi.nlm.nih.gov/articles/PMC3566239/)
-- [Weinberg et al., 3D Facial Norms Database, estudo original](https://pubmed.ncbi.nlm.nih.gov/26492185/)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [Orbital Anatomy for the Surgeon, anatomical review](https://pmc.ncbi.nlm.nih.gov/articles/PMC3566239/)
+- [Weinberg et al., 3D Facial Norms Database, original study](https://pubmed.ncbi.nlm.nih.gov/26492185/)

@@ -1,28 +1,28 @@
 ---
 name: reshape-anatomia-braco
 description: >-
-  Modele ou revise segmento entre ombro e cotovelo, bíceps e tríceps em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the shoulder-to-elbow segment, biceps, and triceps in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Braço
+# Upper arm
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Modele sobre o eixo do úmero. Diferencie a massa anterior de flexão da posterior de extensão e distribua os volumes em direção ao cotovelo.
+Model around the humeral axis. Distinguish the anterior flexor mass from the posterior extensor mass and transition them toward the elbow.
 
-## Revisão e reprovação
+## Review and rejection
 
-Compare perfil em extensão e flexão se houver rig. Examine a inserção visual do deltoide e os espaços próximos ao cotovelo.
+Compare profiles in extension and, if rigged, flexion. Inspect the deltoid transition and spaces around the elbow.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Cápsula uniforme ou músculos isolados em relevos sem continuidade.
+Reject these defects when they conflict with the documented target. A uniform capsule or isolated muscle relief without continuity.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.2, ossos do membro superior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb)
-- [OpenStax §11.5, músculos da cintura escapular e membros superiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
+- [OpenStax, Bones of the upper limb (8.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb)
+- [OpenStax, Shoulder girdle and upper limb muscles (11.5)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)

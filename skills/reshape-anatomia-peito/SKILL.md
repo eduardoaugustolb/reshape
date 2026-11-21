@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-peito
 description: >-
-  Modele ou revise peitoral maior, parede anterior e volume mamário em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the pectoralis major, anterior chest wall, and breast volume in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Peito e mamas
+# Chest and breasts
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Defina a parede torácica e a relação do peitoral com o braço. Modele o volume mamário como tecido sobre a parede, com base e contorno que respondam à pose e ao suporte presentes no alvo.
+Establish the chest wall and its relationship to the arm through pectoralis major. Model breast tissue over the chest wall with a base and contour appropriate to pose and support.
 
-## Revisão e reprovação
+## Review and rejection
 
-Compare de frente e perfil. Examine transição medial, inferior e com a axila conforme a referência.
+Compare front and side views. Inspect the medial, lower, and axillary transitions against the reference.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Volumes esféricos flutuantes, peito independente do braço em rig ou contorno incompatível com pose e suporte.
+Reject these defects when they conflict with the documented target. Floating spheres, a chest disconnected from arm motion in a rig, or contour inconsistent with the pose and support.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.4, caixa torácica](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage)
-- [OpenStax §11.5, músculos da cintura escapular e membros superiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
-- [OpenStax §27.2, anatomia mamária e vulva](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system)
+- [OpenStax, Thoracic cage (7.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage)
+- [OpenStax, Shoulder girdle and upper limb muscles (11.5)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
+- [OpenStax, Breast and vulvar anatomy (27.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system)

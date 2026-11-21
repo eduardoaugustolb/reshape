@@ -1,39 +1,39 @@
 ---
 name: reshape-anatomia-corpo
 description: >-
-  Modele ou revise figura humana, proporções globais e pose em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the human figure, overall proportions, and pose in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Corpo inteiro
+# Whole body
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Bloqueie caixa torácica e pelve com eixos próprios, conecte a coluna e ancore os membros nas cinturas. Em pé, identifique os contatos e use o apoio como referência para distribuir a massa na pose.
+Block out the rib cage and pelvis on their respective axes. Connect them through the spine and anchor the limbs to their girdles. In a standing pose, identify the contact points and use them to judge weight distribution.
 
-## Revisão e reprovação
+## Review and rejection
 
-Compare frente, perfil e costas do corpo inteiro. Marque ombros, pelve, joelhos e tornozelos. Confira a coerência da carga em ambos os pés ou no apoio dominante.
+Compare full front, side, and back views. Mark the shoulders, pelvis, knees, and ankles. Check whether the pose reads as supported by both feet or the dominant foot.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Membros desconectados, apoio incompatível com a pose estática ou proporções impostas por um cânone de alturas em cabeças.
+Reject these defects when they conflict with the documented target. Disconnected limbs, unsupported static poses, or proportions imposed by a fixed head-count canon.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Cabeça inteira](../reshape-anatomia-cabeca/SKILL.md)
-- [Tronco inteiro](../reshape-anatomia-tronco/SKILL.md)
-- [Membro superior inteiro](../reshape-anatomia-membro-superior/SKILL.md)
-- [Membro inferior inteiro](../reshape-anatomia-membro-inferior/SKILL.md)
+- [Whole head](../reshape-anatomia-cabeca/SKILL.md)
+- [Whole trunk](../reshape-anatomia-tronco/SKILL.md)
+- [Whole upper limb](../reshape-anatomia-membro-superior/SKILL.md)
+- [Whole lower limb](../reshape-anatomia-membro-inferior/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
-- [OpenStax §7.3, coluna vertebral](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
-- [OpenStax §8.3, pelve](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
-- [OpenStax cap. 9, articulações sinoviais](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Vertebral column (7.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
+- [OpenStax, Pelvis (8.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis)
+- [OpenStax, Synovial joints (ch. 9)](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)

@@ -1,45 +1,45 @@
 # ReShape
 
-ReShape é uma skill para modelar, esculpir e revisar ativos 3D no Blender. Ela trabalha a partir de imagens, texto ou de uma malha existente e usa o Blender MCP quando disponível.
+[Português (Brasil)](README.pt-BR.md)
 
-![Vaso de terracota com sulcos em vista de três quartos](site/public/reshape/surface-three-quarter.webp)
+ReShape is a Codex skill for modeling, sculpting, and reviewing 3D assets in Blender. Start with an image, a written brief, or an existing mesh, and use Blender MCP when available.
 
-## Instalação no Codex
+![Terracotta vase with carved grooves in three-quarter view](site/public/reshape/surface-three-quarter.webp)
 
-Na raiz do repositório, copie a pasta da skill para o diretório de skills do Codex.
+## Install in Codex
+
+From the repository root, copy ReShape and its companion skills into the Codex skills directory.
 
 ```sh
 mkdir -p ~/.agents/skills
 cp -R skills/reshape skills/reshape-estilos skills/reshape-anatomia-* ~/.agents/skills/
 ```
 
-Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao agente. No Codex, invoque `$reshape` com o briefing ou a referência.
+To edit through MCP, open Blender and connect the Blender MCP server to your agent. Invoke `$reshape` in Codex with your brief or reference.
 
 ```text
-$reshape Modele o vaso desta imagem no Blender. Compare a silhueta de frente e em três quartos.
-$reshape Revise as transições dos ombros nesta malha e confira a deformação nas poses de teste.
+$reshape Model the vase in this image. Compare the silhouette in front and three-quarter views.
+$reshape Review the shoulder transitions in this mesh and check deformation in the test poses.
 ```
 
-## Como funciona
+## How it works
 
-1. Extraia critérios observáveis da referência ou do briefing. Registre o que pode ser conferido e o que precisou ser inferido.
-2. Modele em passagens. Resolva primeiro a silhueta e as massas principais, depois as transições e os detalhes da superfície.
-3. Capture vistas comparáveis e corrija os desvios. Mantenha pose, câmera, escala e luz fixas entre rodadas.
-4. Verifique a malha conforme o destino. Para rig, confira a deformação. Para impressão, confira fechamento e espessura. Para tempo real, confira o custo no destino.
+1. Extract observable criteria from the brief or reference and document any inferred regions.
+2. Model in passes. Resolve silhouette and primary masses before transitions and surface details.
+3. Capture matching views and correct discrepancies. Hold pose, camera, scale, and lighting fixed between rounds.
+4. Verify the mesh for its intended use. Check deformation for rigging, closure and thickness for printing, or cost on the target platform for real-time work.
 
-A entrega inclui a malha editável, as vistas comparativas e o estado da validação. O [guia da skill](skills/reshape/SKILL.md) detalha cada etapa.
+Deliver the editable mesh, comparative views, and documented validation results. The [ReShape skill](skills/reshape/SKILL.md) explains each step.
 
-## Anatomia humana
+## Anatomy and style
 
-O [catálogo de anatomia](skills/reshape/references/anatomia.md) reúne skills por região, desde corpo inteiro até olhos, orelha, nariz, mãos e pés. Cada skill traz regras de construção, vistas de revisão, motivos de reprovação e fontes anatômicas. Use `$reshape-anatomia-face` para uma face inteira ou `$reshape-anatomia-nariz` para uma revisão localizada.
+The [anatomy catalog](skills/reshape/references/anatomia.md) includes 36 skills, from the whole body to individual features and joints. Each skill gives construction rules, inspection views, rejection criteria, and anatomy sources. Use `$reshape-anatomia-face` to integrate facial features or `$reshape-anatomia-nariz` to review a nose.
 
-## Estilos de modelagem
+Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) to define silhouette, geometry, and finish for styles such as realism, low-poly, cartoon, chibi, and cel shading. The skills use US English. Invocation names are the same in both versions of the site.
 
-Use [`$reshape-estilos`](skills/reshape-estilos/SKILL.md) para definir regras de silhueta, geometria e acabamento em estilos como realista, low-poly, cartoon, chibi e cel shading.
+## Website
 
-## Site
-
-O [site da ReShape](site/README.md) demonstra três passagens de modelagem de um vaso e permite comparar bloqueio e superfície em frente, perfil e três quartos.
+The [ReShape site](site/README.md) shows three modeling passes and lets you compare the blockout and surface in front, profile, and three-quarter views. US English is the default, with Brazilian Portuguese at `/pt-br/`.
 
 ```sh
 cd site
@@ -47,6 +47,6 @@ bun install
 bun run dev
 ```
 
-## Créditos
+## Credits
 
-O ciclo de captura, comparação e revisão foi adaptado da [Reanimate de Niaz Morshed](https://github.com/NiazMorshed2007/reanimate). O código original da skill está em [skills/reanimate](skills/reanimate). [Licença MIT](LICENSE).
+ReShape adapts the capture, comparison, and revision workflow of [Reanimate by Niaz Morshed](https://github.com/NiazMorshed2007/reanimate). The original skill is in [skills/reanimate](skills/reanimate). [MIT license](LICENSE).

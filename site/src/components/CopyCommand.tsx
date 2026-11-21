@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { translate, type Locale } from "@/i18n";
 
-export function CopyCommand({ command }: { command: string }) {
+export function CopyCommand({ command, locale }: { command: string; locale: Locale }) {
   const [copied, setCopied] = useState(false);
+  const t = translate(locale);
   return (
     <div className="cmd">
       <span>{command}</span>
@@ -15,7 +17,7 @@ export function CopyCommand({ command }: { command: string }) {
           setTimeout(() => setCopied(false), 1500);
         }}
       >
-        {copied ? "Copiado" : "Copiar"}
+        {copied ? t("Copiado", "Copied") : t("Copiar", "Copy")}
       </button>
     </div>
   );

@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-pescoco
 description: >-
-  Modele ou revise junções cabeça–pescoço e pescoço–tórax em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the head-to-neck and neck-to-thorax junctions in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Pescoço
+# Neck
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Relacione a base occipital à coluna cervical. Use o esternocleidomastoideo entre mastoide e inserções esternal e clavicular e o trapézio no dorso. Ajuste a expressão superficial ao indivíduo.
+Relate the occipital base to the cervical spine. Place sternocleidomastoid between the mastoid and its sternal and clavicular attachments, and trapezius posteriorly. Match their surface visibility to the subject.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira perfil e traseira, além de rotação e inclinação se houver rig. Observe a continuidade com a nuca e a clavícula.
+Inspect side and back views and, if rigged, rotation and tilt. Check the transitions into the nape and clavicles.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Cilindro preso ao queixo, tendões simétricos rígidos em rotação ou folga na nuca.
+Reject these defects when they conflict with the documented target. A cylinder attached to the chin, rigid symmetrical tendons during rotation, or a gap at the nape.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.3, coluna vertebral](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
-- [OpenStax §11.3, músculos axiais](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Vertebral column (7.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
+- [OpenStax, Axial muscles (11.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)

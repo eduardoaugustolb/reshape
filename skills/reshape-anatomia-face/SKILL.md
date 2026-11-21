@@ -1,40 +1,40 @@
 ---
 name: reshape-anatomia-face
 description: >-
-  Modele ou revise modelagem da face, semelhança facial e integração dos traços em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review facial likeness and integration of features in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Face inteira
+# Whole face
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Bloqueie órbitas, zigomas, projeção maxilar, queixo e mandíbula antes de refinar traços. Faça as superfícies orbitária, malar e perioral compartilhar as transições observadas no alvo.
+Block out the orbits, zygomatic bones, maxillary projection, chin, and mandible before refining individual features. Match the orbital, cheek, and mouth transitions in the target.
 
-## Revisão e reprovação
+## Review and rejection
 
-Compare marcos dos cantos dos olhos, base do nariz, comissuras e queixo em vistas alinhadas. Julgue semelhança na expressão prevista, além da leitura do conjunto em luz neutra.
+Compare eye corners, nasal base, mouth corners, and chin in aligned views. Judge likeness with the intended expression and inspect the whole face under neutral light.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Traços individualmente bem desenhados com profundidades incompatíveis, assimetria involuntária ou feições reconhecíveis só sob dramaticidade da luz.
+Reject these defects when they conflict with the documented target. Features with incompatible depths, unintended asymmetry, or likeness that depends on dramatic lighting.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Testa e sobrancelhas](../reshape-anatomia-testa-sobrancelhas/SKILL.md)
-- [Olhos e pálpebras](../reshape-anatomia-olhos/SKILL.md)
-- [Nariz](../reshape-anatomia-nariz/SKILL.md)
-- [Maçãs do rosto e bochechas](../reshape-anatomia-macas-face/SKILL.md)
-- [Boca e lábios](../reshape-anatomia-boca/SKILL.md)
-- [Mandíbula e queixo](../reshape-anatomia-mandibula/SKILL.md)
+- [Forehead and eyebrows](../reshape-anatomia-testa-sobrancelhas/SKILL.md)
+- [Eyes and eyelids](../reshape-anatomia-olhos/SKILL.md)
+- [Nose](../reshape-anatomia-nariz/SKILL.md)
+- [Cheekbones and cheeks](../reshape-anatomia-macas-face/SKILL.md)
+- [Mouth and lips](../reshape-anatomia-boca/SKILL.md)
+- [Mandible and chin](../reshape-anatomia-mandibula/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
-- [OpenStax §11.3, músculos axiais](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
-- [Weinberg et al., 3D Facial Norms Database, estudo original](https://pubmed.ncbi.nlm.nih.gov/26492185/)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Axial muscles (11.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
+- [Weinberg et al., 3D Facial Norms Database, original study](https://pubmed.ncbi.nlm.nih.gov/26492185/)

@@ -1,28 +1,28 @@
 ---
 name: reshape-anatomia-nariz
 description: >-
-  Modele ou revise raiz, dorso, ponta, asas e narinas em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the nasal root, dorsum, tip, alae, and nostrils in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Nariz
+# Nose
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Modele raiz e dorso em continuidade com a face. Diferencie suporte superior, ponta cartilaginosa, asas e columela. Faça narinas recuadas com bordas próprias.
+Blend the root and bridge into the face. Distinguish the upper support, cartilaginous tip, alae, and columella. Recess the nostrils and give their margins thickness.
 
-## Revisão e reprovação
+## Review and rejection
 
-Compare perfil e vista inferior para conferir projeção da ponta, eixo, espessura alar e separação das aberturas.
+Compare profile and underside views for tip projection, axis, alar thickness, and separate openings.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Nariz em cunha colada, narinas sem profundidade ou as duas aberturas fundidas.
+Reject these defects when they conflict with the documented target. A wedge pasted onto the face, nostrils with no depth, or merged openings.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [Anatomy, Head and Neck, Nose, revisão anatômica](https://www.ncbi.nlm.nih.gov/books/NBK532870/)
-- [Weinberg et al., 3D Facial Norms Database, estudo original](https://pubmed.ncbi.nlm.nih.gov/26492185/)
+- [Anatomy, Head and Neck, Nose, anatomical review](https://www.ncbi.nlm.nih.gov/books/NBK532870/)
+- [Weinberg et al., 3D Facial Norms Database, original study](https://pubmed.ncbi.nlm.nih.gov/26492185/)

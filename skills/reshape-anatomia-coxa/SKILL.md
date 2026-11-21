@@ -1,28 +1,28 @@
 ---
 name: reshape-anatomia-coxa
 description: >-
-  Modele ou revise segmento entre quadril e joelho, quadríceps, adutores e posteriores em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the hip-to-knee segment, quadriceps, adductors, and hamstrings in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Coxa
+# Thigh
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Disponha massas anterior, medial e posterior em torno do eixo femoral. Modele a transição próxima à virilha e o afunilamento para os côndilos.
+Arrange anterior, medial, and posterior masses around the femoral axis. Model the transition near the groin and taper toward the condyles.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira perfil e costas além da frente. Compare os volumes perto do quadril e acima do joelho em pose flexionada, se prevista.
+Check side and rear as well as front. Compare masses near the hip and above the knee in flexion if the target calls for it.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Volume cilíndrico uniforme ou transição abrupta da virilha e do joelho.
+Reject these defects when they conflict with the documented target. A uniform cylinder or an abrupt groin or knee transition.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.4, ossos do membro inferior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
-- [OpenStax cap. 11, músculos da cintura pélvica e membros inferiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)
+- [OpenStax, Bones of the lower limb (8.4)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb)
+- [OpenStax, Pelvic girdle and lower limb muscles (ch. 11)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-chapter-review)

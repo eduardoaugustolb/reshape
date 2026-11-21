@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-macas-face
 description: >-
-  Modele ou revise zigoma, região malar e transição palpebromalar em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the zygomatic prominence and lower lid-to-cheek transition in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Maçãs do rosto e bochechas
+# Cheekbones and cheeks
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Defina a saliência do zigoma e a transição da margem orbital inferior para a bochecha. Faça o volume malar convergir para a região perioral e para a lateral do rosto conforme a referência.
+Define the zygomatic prominence and the transition from the lower orbital rim into the cheek. Blend the cheek mass toward the mouth and lateral face to match the target.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira em três quartos sob luz difusa e em perfil. Em sorriso, julgue a elevação da bochecha e a relação com a pálpebra inferior.
+Inspect three-quarter and profile views under diffuse light. For a smile, judge cheek elevation and its relationship to the lower lid.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Polígonos afundados sob o olho ou massas circulares isoladas do plano zigomático.
+Reject these defects when they conflict with the documented target. Collapsed polygons under the eyes or isolated round masses that ignore the zygomatic plane.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
-- [OpenStax §11.3, músculos axiais](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
-- [Weinberg et al., 3D Facial Norms Database, estudo original](https://pubmed.ncbi.nlm.nih.gov/26492185/)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Axial muscles (11.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
+- [Weinberg et al., 3D Facial Norms Database, original study](https://pubmed.ncbi.nlm.nih.gov/26492185/)

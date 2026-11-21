@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-dedos-mao
 description: >-
-  Modele ou revise falanges, articulações interfalângicas, polpas e unhas em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review phalanges, interphalangeal joints, pads, and fingernails in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Dedos da mão e unhas
+# Fingers and fingernails
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Use três falanges nos dedos longos e duas no polegar no alvo típico. Posicione articulações, polpas e leitos ungueais seguindo o giro de cada dedo.
+Use three phalanges for long fingers and two for the thumb in typical anatomy. Place joints, pads, and nail beds on the axis of each digit.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira a sequência das juntas em perfil e em punho fechado quando aplicável. Compare extensão, toque e espaços entre dedos.
+Check joint sequence from the side and, where applicable, in a closed fist. Compare extension, contact, and gaps between digits.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Segmentos idênticos, unha fora do leito ou interpenetrações durante flexão.
+Reject these defects when they conflict with the documented target. Identical segments, nails outside their beds, or intersections during flexion.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §8.2, ossos do membro superior](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb)
-- [OpenStax §11.5, músculos da cintura escapular e membros superiores](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
-- [OpenStax cap. 9, articulações sinoviais](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)
+- [OpenStax, Bones of the upper limb (8.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb)
+- [OpenStax, Shoulder girdle and upper limb muscles (11.5)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs)
+- [OpenStax, Synovial joints (ch. 9)](https://openstax.org/books/anatomy-and-physiology-2e/pages/9-chapter-review)

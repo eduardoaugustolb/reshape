@@ -1,38 +1,38 @@
 ---
 name: reshape-anatomia-cabeca
 description: >-
-  Modele ou revise retrato, busto, crânio e encaixe cervical em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the portrait, skull, and neck attachment in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Cabeça inteira
+# Whole head
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Construa a abóbada craniana e seu volume posterior, conecte zigomas, maxila e mandíbula e assente as orelhas na lateral. Posicione a união com o pescoço sob a base craniana.
+Build the cranial vault and its posterior volume. Connect the zygomatic bones, maxilla, and mandible, seat the ears laterally, and join the neck beneath the cranial base.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira a silhueta do vértice ao occipital, o ângulo mandibular e a profundidade entre a face e a orelha em perfil e traseira.
+Check the silhouette from crown to occiput, the mandibular angle, and the depth between face and ear from the side and back.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Crânio achatado atrás, face aplicada como máscara ou pescoço preso apenas sob o queixo.
+Reject these defects when they conflict with the documented target. A flattened back of the skull, a mask-like face attachment, or a neck joined only under the chin.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regiões específicas
+## Regional skills
 
-Leia as skills irmãs pertinentes à tarefa. Abra os respectivos `SKILL.md` quando precisar de critérios locais.
+Read the relevant regional skills for local criteria.
 
-- [Crânio e abóbada](../reshape-anatomia-cranio/SKILL.md)
-- [Face inteira](../reshape-anatomia-face/SKILL.md)
-- [Orelha externa](../reshape-anatomia-orelha/SKILL.md)
-- [Pescoço](../reshape-anatomia-pescoco/SKILL.md)
+- [Skull and cranial vault](../reshape-anatomia-cranio/SKILL.md)
+- [Whole face](../reshape-anatomia-face/SKILL.md)
+- [External ear](../reshape-anatomia-orelha/SKILL.md)
+- [Neck](../reshape-anatomia-pescoco/SKILL.md)
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
-- [OpenStax §7.3, coluna vertebral](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
-- [Weinberg et al., 3D Facial Norms Database, estudo original](https://pubmed.ncbi.nlm.nih.gov/26492185/)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Vertebral column (7.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column)
+- [Weinberg et al., 3D Facial Norms Database, original study](https://pubmed.ncbi.nlm.nih.gov/26492185/)

@@ -1,16 +1,16 @@
-# Modelagem por passagens
+# Modeling in passes
 
-## Operar o Blender
+## Operating Blender
 
-Use os recursos nativos do MCP para inspecionar e capturar quando estiverem disponíveis. A edição pode ser interativa ou feita inteiramente com Python via Blender MCP. O script pode criar geometria, deslocar vértices, remodelar regiões e aplicar operações nativas do Blender. Antes de cada operação, confirme o objeto ativo, a seleção, o modo e o escopo. Separe construção de massa, correção regional e acabamento em operações que possam ser inspecionadas e revertidas. Abra a captura ao final de cada passagem. Se o resultado falhar, ajuste a geometria que causa o problema e recapture antes de detalhar. Salvar o arquivo, receber sucesso na execução e obter uma malha fechada são evidências técnicas. A aprovação visual vem das vistas inspecionadas.
+Use MCP's native inspection and capture tools when available. Model interactively or entirely through Python via Blender MCP. Scripts may create geometry, move vertices, reshape regions, and apply native Blender operations. Before each operation, verify the active object, selection, mode, and scope. Split mass construction, regional correction, and finish into inspectable and reversible operations. Open a capture after each pass. If the form fails, correct its geometric cause and recapture before detailing. Successful execution, a saved file, and a closed mesh are technical evidence. Visual approval comes from inspected views.
 
-## Escolher uma construção
+## Choosing a construction method
 
-- **Orgânico.** Monte uma base contínua com topologia simples ou crie uma massa inicial unificada em cópia. Trabalhe a silhueta com deslocamentos amplos, depois mire os planos e transições com pincéis ou edição localizada. Regule a densidade antes de esculpir detalhes. Se usar remesh, confira volume perdido, dedos ou aberturas fechadas e junções involuntárias. União, remesh e suavização por si só são preparação de superfície. Ombro, cotovelo, quadril e joelho exigem volumes e transições projetados para a pose.
-- **Hard surface.** Construa perfis, espessuras, encaixes e planos a partir da referência. Use modificadores reversíveis quando couber. Julgue chanfros e normais pela continuidade dos reflexos. Emendas reais, painéis e acessórios podem ser peças independentes.
-- **Estilizado ou low-poly.** Preserve a leitura dos planos, o desenho das bordas e a distribuição deliberada dos polígonos. Modele a superfície contínua com controle da topologia e avalie as facetas na escala de uso. Arestas facetadas intencionais passam quando sustentam a forma.
-- **Malha existente.** Identifique a origem do defeito antes de reconstruir. Preserve UVs, materiais, pesos e shape keys conforme a finalidade. Alterações de topologia podem invalidá-los. Faça a comparação na versão de trabalho antes de substituir qualquer dado.
+- **Organic.** Build a continuous base with simple topology or prepare a unified blockout on a copy. Establish the silhouette with broad changes, then refine planes and transitions with brushes or local edits. Adjust mesh density before sculpting details. After remeshing, check for volume loss, fused fingers, sealed openings, and accidental joints. Union, remesh, and smoothing prepare the surface. Shoulders, elbows, hips, and knees still need volumes and transitions designed for the pose.
+- **Hard surface.** Build profiles, thicknesses, joints, and planes from the reference. Use reversible modifiers where appropriate. Judge bevels and normals by the continuity of reflections. Real seams, panels, and accessories may remain separate pieces.
+- **Stylized or low-poly.** Preserve the readability of planes, edge design, and deliberate polygon distribution. Control topology on continuous surfaces and inspect facets at the intended viewing scale. Intentional facets pass where they support the form.
+- **Existing mesh.** Identify the defect's cause before rebuilding. Preserve UVs, materials, weights, and shape keys as required. Topology changes can invalidate them. Compare the working version before replacing existing data.
 
-## Ordem da forma
+## Form order
 
-Acerte primeiro a relação entre marcos e massas em mais de uma vista. Refinar um plano costuma afetar dois perfis. Em seguida, resolva as transições e as peças que alteram a silhueta. Acrescente rugas, costuras, materiais ou desgaste só quando as formas que eles acompanham estiverem aprovadas. Para um personagem vestido, revise o corpo e a roupa juntos para conferir espessura, caimento e interferência, e isole camadas quando precisar localizar a causa.
+Resolve the relationship between landmarks and masses from more than one view. Changing a plane often affects two profiles. Then solve transitions and pieces that alter the silhouette. Add folds, seams, materials, or wear after approving the forms they follow. For clothed characters, inspect body and clothing together for thickness, drape, and interference. Isolate layers to diagnose the cause.

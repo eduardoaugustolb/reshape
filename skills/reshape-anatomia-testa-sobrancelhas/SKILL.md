@@ -1,29 +1,29 @@
 ---
 name: reshape-anatomia-testa-sobrancelhas
 description: >-
-  Modele ou revise testa, glabela, arco supraorbitário e sobrancelhas em anatomia humana 3D com Blender ou ReShape. Use quando essa região fizer parte do escopo da modelagem ou da auditoria visual.
+  Model or review the forehead, glabella, brow ridge, and eyebrows in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
 ---
 
-# Testa e sobrancelhas
+# Forehead and eyebrows
 
-Aplique ao alvo especificado. Use a referência do indivíduo, da pose e do estilo para decidir forma, variações e assimetrias. Para medidas, registre os marcos e a vista. Médias de amostras servem como referência contextual. Declare as regiões ocultas ou inferidas.
+Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
-## Modelagem
+## Modeling
 
-Diferencie a convexidade frontal, o relevo da glabela e a margem supraorbitária. Aloje a sobrancelha sobre o plano definido pela referência e conserve a transição temporal.
+Distinguish forehead convexity, glabella, and supraorbital rim. Place the brows on the surface seen in the reference and preserve the transition into the temple.
 
-## Revisão e reprovação
+## Review and rejection
 
-Confira sob luz lateral suave em três quartos e perfil. Em rig, compare a posição da pele em repouso, elevação e contração.
+Check side and three-quarter views under soft side lighting. If rigged, compare skin at rest, with raised brows, and with furrowed brows.
 
-Reprove estes defeitos quando incompatíveis com o alvo documentado. Sobrancelha flutuante ou arco rígido que apaga a transição para a órbita.
+Reject these defects when they conflict with the documented target. Floating brows or a rigid brow arch that erases the transition to the orbit.
 
-Aplique a revisão da versão salva prevista pela [ReShape](../reshape/SKILL.md). Registre a vista e o desvio, corrija a causa e recapture. Um critério obrigatório sem evidência fica pendente e impede aprovar esta região.
+Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Fontes anatômicas
+## Anatomy sources
 
-As fontes sustentam a anatomia e a antropometria. As instruções de construção e os critérios visuais são aplicações para modelagem 3D.
+The sources support the anatomy and anthropometry. The construction and visual review criteria apply that evidence to 3D modeling.
 
-- [OpenStax §7.2, crânio e órbitas](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
-- [OpenStax §11.3, músculos axiais](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
-- [Weinberg et al., 3D Facial Norms Database, estudo original](https://pubmed.ncbi.nlm.nih.gov/26492185/)
+- [OpenStax, Skull and orbits (7.2)](https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull)
+- [OpenStax, Axial muscles (11.3)](https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back)
+- [Weinberg et al., 3D Facial Norms Database, original study](https://pubmed.ncbi.nlm.nih.gov/26492185/)
