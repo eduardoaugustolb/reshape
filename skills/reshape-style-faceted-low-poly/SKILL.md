@@ -22,4 +22,8 @@ Draft the contour before triangulation. Use face orientation to establish the ma
 
 Pair a wireframe with a flat-shaded clay render. Turn the model and check that adjacent triangles establish coherent plane groups. Measure the evaluated export against any budget.
 
+When facial likeness is required, review it at blockout and again after simplification. Match the photo's head angle, tilt, and framing as closely as the evidence allows. Mark the visible eye corners, nasal base, mouth corners, chin, jaw contour, and hairline on both views. Use the same marks to identify which relationships changed, and correct the largest mismatch in the mesh before refining texture or reducing more triangles.
+
+Record visible likeness and polygon budget as independent criteria. A side-by-side with different head angles leaves affected landmark relationships unverified. Record which depths and contours a single photo leaves unverified, and use profile and three-quarter captures to check the model's form in those areas. Mark the delivery as partial if a defining visible relationship still fails or lacks evidence.
+
 Reject and correct these failures before approval. Random diagonal dents, fractured outlines, flickering facets, or reductions that remove defining landmarks. Record any remaining issue as partial delivery with a named view and cause.
