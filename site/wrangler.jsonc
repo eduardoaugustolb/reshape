@@ -1,10 +1,14 @@
 {
-  // Static-assets-only Worker: serves the Next.js static export in ./out.
+  // Worker fronting the Next.js static export in ./out. It serves static assets and performs
+  // agent-friendly content negotiation (Markdown for the homepage and 404s when requested).
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "reshape",
   "compatibility_date": "2026-10-29",
+  "main": "src/worker.ts",
   "assets": {
     "directory": "./out",
+    "binding": "ASSETS",
+    "run_worker_first": true,
     "not_found_handling": "404-page"
   }
 }

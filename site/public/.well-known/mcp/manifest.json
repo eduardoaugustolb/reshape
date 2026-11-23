@@ -1,0 +1,117 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "name": "reshape-mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for ReShape 3D modeling and sculpting in Blender",
+  "homepage": "https://reshape.eduardoaugusto.work/mcp/",
+  "documentation": "https://reshape.eduardoaugusto.work/docs/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduardoaugustolb/reshape.git"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://reshape.eduardoaugusto.work/mcp"
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "prompts": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "reshape_model",
+      "description": "Create or edit a 3D asset in Blender through iterative modeling passes (Blockout, Volumes, Surface)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "brief": {
+            "type": "string",
+            "description": "Description of the 3D model to create or modify"
+          },
+          "pass": {
+            "type": "string",
+            "enum": ["blockout", "volumes", "surface"],
+            "description": "Modeling pass stage"
+          },
+          "style": {
+            "type": "string",
+            "description": "Target style (e.g. faceted-low-poly, cel-shading, realism, clay)"
+          }
+        },
+        "required": ["brief", "pass"]
+      }
+    },
+    {
+      "name": "reshape_compare_views",
+      "description": "Render matching camera views (front, profile, three-quarter) across iterations with locked camera and lighting",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "views": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["front", "profile", "three-quarter", "top"] },
+            "description": "List of views to render"
+          },
+          "resolution": {
+            "type": "integer",
+            "default": 1024
+          }
+        },
+        "required": ["views"]
+      }
+    },
+    {
+      "name": "reshape_validate_mesh",
+      "description": "Run automated topology audits (manifoldness, normals, triangle count, watertightness)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "targetUse": {
+            "type": "string",
+            "enum": ["real-time", "3d-printing", "rigging", "subdivision"],
+            "description": "Target downstream application for the 3D mesh"
+          },
+          "maxTriangles": {
+            "type": "integer"
+          }
+        },
+        "required": ["targetUse"]
+      }
+    },
+    {
+      "name": "reshape_list_skills",
+      "description": "List all 44 anatomy and 10 style skills available in ReShape",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": ["all", "anatomy", "styles"]
+          }
+        }
+      }
+    },
+    {
+      "name": "reshape_inspect_anatomy",
+      "description": "Retrieve anatomy landmarks, review angles, and rejection criteria for a specific body region",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "region": {
+            "type": "string",
+            "description": "Anatomical region (e.g. head, face, eyes, nose, hands, torso)"
+          }
+        },
+        "required": ["region"]
+      }
+    }
+  ]
+}

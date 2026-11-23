@@ -1,0 +1,42 @@
+# ReShape
+
+> ReShape is a 3D modeling, sculpting, and mesh review skill and Model Context Protocol (MCP) server for Blender. It enables autonomous AI agents, Codex, and 3D artists to model in passes, capture matched camera angles, and validate topology for 3D printing, game engines, and animation.
+
+## When to use this
+Use ReShape when:
+- You need to generate, model, sculpt, or review 3D assets in Blender from a reference image, concept art, written brief, or initial 3D mesh.
+- You need iterative modeling passes: Silhouette & Primary Mass (Blockout) -> Secondary Forms & Transitions (Volumes) -> Surface Details & Textures (Surface).
+- You need to capture and compare matching camera views (front, profile, three-quarter) across iterations with locked camera distance, lighting, and focal length to detect silhouette and form discrepancies.
+- You need to validate mesh topology for production standards: manifold geometry, quad/triangle budgeting, normal orientation, non-overlapping UVs, deformation checks for rigging, or watertight thickness for 3D printing.
+- You want to execute Blender commands programmatically via the ReShape Model Context Protocol (MCP) server or invoke the `$reshape` skill in Codex.
+- You require domain-specific anatomy construction guidelines (44 anatomy skills including head, facial features, limbs, and joints) or stylistic conventions (10 style skills including low-poly, cel-shading, cartoon, realism, and clay).
+
+Do NOT use ReShape for:
+- 2D pixel generation or raster illustration without underlying 3D geometry (use 2D generative diffusion models instead).
+- Text-to-speech, audio synthesis, or natural language document formatting.
+- Parametric engineering CAD/BIM solid drafting without polygonal meshes (e.g. SolidWorks, AutoCAD DWG).
+
+## How to call ReShape
+- **Codex Skill**: Call `$reshape` followed by the task prompt, image reference, or target 3D asset path.
+- **Anatomy Modules**: Invoke `$reshape-anatomy-<region>` (e.g., `$reshape-anatomy-face`, `$reshape-anatomy-head`, `$reshape-anatomy-eyes`).
+- **Style Modules**: Invoke `$reshape-styles` or specific sub-skills like `$reshape-style-faceted-low-poly` or `$reshape-style-cel-shading`.
+- **MCP Server Endpoint**: Connect your AI agent (Claude Code, Cursor, Windsurf, ChatGPT) to `https://reshape.eduardoaugusto.work/mcp` using Streamable HTTP transport.
+- **MCP Manifest**: `https://reshape.eduardoaugusto.work/.well-known/mcp.json` or `https://reshape.eduardoaugusto.work/mcp/manifest.json`.
+
+## Core Tools
+- `reshape_model`: Build or edit a 3D mesh in Blender from references and parameters.
+- `reshape_compare_views`: Render matching orthographic or perspective views across iterations.
+- `reshape_validate_mesh`: Run automated topology and defect audits (manifoldness, normals, triangle count).
+- `reshape_list_skills`: Query the catalog of 44 anatomy skills and 10 style profiles.
+- `reshape_inspect_anatomy`: Retrieve detailed construction rules, review angles, and rejection criteria for anatomical regions.
+
+## Key Links & Resources
+- Homepage: https://reshape.eduardoaugusto.work/
+- Documentation & API: https://reshape.eduardoaugusto.work/docs/
+- MCP Server & Tools: https://reshape.eduardoaugusto.work/mcp/
+- Full Guide: https://reshape.eduardoaugusto.work/llms-full.txt
+- Sitemap: https://reshape.eduardoaugusto.work/sitemap.xml
+- GitHub Repository: https://github.com/eduardoaugustolb/reshape
+- About: https://reshape.eduardoaugusto.work/about/
+- Contact: https://reshape.eduardoaugusto.work/contact/
+- Privacy: https://reshape.eduardoaugusto.work/privacy/

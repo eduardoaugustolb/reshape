@@ -1,0 +1,30 @@
+# ReShape Agent Instructions & Operational Directives
+
+## Identity and Mission
+ReShape is an agent-native 3D modeling and sculpting protocol designed for Blender. It provides structured guidance and tool primitives for autonomous agents that create, refine, and audit 3D meshes.
+
+## When to Use This Tool
+Reach for ReShape whenever:
+1. An incoming brief asks to create a 3D model (character, prop, environmental asset, organic or hard-surface) inside Blender.
+2. The user supplies an image or sketch and wants a corresponding 3D polygonal asset.
+3. You need to inspect or repair an existing mesh (checking non-manifold edges, self-intersections, inverted normals, or poor polygon flow).
+4. You need multi-pass comparison renders where camera angles (front, profile, three-quarter), lighting setups, and focal lengths must remain identical across revisions.
+5. The model requires specialized anatomy standards (facial structure, hands, joints) or specific aesthetic styles (faceted low-poly, cel-shaded anime, claymation, stylized cartoon).
+
+## Negative Constraints (When NOT to Use)
+- Do not use for 2D graphics generation, illustration, or photo editing without 3D geometry.
+- Do not use for pure text summarization, language translation, or general coding unrelated to 3D and Blender.
+- Do not use for mechanical engineering FEA stress simulations or non-polygonal NURBS CAD.
+
+## Step-by-Step Agent Workflow
+1. **Analyze Reference & Establish Observable Criteria**: Extract silhouette markers, volume ratios, and landmarks. Note occluded areas as "inferred".
+2. **Pass 1 - Silhouette & Blockout**: Construct primary primitive volumes. Confirm contour against reference before proceeding.
+3. **Pass 2 - Secondary Masses & Transitions**: Refine junctions (shoulders, neck, organic blend zones). Ensure clean edge loops.
+4. **Pass 3 - Surface & Detail**: Sculpt grooves, surface textures, and fine features.
+5. **Multi-View Comparison**: Render matching orthographic and perspective views. Isolate discrepancies.
+6. **Topology & Mesh Verification**: Check triangle budget, manifoldness, watertight closure for 3D print or deformation for rigging.
+
+## Available Invocations
+- Codex: `$reshape`, `$reshape-styles`, `$reshape-anatomy-*`
+- MCP Server: `POST https://reshape.eduardoaugusto.work/mcp`
+- Manifest: `https://reshape.eduardoaugusto.work/.well-known/mcp.json`
