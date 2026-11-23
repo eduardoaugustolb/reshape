@@ -3,16 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "vendor": "bun scripts/vendor-examples.mjs",
-    "predev": "bun run vendor && bun run package:skill",
     "dev": "next dev",
-    "prebuild": "bun run vendor && bun run package:skill",
     "build": "next build",
     "preview": "bun run build && wrangler dev",
     "deploy": "bun run build && wrangler deploy",
     "lint": "eslint",
-    "media": "bun scripts/record-media.ts",
-    "package:skill": "cd ../skills && tar -czf ../site/public/reshape/reshape-skill.tar.gz reshape reshape-styles reshape-style-* reshape-anatomy-*"
+    "media": "bun scripts/record-media.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

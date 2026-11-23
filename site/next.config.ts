@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
-// Static export: the whole site is prebuilt HTML/CSS/JS, served by Cloudflare Workers static assets.
+// Next.js deployment on Vercel: server-rendered pages + Edge Functions (middleware, route handlers).
 const nextConfig: NextConfig = {
-  output: "export",
   trailingSlash: true,
   images: { unoptimized: true },
   // The static host serves examples/<name>/index.html for the folder URL; `next dev` doesn't, so map it here.
