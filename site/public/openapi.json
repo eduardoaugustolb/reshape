@@ -1,0 +1,477 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "ReShape API",
+    "description": "ReShape API for Blender 3D modeling, sculpting, and mesh validation. Enables AI agents to model in passes, capture matched camera views, and validate mesh topology.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "ReShape support",
+      "email": "contact@eduardoaugusto.work",
+      "url": "https://reshape.eduardoaugusto.work/contact/"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/eduardoaugustolb/reshape/blob/main/LICENSE"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://reshape.eduardoaugusto.work",
+      "description": "ReShape production server"
+    }
+  ],
+  "tags": [
+    {
+      "name": "modeling",
+      "description": "Create or edit 3D assets in Blender through iterative modeling passes."
+    },
+    {
+      "name": "views",
+      "description": "Render matching camera views across iterations."
+    },
+    {
+      "name": "validation",
+      "description": "Run automated mesh topology and defect audits."
+    },
+    {
+      "name": "catalog",
+      "description": "List anatomy and style skills available in ReShape."
+    }
+  ],
+  "paths": {
+    "/api/model": {
+      "post": {
+        "operationId": "reshape_model",
+        "tags": ["modeling"],
+        "summary": "Create or edit a 3D asset in Blender",
+        "description": "Build or edit a 3D mesh in Blender from references and parameters, through iterative modeling passes (Blockout, Volumes, Surface).",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModelRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Model created or updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Unprocessable modeling request.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/compare-views": {
+      "post": {
+        "operationId": "reshape_compare_views",
+        "tags": ["views"],
+        "summary": "Render matching camera views across iterations",
+        "description": "Render matching orthographic or perspective views (front, profile, three-quarter, top) with locked camera distance, lighting, and focal length to detect silhouette and form discrepancies.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompareViewsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Views rendered successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompareViewsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/validate-mesh": {
+      "post": {
+        "operationId": "reshape_validate_mesh",
+        "tags": ["validation"],
+        "summary": "Run automated mesh topology audit",
+        "description": "Run automated topology and defect audits: manifoldness, normals, triangle count, watertightness for 3D printing, game engines, or animation rigging.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidateMeshRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Mesh validation completed.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValidateMeshResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid request parameters.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/list-skills": {
+      "get": {
+        "operationId": "reshape_list_skills",
+        "tags": ["catalog"],
+        "summary": "List anatomy and style skills",
+        "description": "Query the catalog of 44 anatomy skills and 10 style profiles available in ReShape.",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "query",
+            "description": "Skill category to list.",
+            "required": false,
+            "schema": {
+              "$ref": "#/components/schemas/SkillCategory"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Skill catalog listed successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ListSkillsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid category parameter.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/inspect-anatomy": {
+      "get": {
+        "operationId": "reshape_inspect_anatomy",
+        "tags": ["catalog"],
+        "summary": "Retrieve anatomy construction rules",
+        "description": "Retrieve detailed construction rules, review angles, and rejection criteria for a specific anatomical region.",
+        "parameters": [
+          {
+            "name": "region",
+            "in": "query",
+            "description": "Anatomical region (e.g. head, face, eyes, nose, hands, torso).",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Anatomy inspection returned successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/InspectAnatomyResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Missing or invalid region parameter.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Anatomy region not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ModelRequest": {
+        "type": "object",
+        "required": ["brief", "pass"],
+        "properties": {
+          "brief": {
+            "type": "string",
+            "description": "Description of the 3D model to create or modify."
+          },
+          "pass": {
+            "type": "string",
+            "enum": ["blockout", "volumes", "surface"],
+            "description": "Modeling pass stage."
+          },
+          "style": {
+            "type": "string",
+            "description": "Target style (e.g. faceted-low-poly, cel-shading, realism, clay)."
+          }
+        }
+      },
+      "ModelResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "Outcome of the modeling operation."
+          },
+          "pass": {
+            "type": "string",
+            "description": "Modeling pass that was applied."
+          },
+          "meshUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "URI to the resulting mesh asset."
+          }
+        }
+      },
+      "CompareViewsRequest": {
+        "type": "object",
+        "required": ["views"],
+        "properties": {
+          "views": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["front", "profile", "three-quarter", "top"]
+            },
+            "description": "List of views to render.",
+            "minItems": 1
+          },
+          "resolution": {
+            "type": "integer",
+            "default": 1024,
+            "minimum": 256,
+            "maximum": 4096,
+            "description": "Render resolution in pixels."
+          }
+        }
+      },
+      "CompareViewsResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "Outcome of the view render operation."
+          },
+          "views": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri",
+              "description": "URI to each rendered view image."
+            }
+          }
+        }
+      },
+      "ValidateMeshRequest": {
+        "type": "object",
+        "required": ["targetUse"],
+        "properties": {
+          "targetUse": {
+            "type": "string",
+            "enum": ["real-time", "3d-printing", "rigging", "subdivision"],
+            "description": "Target downstream application for the 3D mesh."
+          },
+          "maxTriangles": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Maximum triangle budget for the mesh."
+          }
+        }
+      },
+      "ValidateMeshResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "Validation outcome."
+          },
+          "manifold": {
+            "type": "boolean",
+            "description": "Whether the mesh is manifold."
+          },
+          "triangleCount": {
+            "type": "integer",
+            "description": "Number of triangles in the mesh."
+          },
+          "issues": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Detected topology or defect issues."
+            }
+          }
+        }
+      },
+      "SkillCategory": {
+        "type": "string",
+        "enum": ["all", "anatomy", "styles"],
+        "description": "Category of skills to list."
+      },
+      "ListSkillsResponse": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "$ref": "#/components/schemas/SkillCategory"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Skill identifier."
+                },
+                "name": {
+                  "type": "string",
+                  "description": "Human-readable skill name."
+                },
+                "description": {
+                  "type": "string",
+                  "description": "What the skill covers."
+                }
+              }
+            }
+          }
+        }
+      },
+      "InspectAnatomyResponse": {
+        "type": "object",
+        "properties": {
+          "region": {
+            "type": "string",
+            "description": "Anatomical region inspected."
+          },
+          "landmarks": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Anatomical landmarks for the region."
+            }
+          },
+          "reviewAngles": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Recommended camera angles for review."
+            }
+          },
+          "rejectionCriteria": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Criteria that would cause rejection."
+            }
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "required": ["error"],
+        "properties": {
+          "error": {
+            "type": "object",
+            "required": ["code", "message"],
+            "properties": {
+              "code": {
+                "type": "string",
+                "description": "Machine-readable error code."
+              },
+              "message": {
+                "type": "string",
+                "description": "Human-readable error message."
+              },
+              "hint": {
+                "type": "string",
+                "description": "Resolution hint for the agent or developer."
+              },
+              "status": {
+                "type": "integer",
+                "description": "HTTP status code associated with the error."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
