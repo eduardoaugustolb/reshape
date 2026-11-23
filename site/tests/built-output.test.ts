@@ -45,7 +45,7 @@ describe("server-rendered pages (source-level)", () => {
   it("catch-all route handler exists for Markdown 404 negotiation", () => {
     const route = read("src/app/[...slug]/route.ts");
     expect(route).toContain("markdownNotFound");
-    expect(route).toContain("notFound()");
+    expect(route).toContain("htmlNotFound");
   });
 
   it("sitemap.xml and robots.txt are served from public root", () => {
