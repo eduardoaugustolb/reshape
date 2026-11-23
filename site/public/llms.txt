@@ -21,7 +21,7 @@ Do NOT use ReShape for:
 - **Anatomy Modules**: Invoke `$reshape-anatomy-<region>` (e.g., `$reshape-anatomy-face`, `$reshape-anatomy-head`, `$reshape-anatomy-eyes`).
 - **Style Modules**: Invoke `$reshape-styles` or specific sub-skills like `$reshape-style-faceted-low-poly` or `$reshape-style-cel-shading`.
 - **MCP Server Endpoint**: Connect your AI agent (Claude Code, Cursor, Windsurf, ChatGPT) to `https://reshape.eduardoaugusto.work/mcp` using Streamable HTTP transport.
-- **MCP Manifest**: `https://reshape.eduardoaugusto.work/.well-known/mcp.json` or `https://reshape.eduardoaugusto.work/mcp/manifest.json`.
+- **MCP Manifest**: `https://reshape.eduardoaugusto.work/.well-known/mcp.json` or `https://reshape.eduardoaugusto.work/mcpmanifest.json`.
 
 ## Core Tools
 - `reshape_model`: Build or edit a 3D mesh in Blender from references and parameters.
@@ -32,11 +32,11 @@ Do NOT use ReShape for:
 
 ## Key Links & Resources
 - Homepage: https://reshape.eduardoaugusto.work/
-- Documentation & API: https://reshape.eduardoaugusto.work/docs/
-- MCP Server & Tools: https://reshape.eduardoaugusto.work/mcp/
+- Documentation & API: https://reshape.eduardoaugusto.work/docs
+- MCP Server & Tools: https://reshape.eduardoaugusto.work/mcp
 - Full Guide: https://reshape.eduardoaugusto.work/llms-full.txt
 - Sitemap: https://reshape.eduardoaugusto.work/sitemap.xml
 - GitHub Repository: https://github.com/eduardoaugustolb/reshape
-- About: https://reshape.eduardoaugusto.work/about/
-- Contact: https://reshape.eduardoaugusto.work/contact/
-- Privacy: https://reshape.eduardoaugusto.work/privacy/
+- About: https://reshape.eduardoaugusto.work/about
+- Contact: https://reshape.eduardoaugusto.work/contact
+- Privacy: https://reshape.eduardoaugusto.work/privacy

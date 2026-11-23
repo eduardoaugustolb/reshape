@@ -34,7 +34,7 @@ export default function Home({ locale }: { locale: Locale }) {
           <div className="masthead__actions">
             <HeaderMotion locale={locale} />
             <a className="icon-action" href={t("/", "/pt-br/")} hrefLang={t("en-US", "pt-BR")} lang={t("en-US", "pt-BR")}><TranslateIcon aria-hidden="true" />{t("English", "Português")}</a>
-            <a className="icon-action" href="/docs/"><BookOpenIcon aria-hidden="true" />{t("Documentação", "Documentation")}</a>
+            <a className="icon-action" href="/docs"><BookOpenIcon aria-hidden="true" />{t("Documentação", "Documentation")}</a>
             <a className="icon-action" href="#instalacao"><DownloadSimpleIcon aria-hidden="true" />{t("Instalar", "Install")}</a>
           </div>
         </header>

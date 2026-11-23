@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ReShape API Documentation",
   description: "ReShape API reference for the Blender 3D modeling skill and Model Context Protocol (MCP) server.",
-  alternates: { canonical: "https://reshape.eduardoaugusto.work/docs/" },
+  alternates: { canonical: "https://reshape.eduardoaugusto.work/docs" },
   openGraph: {
     title: "ReShape API Documentation",
     description: "ReShape API reference for the Blender 3D modeling skill and Model Context Protocol (MCP) server.",
     type: "website",
-    url: "https://reshape.eduardoaugusto.work/docs/",
+    url: "https://reshape.eduardoaugusto.work/docs",
   },
 };
 
@@ -19,8 +19,8 @@ export default function DocsPage() {
         <span className="masthead__brand">ReShape</span>
         <div className="masthead__links">
           <a href="/">Home</a>
-          <a href="/mcp/">MCP Server</a>
-          <a href="/about/">About</a>
+          <a href="/mcp">MCP Server</a>
+          <a href="/about">About</a>
         </div>
       </header>
 

@@ -15,12 +15,11 @@ describe("agent-ready static files", () => {
     expect(xml).toContain('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
     for (const url of [
       "https://reshape.eduardoaugusto.work/",
-      "https://reshape.eduardoaugusto.work/pt-br/",
-      "https://reshape.eduardoaugusto.work/docs/",
-      "https://reshape.eduardoaugusto.work/mcp/",
-      "https://reshape.eduardoaugusto.work/about/",
-      "https://reshape.eduardoaugusto.work/contact/",
-      "https://reshape.eduardoaugusto.work/privacy/",
+      "https://reshape.eduardoaugusto.work/pt-br",
+      "https://reshape.eduardoaugusto.work/docs",
+      "https://reshape.eduardoaugusto.work/about",
+      "https://reshape.eduardoaugusto.work/contact",
+      "https://reshape.eduardoaugusto.work/privacy",
     ]) {
       expect(xml).toContain(`<loc>${url}</loc>`);
       expect(xml).toContain("<lastmod>");
@@ -37,8 +36,8 @@ describe("agent-ready static files", () => {
   it("llms.txt has a when-to-use section and key links", () => {
     const llms = read("public/llms.txt");
     expect(llms).toMatch(/## When to use this/);
-    expect(llms).toContain("https://reshape.eduardoaugusto.work/docs/");
-    expect(llms).toContain("https://reshape.eduardoaugusto.work/mcp/");
+    expect(llms).toContain("https://reshape.eduardoaugusto.work/docs");
+    expect(llms).toContain("https://reshape.eduardoaugusto.work/mcp");
     expect(llms).toContain("https://reshape.eduardoaugusto.work/sitemap.xml");
     expect(llms).toContain("https://github.com/eduardoaugustolb/reshape");
   });
@@ -55,8 +54,8 @@ describe("agent-ready static files", () => {
     expect(manifest.transport.endpoint).toBe("https://reshape.eduardoaugusto.work/mcp");
     expect(Array.isArray(manifest.tools)).toBe(true);
     expect(manifest.tools.length).toBeGreaterThan(0);
-    expect(manifest.homepage).toBe("https://reshape.eduardoaugusto.work/mcp/");
-    expect(manifest.documentation).toBe("https://reshape.eduardoaugusto.work/docs/");
+    expect(manifest.homepage).toBe("https://reshape.eduardoaugusto.work/mcp");
+    expect(manifest.documentation).toBe("https://reshape.eduardoaugusto.work/docs");
   });
 
   it("MCP manifest is also exposed at /mcp/manifest.json", () => {
@@ -71,7 +70,7 @@ describe("agent-ready static files", () => {
       "src/app/(en)/contact/page.tsx",
       "src/app/(en)/privacy/page.tsx",
       "src/app/(en)/docs/page.tsx",
-      "src/app/(en)/mcp/page.tsx",
+      "src/app/[...slug]/route.ts",
       "src/app/not-found.tsx",
     ]) {
       expect(read(page).length).toBeGreaterThan(0);

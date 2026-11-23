@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact · ReShape",
   description: "Contact ReShape: reach the maintainer at contact@eduardoaugusto.work.",
-  alternates: { canonical: "https://reshape.eduardoaugusto.work/contact/" },
+  alternates: { canonical: "https://reshape.eduardoaugusto.work/contact" },
   openGraph: {
     title: "Contact · ReShape",
     description: "Contact ReShape: reach the maintainer at contact@eduardoaugusto.work.",
     type: "website",
-    url: "https://reshape.eduardoaugusto.work/contact/",
+    url: "https://reshape.eduardoaugusto.work/contact",
   },
 };
 
@@ -19,8 +19,8 @@ export default function ContactPage() {
         <span className="masthead__brand">ReShape</span>
         <div className="masthead__links">
           <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/privacy/">Privacy</a>
+          <a href="/about">About</a>
+          <a href="/privacy">Privacy</a>
         </div>
       </header>
 

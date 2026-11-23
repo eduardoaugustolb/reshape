@@ -28,7 +28,7 @@ tar -xzf reshape-skill.tar.gz -C ~/.agents/skills
 
 ## Links
 - Site: https://reshape.eduardoaugusto.work/
-- Docs: https://reshape.eduardoaugusto.work/docs/
-- MCP: https://reshape.eduardoaugusto.work/mcp/
+- Docs: https://reshape.eduardoaugusto.work/docs
+- MCP: https://reshape.eduardoaugusto.work/mcp
 - Sitemap: https://reshape.eduardoaugusto.work/sitemap.xml
 - GitHub: https://github.com/eduardoaugustolb/reshape

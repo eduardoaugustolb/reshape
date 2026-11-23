@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy · ReShape",
   description: "ReShape privacy notice: what data we collect, why, and how to exercise your rights.",
-  alternates: { canonical: "https://reshape.eduardoaugusto.work/privacy/" },
+  alternates: { canonical: "https://reshape.eduardoaugusto.work/privacy" },
   openGraph: {
     title: "Privacy · ReShape",
     description: "ReShape privacy notice: what data we collect, why, and how to exercise your rights.",
     type: "website",
-    url: "https://reshape.eduardoaugusto.work/privacy/",
+    url: "https://reshape.eduardoaugusto.work/privacy",
   },
 };
 
@@ -19,8 +19,8 @@ export default function PrivacyPage() {
         <span className="masthead__brand">ReShape</span>
         <div className="masthead__links">
           <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/contact/">Contact</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </div>
       </header>
 
@@ -64,7 +64,7 @@ export default function PrivacyPage() {
         <p>
           Privacy questions can be sent to{" "}
           <a href="mailto:contact@eduardoaugusto.work">contact@eduardoaugusto.work</a> or to the address on the
-          <a href="/contact/">Contact page</a>.
+          <a href="/contact">Contact page</a>.
         </p>
       </section>
 

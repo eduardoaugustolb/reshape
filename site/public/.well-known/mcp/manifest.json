@@ -3,8 +3,8 @@
   "name": "reshape-mcp-server",
   "version": "1.0.0",
   "description": "Model Context Protocol server for ReShape 3D modeling and sculpting in Blender",
-  "homepage": "https://reshape.eduardoaugusto.work/mcp/",
-  "documentation": "https://reshape.eduardoaugusto.work/docs/",
+  "homepage": "https://reshape.eduardoaugusto.work/mcp",
+  "documentation": "https://reshape.eduardoaugusto.work/docs",
   "repository": {
     "type": "git",
     "url": "https://github.com/eduardoaugustolb/reshape.git"

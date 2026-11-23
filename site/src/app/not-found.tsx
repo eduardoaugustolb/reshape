@@ -13,7 +13,7 @@ export default function NotFound() {
         <span className="masthead__brand">ReShape</span>
         <div className="masthead__links">
           <a href="/">Home</a>
-          <a href="/docs/">API Documentation</a>
+          <a href="/docs">API Documentation</a>
           <a href="/sitemap.xml">Sitemap</a>
         </div>
       </header>
@@ -31,7 +31,7 @@ export default function NotFound() {
             <a href="/">Homepage</a> — ReShape 3D modeling and sculpting for Blender.
           </li>
           <li>
-            <a href="/docs/">ReShape API Documentation</a> — skill and MCP server reference.
+            <a href="/docs">ReShape API Documentation</a> — skill and MCP server reference.
           </li>
           <li>
             <a href="/sitemap.xml">Sitemap</a> — full list of indexable pages.

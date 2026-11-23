@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About · ReShape",
   description: "About ReShape: an agentic 3D modeling, sculpting, and mesh validation system for Blender.",
-  alternates: { canonical: "https://reshape.eduardoaugusto.work/about/" },
+  alternates: { canonical: "https://reshape.eduardoaugusto.work/about" },
   openGraph: {
     title: "About · ReShape",
     description: "About ReShape: an agentic 3D modeling, sculpting, and mesh validation system for Blender.",
     type: "website",
-    url: "https://reshape.eduardoaugusto.work/about/",
+    url: "https://reshape.eduardoaugusto.work/about",
   },
 };
 
@@ -19,8 +19,8 @@ export default function AboutPage() {
         <span className="masthead__brand">ReShape</span>
         <div className="masthead__links">
           <a href="/">Home</a>
-          <a href="/contact/">Contact</a>
-          <a href="/privacy/">Privacy</a>
+          <a href="/contact">Contact</a>
+          <a href="/privacy">Privacy</a>
         </div>
       </header>
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
         <p>
           Questions about ReShape, the MCP server, or this site can be sent to
           <a href="mailto:contact@eduardoaugusto.work">contact@eduardoaugusto.work</a>. See the
-          <a href="/contact/">Contact page</a> for more details.
+          <a href="/contact">Contact page</a> for more details.
         </p>
       </section>
 

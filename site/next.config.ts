@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 // Next.js deployment on Vercel: server-rendered pages + Edge Functions (middleware, route handlers).
 const nextConfig: NextConfig = {
-  trailingSlash: true,
   images: { unoptimized: true },
   // The static host serves examples/<name>/index.html for the folder URL; `next dev` doesn't, so map it here.
   ...(process.env.NODE_ENV === "development" && {

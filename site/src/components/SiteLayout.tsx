@@ -19,7 +19,7 @@ export function siteMetadata(locale: Locale): Metadata {
     "Modele, compare vistas e valide a malha de ativos 3D no Blender com a ReShape.",
     "Model, compare views, and validate 3D meshes in Blender with ReShape.",
   );
-  const path = t("/pt-br/", "/");
+  const path = t("/pt-br", "/");
   const canonicalUrl = path === "/" ? siteUrl : `${siteUrl}${path}`;
   const sharingImage = {
     url: `${siteUrl}/reshape/og.jpg`,
@@ -47,7 +47,7 @@ export function siteMetadata(locale: Locale): Metadata {
     icons: { icon: "/reshape/icon.svg" },
     alternates: {
       canonical: canonicalUrl,
-      languages: { "pt-BR": "/pt-br/", "en-US": "/", "x-default": "/" },
+      languages: { "pt-BR": "/pt-br", "en-US": "/", "x-default": "/" },
     },
     openGraph: {
       title,
@@ -116,7 +116,7 @@ export function SiteLayout({ children, locale }: { children: React.ReactNode; lo
             "@type": "ContactPoint",
             contactType: "customer support",
             email: "contact@eduardoaugusto.work",
-            url: `${siteUrl}/contact/`,
+            url: `${siteUrl}/contact`,
           },
         ],
         address: {
