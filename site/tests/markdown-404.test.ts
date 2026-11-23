@@ -5,6 +5,7 @@ import {
   wantsMarkdown,
   markdownNotFound,
   markdownResponse,
+  htmlNotFound,
 } from "../src/lib/markdown";
 
 function req(accept: string): Request {
@@ -59,5 +60,17 @@ describe("Markdown 404 negotiation (catch-all route logic)", () => {
     for (const link of ["/docs", "/sitemap.xml", "/llms.txt", "/about", "/contact", "/privacy", "/mcp", "/openapi.json"]) {
       expect(NOT_FOUND_MARKDOWN).toContain(link);
     }
+  });
+
+  it("HTML 404 fallback is a branded page with the same links", async () => {
+    const res = htmlNotFound();
+    expect(res.status).toBe(404);
+    expect(res.headers.get("content-type")).toBe("text/html; charset=utf-8");
+    expect(res.headers.get("vary")).toBe("Accept");
+    const body = await res.text();
+    expect(body).toContain("404 · Page not found");
+    expect(body).toContain('href="/docs"');
+    expect(body).toContain('href="/sitemap.xml"');
+    expect(body).toContain('href="/llms.txt"');
   });
 });

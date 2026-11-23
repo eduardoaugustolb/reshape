@@ -86,3 +86,58 @@ export function markdownNotFound(request: Request): Response | null {
   if (!wantsMarkdown(accept)) return null;
   return markdownResponse(NOT_FOUND_MARKDOWN, 404);
 }
+
+// Minimal branded HTML 404 for the catch-all route handler. (Calling
+// notFound() inside a route handler returns an empty body on Vercel, so the
+// HTML variant is rendered here directly; not-found.tsx still covers
+// notFound() thrown from pages.)
+export const NOT_FOUND_HTML = `<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>404 · Not Found · ReShape</title>
+<meta name="description" content="The requested page could not be found on ReShape."/>
+<link rel="canonical" href="https://reshape.eduardoaugusto.work/"/>
+</head>
+<body>
+<main>
+  <header>
+    <span>ReShape</span>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/docs">API Documentation</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </nav>
+  </header>
+  <h1>404 · Page not found</h1>
+  <p>The page you requested could not be found on ReShape. Check the URL or browse the site map to find what you are looking for.</p>
+  <section>
+    <h2>Where to go next</h2>
+    <ul>
+      <li><a href="/">Homepage</a> — ReShape 3D modeling and sculpting for Blender.</li>
+      <li><a href="/docs">ReShape API Documentation</a> — skill and MCP server reference.</li>
+      <li><a href="/openapi.json">OpenAPI spec</a> — machine-readable API description.</li>
+      <li><a href="/sitemap.xml">Sitemap</a> — full list of indexable pages.</li>
+      <li><a href="/llms.txt">llms.txt</a> — agent-oriented site guide and when-to-use guidance.</li>
+    </ul>
+  </section>
+  <footer>
+    <span>ReShape · MIT license</span>
+    <span>Source: <a href="https://github.com/eduardoaugustolb/reshape">github.com/eduardoaugustolb/reshape</a></span>
+  </footer>
+</main>
+</body>
+</html>
+`;
+
+export function htmlNotFound(): Response {
+  return new Response(NOT_FOUND_HTML, {
+    status: 404,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      Vary: "Accept",
+      "Cache-Control": "public, max-age=300",
+    },
+  });
+}
