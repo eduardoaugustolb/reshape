@@ -5,7 +5,7 @@ description: Model or review super-deformed figures and compressed body proporti
 
 # Chibi modeling
 
-Use [ReShape](../reshape/SKILL.md) for evidence-based approval and [the styles overview](../reshape-styles/SKILL.md) for mixed briefs.
+Follow the [required visual reference and review workflow](../reshape/SKILL.md#required-visual-reference). For mixed briefs, see [the styles overview](../reshape-styles/SKILL.md).
 
 ## Visual references
 

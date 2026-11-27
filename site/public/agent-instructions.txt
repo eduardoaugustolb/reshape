@@ -17,11 +17,11 @@ Reach for ReShape whenever:
 - Do not use for mechanical engineering FEA stress simulations or non-polygonal NURBS CAD.
 
 ## Step-by-Step Agent Workflow
-1. **Analyze Reference & Establish Observable Criteria**: Extract silhouette markers, volume ratios, and landmarks. Note occluded areas as "inferred".
+1. **Obtain a visual reference.** If none is available, ask the user to attach one or authorize image search. Open the image before modeling and record what it governs.
 2. **Pass 1 - Silhouette & Blockout**: Construct primary primitive volumes. Confirm contour against reference before proceeding.
 3. **Pass 2 - Secondary Masses & Transitions**: Refine junctions (shoulders, neck, organic blend zones). Ensure clean edge loops.
 4. **Pass 3 - Surface & Detail**: Sculpt grooves, surface textures, and fine features.
-5. **Multi-View Comparison**: Render matching orthographic and perspective views. Isolate discrepancies.
+5. **Multi-view comparison.** Save a side-by-side with the reference, an overlay when the views can be aligned, and relevant silhouette, landmark, or detail crops. Correct and recapture.
 6. **Topology & Mesh Verification**: Run the local ReShape audit script on the saved .blend and inspect the matched views. Check closure and thickness for print or deformation for rigging where required. Hosted mesh validation returns `unverified`.
 
 ## Available Invocations

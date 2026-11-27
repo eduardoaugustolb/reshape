@@ -121,17 +121,6 @@ ul.list li + li { margin-top: 8px; }
 .figure__caption button, .figure__caption a { color: var(--muted); font-size: 12.5px; background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-decoration-color: var(--faint); text-underline-offset: 3px; white-space: nowrap; font-family: inherit; }
 .figure__caption button:hover, .figure__caption a:hover { color: var(--fg); }
 
-/* the original and the clone in one video: side by side, labelled underneath */
-.compare { display: block; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 0 1px var(--rule); background: #f9fbfe; }
-.figure__caption--pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.livecard { display: flex; justify-content: center; overflow: hidden; border-radius: 10px; background: #131316; }
-.livecard iframe { flex: none; border: 0; transform-origin: top center; }
-/* a card plays on hover, or on touch screens while it's on screen and on tap (clerk-bento/src/bento.js) */
-@media (hover: hover) { .on-touch { display: none; } }
-@media (hover: none) { .on-hover { display: none; } }
-
-.sheet { display: block; width: 100%; height: auto; border-radius: 10px; box-shadow: 0 0 0 1px var(--rule); }
-
 /* ---------- install / commands ---------- */
 
 .cmd { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; padding: 12px 14px; border-radius: 8px; background: #171717; color: #fafafa; font-family: var(--font-mono), monospace; font-size: 13.5px; overflow-x: auto; }
@@ -150,46 +139,12 @@ ul.list li + li { margin-top: 8px; }
 .prompt__text code { background: #f0f0ee; padding: 1px 5px; border-radius: 4px; }
 @media (max-width: 520px) { .prompts > div { grid-template-columns: 1fr; gap: 2px; } }
 
-/* example thumbnails at the top of the examples, one per example */
-.strip { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
-.strip a { display: block; width: 96px; height: 72px; border-radius: 8px; overflow: hidden; background: #fff; box-shadow: 0 0 0 1px var(--rule); transition: box-shadow 0.2s; }
-.strip a:hover { box-shadow: 0 0 0 1px var(--faint); }
-.strip img { width: 100%; height: 100%; object-fit: cover; object-position: center 62%; display: block; }
-
 /* numbered steps */
 .steps { list-style: none; margin: 22px 0 0; padding: 0; border-top: 1px solid var(--rule); }
 .steps li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; padding: 11px 0; border-bottom: 1px solid var(--rule); }
 .steps__n { color: var(--faint); font-size: 13.5px; font-variant-numeric: tabular-nums; padding-top: 1px; }
 .steps p { margin: 0; color: #404040; }
 .steps b { color: var(--fg); font-weight: 600; }
-
-/* examples */
-.example__head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
-.example h3 span { font-weight: 400; color: var(--muted); }
-.example .figure { margin-top: 16px; }
-
-/* "details": what an example does and its numbers, on hover or focus */
-.tip { position: relative; flex: none; }
-.tip__btn { font: inherit; font-size: 12.5px; color: var(--muted); background: none; border: 0; padding: 0; cursor: help; text-decoration: underline dotted var(--faint); text-underline-offset: 3px; }
-.tip:hover .tip__btn, .tip:focus-within .tip__btn { color: var(--fg); }
-.tip__box {
-  position: absolute; z-index: 30; right: 0; top: calc(100% + 8px); width: 320px; padding: 14px 16px 4px;
-  background: #fff; border-radius: 10px; box-shadow: 0 0 0 1px var(--rule), 0 12px 32px -10px rgb(0 0 0 / 0.18);
-  font-size: 13px; line-height: 1.5; color: #404040;
-  opacity: 0; visibility: hidden; transform: translateY(-4px); transition: opacity 0.15s, transform 0.15s, visibility 0.15s;
-}
-.tip__box::before { content: ""; position: absolute; left: 0; right: 0; top: -8px; height: 8px; } /* keeps the hover across the gap */
-.tip:hover .tip__box, .tip:focus-within .tip__box { opacity: 1; visibility: visible; transform: none; }
-.tip__box p { margin: 0 0 10px; }
-.tip__note { color: var(--muted); }
-.tip__rows { margin: 0; border-top: 1px solid var(--rule); }
-.tip__rows div { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--rule); }
-.tip__rows div:first-child { border-top: 0; }
-.tip__rows dt { font-weight: 600; color: var(--fg); }
-.tip__rows dt span { display: block; font-weight: 400; font-size: 12px; color: var(--muted); }
-.tip__rows dd { margin: 0; white-space: nowrap; color: var(--fg); font-variant-numeric: tabular-nums; }
-@media (prefers-reduced-motion: reduce) { .tip__box { transition: none; } }
-.figure--sheet { max-width: 420px; }
 
 .footer { margin-top: 96px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 12.5px; color: var(--muted); display: flex; flex-direction: column; gap: 8px; }
 

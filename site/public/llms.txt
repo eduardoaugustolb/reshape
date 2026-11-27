@@ -4,11 +4,11 @@
 
 ## When to use this
 Use ReShape when:
-- You need to generate, model, sculpt, or review 3D assets in Blender from a reference image, concept art, written brief, or initial 3D mesh.
+- You need to create a realistic, stylized, or low-poly 3D asset from scratch or sculpt and review an existing mesh in Blender.
 - You need iterative modeling passes: Silhouette & Primary Mass (Blockout) -> Secondary Forms & Transitions (Volumes) -> Surface Details & Textures (Surface).
 - You need to capture and compare matching camera views (front, profile, three-quarter) across iterations with locked camera distance, lighting, and focal length to detect silhouette and form discrepancies.
 - You need to validate mesh topology for production standards: manifold geometry, quad/triangle budgeting, normal orientation, non-overlapping UVs, deformation checks for rigging, or watertight thickness for 3D printing.
-- You want to execute Blender commands programmatically via the ReShape Model Context Protocol (MCP) server or invoke the `$reshape` skill in Codex.
+- You want to execute Blender commands through a local Blender MCP connection or invoke the `$reshape` skill in Codex.
 - You require anatomy construction guidelines (five anatomy skills with local guides) or stylistic conventions (10 style skills including low-poly, cel-shading, cartoon, realism, and clay).
 
 Do NOT use ReShape for:
@@ -17,7 +17,8 @@ Do NOT use ReShape for:
 - Parametric engineering CAD/BIM solid drafting without polygonal meshes (e.g. SolidWorks, AutoCAD DWG).
 
 ## How to call ReShape
-- **Codex Skill**: Call `$reshape` followed by the task prompt, image reference, or target 3D asset path.
+- **Codex Skill**: Call `$reshape` with the brief or target mesh and a visual reference. If no usable image is available, ask the user to attach one or authorize an image search before modeling.
+- **Visual review**: Save side-by-side comparisons, overlays when the views can be aligned, and diagnostic views and crops for each pass.
 - **Anatomy Modules**: Invoke `$reshape-anatomy-body`, `$reshape-anatomy-head`, `$reshape-anatomy-trunk`, `$reshape-anatomy-upper-limb`, or `$reshape-anatomy-lower-limb`. Open local guides only for the current region.
 - **Style Modules**: Invoke `$reshape-styles` or specific sub-skills like `$reshape-style-faceted-low-poly` or `$reshape-style-cel-shading`.
 - **MCP Server Endpoint**: Connect your AI agent (Claude Code, Cursor, Windsurf, ChatGPT) to `https://reshape.eduardoaugusto.work/mcp` using Streamable HTTP transport.

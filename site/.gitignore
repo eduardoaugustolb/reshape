@@ -41,12 +41,5 @@ yarn-error.log*
 next-env.d.ts
 !.env.production
 
-# vendored at build by scripts/vendor-examples.mjs
-/public/examples/*/vendor/
-
 # wrangler
 .wrangler/
-
-# demo video: recorded clips and renders (video/scripts/clips.ts, render.ts)
-/video/clips/
-/video/out/

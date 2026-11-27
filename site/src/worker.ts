@@ -76,10 +76,10 @@ printing, game engines, and animation.
 ## When to use this
 
 Use ReShape when:
-- You need to generate, model, sculpt, or review 3D assets in Blender from a reference image, concept art,
-  written brief, or initial 3D mesh.
+- You need to create a realistic, stylized, or low-poly model from scratch or sculpt and review an existing mesh.
+- Each visual task uses an opened reference image. Ask the user to attach one or authorize image search when needed.
 - You need iterative modeling passes: Blockout -> Volumes -> Surface.
-- You need to capture and compare matching camera views (front, profile, three-quarter) across iterations.
+- You need to compare renders with the reference side by side, overlay aligned images, and inspect landmarks and close-ups.
 - You need to validate mesh topology for production standards: manifold geometry, quad/triangle budgeting,
   normal orientation, non-overlapping UVs, watertight thickness for 3D printing.
 - You want to execute Blender commands programmatically via the ReShape MCP server or invoke the \$reshape skill

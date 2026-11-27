@@ -3,7 +3,7 @@
 <h1 align="center">ReShape</h1>
 
 <p align="center"><strong>Crie, esculpa e revise modelos 3D no Blender com o Codex e o Blender MCP.</strong></p>
-<p align="center">Parta de uma imagem, de um briefing ou de uma malha existente. Compare as mesmas vistas a cada rodada para decidir o que corrigir.</p>
+<p align="center">Crie modelos realistas, estilizados ou low-poly do zero ou refine uma malha existente. Use referências visuais para orientar a forma e conferir cada passagem.</p>
 <p align="center"><a href="#instalação-no-codex">Instalar</a> · <a href="skills/reshape/references/anatomy.md">Anatomia</a> · <a href="skills/reshape-styles/SKILL.md">Estilos</a> · <a href="#site">Site</a> · <a href="README.md" lang="en-US">English</a></p>
 
 | Bloqueio | Volumes | Superfície |
@@ -31,9 +31,9 @@ $reshape Revise as transições dos ombros nesta malha e confira a deformação 
 
 ## Como funciona
 
-1. Extraia critérios observáveis da referência ou do briefing. Registre o que pode ser conferido e o que precisou ser inferido.
+1. Envie uma referência visual ou autorize o agente a buscar uma. Se nenhuma imagem utilizável estiver disponível, o agente pergunta qual opção você prefere.
 2. Modele em passagens. Resolva primeiro a silhueta e as massas principais, depois as transições e os detalhes da superfície.
-3. Capture vistas comparáveis e corrija os desvios. Mantenha pose, câmera, escala e luz fixas entre rodadas.
+3. Compare a referência e o render lado a lado. Sobreponha as vistas que puderem ser alinhadas e confira silhueta, marcos e recortes. Mantenha pose, câmera, escala e luz fixas entre rodadas.
 4. Verifique a malha conforme o destino. Para rig, confira a deformação. Para impressão, confira fechamento e espessura. Para tempo real, confira o custo no destino.
 
 A entrega inclui a malha editável, as vistas comparativas e o estado da validação. O [guia da skill](skills/reshape/SKILL.md) detalha cada etapa.
@@ -60,6 +60,6 @@ bun install
 bun run dev
 ```
 
-## Créditos
+## Licença
 
-O ciclo de captura, comparação e revisão foi adaptado da [Reanimate de Niaz Morshed](https://github.com/NiazMorshed2007/reanimate). O código original da skill está em [skills/reanimate](skills/reanimate). [Licença MIT](LICENSE).
+[Licença MIT](LICENSE).

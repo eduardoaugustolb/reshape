@@ -2,11 +2,22 @@
 
 ## Prepare verifiable criteria
 
-For each requirement, record the region, target, view or test, measurable tolerance where applicable, and expected evidence. When scale is unknown, use normalized proportions such as shoulder width divided by projected height. Set tolerances based on resolution, perspective, and use before comparing. For text briefs, write observable checks, such as “the silhouette tapers from shoulders to waist in front view,” and tie each inference to the brief.
+For each requirement, record the region, reference or brief requirement, view or test, tolerance where applicable, and expected evidence. Identify whether the reference governs likeness, silhouette, proportions, style, or material. For original designs, compare the intended traits and document deliberate departures.
+
+## Compare with the visual reference
+
+Use the [required visual reference](../SKILL.md#required-visual-reference) from the first pass through the saved delivery candidate. Open and inspect the actual images at each review.
+
+- **Side by side.** Save a labeled reference and render pair. Match pose, camera angle, focal length or projection, framing, and display scale as closely as the source allows. Mark mismatches that limit the comparison.
+- **Overlay.** When pose and projection support it, align the reference and render on stable landmarks with translation, rotation, and uniform scale. Save a translucent overlay, two-color contours, or a before/after toggle. Keep the image undistorted and inspect landmarks left out of the alignment. If a reliable overlay cannot be made, record the reason and mark affected measurements unverified.
+- **Silhouette and landmarks.** Check the outer contour and negative spaces. Annotate key landmarks and compare normalized distances where alignment supports it, such as shoulder width divided by projected height. Use matched crops for joints, face, and other decisive areas.
+- **Additional views.** Inspect uncluttered front, profile, and three-quarter views and add back or top when useful. Use neutral matte shading to read volume, wireframe to diagnose topology, and intended lighting to assess finish. Views absent from the reference establish form coherence and leave likeness in those regions unverified.
+
+Archive the pair, any overlay, and useful crops with the source and candidate version. For each discrepancy, name the view and region, state what to change, and repeat the comparison after correction.
 
 ## Capture and inspect each round
 
-- Record camera, pose, scale, framing, resolution, lighting, and shading mode. Hold them fixed between rounds. Align pose and projection to reliable landmarks for photo comparison. Use overlays and ratios only where the alignment supports measurement. Unknown perspective reduces confidence in depth. Record which views match the reference and which assess model coherence alone.
+- Record camera, pose, scale, framing, resolution, lighting, and shading mode. Hold them fixed between rounds.
 - Capture front, profile, and three-quarter views. Capture the back where warranted. Isolate the silhouette and use neutral shading to read mass. Use close-ups for transitions and wireframe for diagnosis. Review finish under conditions appropriate to the intended use. Open every view cited in the report.
 - Inspect pose and proportions, silhouette and negative spaces, masses and junctions, planes and artifacts, then detail and finish. Compare parts at the same visual scale. Record the discrepancy in the view where it appears and state what needs correction.
 - Use pass, fail, unverified, and not applicable. Only a pass closes a mandatory criterion. A hidden surface can be coherent even when fidelity to the reference remains unverified. Record that distinction in the report.

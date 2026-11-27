@@ -5,7 +5,7 @@ description: Model or review the torso and pelvis in Blender. Covers rib cage, c
 
 # Whole trunk
 
-Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
+Obtain the [required visual reference](../reshape/SKILL.md#required-visual-reference) before modeling or visual review. Follow the subject, pose, and style reference for form, variation, and asymmetry. Record landmarks and views for measurements. Use population averages as context and mark hidden or inferred regions.
 
 ## Visual references
 

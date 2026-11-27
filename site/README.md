@@ -17,5 +17,3 @@ The build serves the checked-in [download package](public/reshape/reshape-skill.
 ## Host
 
 The Next.js deployment uses `site/` as its project root. It serves the pages, JSON API, and MCP endpoints. For mesh validation, the hosted endpoints return `unverified` with null counts. Run the local audit script against the saved `.blend` for measurements.
-
-The original Reanimate showcase assets are in `public/examples/`, `public/media/`, and [video/](video/README.md).

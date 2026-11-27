@@ -13,8 +13,6 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
     ".wrangler/**",
-    // three.js and fonts copied in by scripts/vendor-examples.mjs
-    "public/examples/*/vendor/**",
   ]),
 ]);
 

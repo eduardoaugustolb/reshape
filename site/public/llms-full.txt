@@ -1,13 +1,13 @@
 # ReShape Complete Specification & Developer Guide
 
 ## Overview
-ReShape enables AI agents to model, sculpt, and review 3D assets in Blender using iterative passes and matched-view comparisons.
+ReShape enables AI agents to create realistic, stylized, and low-poly models from scratch and to sculpt or review existing meshes in Blender.
 
 ## When to use this
 Use ReShape when:
-- Creating 3D models in Blender from images, briefs, or meshes.
+- Creating 3D models in Blender with a brief and an opened visual reference. If the user supplied no usable image, ask whether they prefer to attach one or authorize image search.
 - Executing iterative sculpting passes (Blockout -> Volumes -> Surface).
-- Capturing matching front, profile, and three-quarter renders to audit silhouette fidelity.
+- Comparing the reference and model side by side, overlaying aligned views, and checking silhouettes, landmarks, and close-ups.
 - Running mesh validation for game engines, 3D printing, or animation rigging.
 - Connecting autonomous agents to Blender via Model Context Protocol (MCP).
 

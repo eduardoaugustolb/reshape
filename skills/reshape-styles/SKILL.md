@@ -5,7 +5,7 @@ description: Define, apply, or review the visual style of 3D models in Blender w
 
 # 3D modeling styles
 
-Use [ReShape](../reshape/SKILL.md) to build, capture, and approve the asset. This skill turns visual direction into decisions about geometry, surfaces, and presentation. For human figures, use the [anatomy catalog](../reshape/references/anatomy.md) to establish landmarks and junctions before stylizing.
+Follow the [required visual reference and review workflow](../reshape/SKILL.md#required-visual-reference) to build, capture, and approve the asset. For human figures, use the [anatomy catalog](../reshape/references/anatomy.md) to establish landmarks and junctions before stylizing.
 
 ## Define style before blockout
 

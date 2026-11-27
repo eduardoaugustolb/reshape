@@ -3,7 +3,7 @@
 <h1 align="center">ReShape</h1>
 
 <p align="center"><strong>Model, sculpt, and review 3D assets in Blender with Codex and Blender MCP.</strong></p>
-<p align="center">Start from an image, a brief, or an existing mesh. Compare matching views each round to decide what to correct.</p>
+<p align="center">Create realistic, stylized, or low-poly assets from scratch, or refine an existing mesh. Use visual references to guide the form and check each pass.</p>
 <p align="center"><a href="#install-in-codex">Install</a> · <a href="skills/reshape/references/anatomy.md">Anatomy</a> · <a href="skills/reshape-styles/SKILL.md">Styles</a> · <a href="#website">Website</a> · <a href="README.pt-BR.md" lang="pt-BR">Português (Brasil)</a></p>
 
 | Blockout | Volumes | Surface |
@@ -31,9 +31,9 @@ $reshape Review the shoulder transitions in this mesh and check deformation in t
 
 ## How it works
 
-1. Extract observable criteria from the brief or reference and document any inferred regions.
+1. Supply a visual reference or authorize the agent to search for one. The agent asks which option you prefer when no usable image is available.
 2. Model in passes. Resolve silhouette and primary masses before transitions and surface details.
-3. Capture matching views and correct discrepancies. Hold pose, camera, scale, and lighting fixed between rounds.
+3. Compare the reference and render side by side. Overlay aligned views and inspect silhouettes, landmarks, and close-ups. Hold pose, camera, scale, and lighting fixed between rounds.
 4. Verify the mesh for its intended use. Check deformation for rigging, closure and thickness for printing, or cost on the target platform for real-time work.
 
 Deliver the editable mesh, comparative views, and documented validation results. The [ReShape skill](skills/reshape/SKILL.md) explains each step.
@@ -58,6 +58,6 @@ bun install
 bun run dev
 ```
 
-## Credits
+## License
 
-ReShape adapts the capture, comparison, and revision workflow of [Reanimate by Niaz Morshed](https://github.com/NiazMorshed2007/reanimate). The original skill is in [skills/reanimate](skills/reanimate). [MIT license](LICENSE).
+[MIT license](LICENSE).

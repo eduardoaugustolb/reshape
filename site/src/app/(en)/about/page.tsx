@@ -36,8 +36,9 @@ export default function AboutPage() {
         <p>
           ReShape is both a Codex skill and a Model Context Protocol (MCP) server. The skill ($reshape and the
           $reshape-anatomy-* / $reshape-styles modules) gives agents structured guidance for modeling, sculpting,
-          and reviewing 3D assets. The MCP server exposes the same capabilities as tools over Streamable HTTP, so
-          agents such as Claude Code, Cursor, and ChatGPT can call Blender natively.
+          and reviewing 3D assets from scratch or from an existing mesh. The workflow uses visual references
+          from blockout through final comparison. Scene editing and captures run through a local Blender MCP
+          connection. The hosted MCP endpoint provides sample tool responses.
         </p>
       </section>
 

@@ -38,6 +38,11 @@ export default function DocsPage() {
           <a href="https://github.com/eduardoaugustolb/reshape/blob/main/skills/reshape/references/anatomy.md">five anatomy skills</a>{" "}
           to find the guide for the region you are working on. Use <code>$reshape-styles</code> for style guidance.
         </p>
+        <p>
+          ReShape creates new realistic, stylized, or low-poly models and can sculpt or review existing meshes.
+          Attach a visual reference or authorize the agent to search for one before it starts modeling.
+          The review pairs each matching render with its reference and uses overlays for alignable views.
+        </p>
       </section>
 
       <section className="section">

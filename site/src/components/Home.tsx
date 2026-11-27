@@ -18,9 +18,9 @@ export default function Home({ locale }: { locale: Locale }) {
     { id: "instalacao", label: t("Instalar", "Install") },
   ];
   const steps = [
-    [t("Leia a referência.", "Study the reference."), t("Registre a pose, a silhueta, as proporções e o que cada vista permite confirmar. Para um briefing em texto, defina critérios que possam ser observados no modelo.", "Record pose, silhouette, proportions, and what each view can verify. For a written brief, define criteria you can observe on the model.")],
+    [t("Obtenha uma referência visual.", "Obtain a visual reference."), t("Envie uma imagem ou autorize a busca. Registre a pose, a silhueta, as proporções e o que cada vista permite confirmar.", "Attach an image or authorize a search. Record the pose, silhouette, proportions, and what each view can verify.")],
     [t("Modele por passagens.", "Model in passes."), t("Acerte a massa e o contorno. Trabalhe as transições e os volumes secundários antes de esculpir os detalhes.", "Establish the mass and silhouette. Refine transitions and secondary forms before sculpting details.")],
-    [t("Capture as mesmas vistas.", "Capture matching views."), t("Mantenha câmera, escala e luz fixas entre rodadas. Compare a silhueta de longe e examine as junções de perto.", "Keep camera, scale, and lighting fixed across iterations. Compare the silhouette at a distance and inspect junctions up close.")],
+    [t("Compare com a referência.", "Compare with the reference."), t("Coloque as imagens lado a lado. Sobreponha vistas alinháveis e confira a silhueta, os marcos e as junções em recortes.", "Put the images side by side. Overlay compatible views and check the silhouette, landmarks, and junctions in close-ups.")],
     [t("Corrija e confira de novo.", "Correct and recheck."), t("Comece pelo desvio que mais afeta a forma. Recapture a peça e verifique se a correção alterou as regiões vizinhas.", "Start with the discrepancy that most affects the form. Recapture the model and check for changes in adjacent regions.")],
   ];
 
@@ -40,13 +40,12 @@ export default function Home({ locale }: { locale: Locale }) {
         </header>
 
         <h1 className="hero-title">{t("Da silhueta", "From silhouette")}<br />{t("à superfície.", "to surface.")}</h1>
-        <p className="lede">{t("Uma skill para modelar, esculpir e revisar ativos 3D no Blender, a partir de imagens, texto ou do zero.", "A skill for modeling, sculpting, and reviewing 3D assets in Blender from images, a written brief, or scratch.")}</p>
+        <p className="lede">{t("Crie modelos 3D do zero, esculpa formas realistas ou low-poly e revise malhas existentes no Blender com referências visuais.", "Create 3D models from scratch, sculpt realistic or low-poly forms, and review existing meshes in Blender with visual references.")}</p>
 
         <SculptPasses locale={locale} />
 
         <section id="metodo" className="section">
           <div className="section__head"><h2>{t("Como funciona", "How it works")}</h2></div>
-          <p>{t("A ReShape leva o ciclo de comparação da Reanimate para a escultura 3D. Ela orienta o agente a inspecionar cada passagem no Blender e guardar vistas comparáveis antes de seguir.", "ReShape brings Reanimate’s comparison process to 3D sculpting. It guides the agent through inspecting each pass in Blender and saving comparable views before moving on.")}</p>
           <ol className="steps">
             {steps.map(([title, body], index) => (
               <li key={title}>
@@ -103,7 +102,6 @@ export default function Home({ locale }: { locale: Locale }) {
 
         <footer className="footer">
           <span>{t("ReShape · licença MIT", "ReShape · MIT license")}</span>
-          <span>{t("Fluxo de comparação adaptado da ", "Comparison workflow adapted from ")}<a href="https://github.com/NiazMorshed2007/reanimate">{t("Reanimate de Niaz Morshed", "Reanimate by Niaz Morshed")}</a>.</span>
         </footer>
       </main>
     </div>
