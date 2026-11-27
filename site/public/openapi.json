@@ -133,8 +133,8 @@
       "post": {
         "operationId": "reshape_validate_mesh",
         "tags": ["validation"],
-        "summary": "Run automated mesh topology audit",
-        "description": "Run automated topology and defect audits: manifoldness, normals, triangle count, watertightness for 3D printing, game engines, or animation rigging.",
+        "summary": "Report mesh validation availability",
+        "description": "Use the local ReShape mesh audit in Blender for actual measurements.",
         "requestBody": {
           "required": true,
           "content": {
@@ -147,7 +147,7 @@
         },
         "responses": {
           "200": {
-            "description": "Mesh validation completed.",
+            "description": "Mesh validation is unverified because the service has no Blender scene.",
             "content": {
               "application/json": {
                 "schema": {
@@ -174,7 +174,7 @@
         "operationId": "reshape_list_skills",
         "tags": ["catalog"],
         "summary": "List anatomy and style skills",
-        "description": "Query the catalog of 44 anatomy skills and 10 style profiles available in ReShape.",
+        "description": "List ReShape tool entry points by category.",
         "parameters": [
           {
             "name": "category",
@@ -362,21 +362,23 @@
         "properties": {
           "status": {
             "type": "string",
-            "description": "Validation outcome."
+            "enum": ["unverified"]
           },
           "manifold": {
             "type": "boolean",
-            "description": "Whether the mesh is manifold."
+            "nullable": true,
+            "description": "Null when no mesh was inspected."
           },
           "triangleCount": {
             "type": "integer",
-            "description": "Number of triangles in the mesh."
+            "nullable": true,
+            "description": "Null when no mesh was inspected."
           },
           "issues": {
             "type": "array",
             "items": {
               "type": "string",
-              "description": "Detected topology or defect issues."
+              "description": "Reasons validation could not run."
             }
           }
         }

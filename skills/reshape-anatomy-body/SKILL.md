@@ -1,7 +1,6 @@
 ---
 name: reshape-anatomy-body
-description: >-
-  Model or review the human figure, overall proportions, and pose in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
+description: Model or review whole-body proportions, pose, and weight distribution in Blender.
 ---
 
 # Whole body

@@ -40,7 +40,11 @@ A entrega inclui a malha editável, as vistas comparativas e o estado da valida�
 
 ## Anatomia humana
 
-O [catálogo de anatomia](skills/reshape/references/anatomy.md) reúne skills por região, desde corpo inteiro até olhos, orelha, nariz, mãos e pés. Cada skill traz regras de construção, vistas de revisão, motivos de reprovação e fontes anatômicas. Use `$reshape-anatomy-face` para uma face inteira ou `$reshape-anatomy-nose` para uma revisão localizada.
+O [catálogo de anatomia](skills/reshape/references/anatomy.md) reúne cinco skills para corpo inteiro, cabeça e pescoço, tronco, membros superiores e membros inferiores. Os guias locais preservam regras de construção, vistas, motivos de reprovação e fontes. Para corrigir o nariz, invoque `$reshape-anatomy-head` e abra o guia do nariz.
+
+Ao atualizar, mova as pastas antigas `reshape-anatomy-*` para um backup fora do diretório de skills. Mantenha as cinco pastas listadas no catálogo e reinicie o Codex para atualizar a lista.
+
+Use a [auditoria local no Blender](skills/reshape/references/validation.md#verify-mesh-and-intended-use) para medir a topologia do arquivo salvo. Revise as vistas comparáveis para aprovar a forma.
 
 ## Estilos de modelagem
 

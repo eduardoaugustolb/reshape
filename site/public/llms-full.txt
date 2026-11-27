@@ -16,9 +16,11 @@ ReShape provides a Streamable HTTP MCP server at `https://reshape.eduardoaugusto
 Supported JSON-RPC 2.0 methods:
 - `initialize`: Establishes protocol handshake and declares capabilities.
 - `tools/list`: Enumerates `reshape_model`, `reshape_compare_views`, `reshape_validate_mesh`, `reshape_list_skills`, `reshape_inspect_anatomy`.
-- `tools/call`: Executes specified tool with input arguments.
+- `tools/call`: Returns hosted sample responses and tool information.
 - `resources/list`: Lists anatomy references and styling guides.
 - `prompts/list`: Pre-configured prompts for 3D asset generation and review.
+
+Connect Blender MCP to a local Blender session to edit scenes and capture views. For topology measurements, run the local audit script packaged with the ReShape skill in Blender. The hosted `reshape_validate_mesh` tool returns `unverified`.
 
 ## Installation in Codex
 ```bash

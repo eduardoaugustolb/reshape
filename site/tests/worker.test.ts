@@ -147,6 +147,19 @@ describe("JSON API error responses", () => {
     expect(body.error.code).toBe("invalid_request");
   });
 
+  it("reports the mesh as unverified when no Blender scene is available", async () => {
+    const req = new Request("https://reshape.eduardoaugusto.work/api/validate-mesh", {
+      method: "POST",
+      body: JSON.stringify({ targetUse: "real-time" }),
+    });
+    const res = await handleValidateMesh(req);
+    expect(await res.json()).toMatchObject({
+      status: "unverified",
+      manifold: null,
+      triangleCount: null,
+    });
+  });
+
   it("handleListSkills returns 400 for invalid category", async () => {
     const req = new Request(
       "https://reshape.eduardoaugusto.work/api/list-skills?category=nope",
@@ -244,8 +257,11 @@ describe("MCP Streamable HTTP server", () => {
     const res = await handleMcp(req);
     const body = parseJson(await res.text());
     expect(body.id).toBe(3);
-    expect(body.result.status).toBe("ok");
-    expect(body.result.manifold).toBe(true);
+    expect(body.result).toMatchObject({
+      status: "unverified",
+      manifold: null,
+      triangleCount: null,
+    });
   });
 
   it("unknown method returns JSON-RPC error -32601", async () => {

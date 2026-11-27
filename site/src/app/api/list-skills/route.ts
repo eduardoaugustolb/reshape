@@ -17,7 +17,7 @@ export async function GET(request: Request): Promise<Response> {
       ? [
           { id: "reshape_model", name: "Model", description: "Create or edit a 3D asset in Blender." },
           { id: "reshape_compare_views", name: "Compare Views", description: "Render matching camera views." },
-          { id: "reshape_validate_mesh", name: "Validate Mesh", description: "Audit mesh topology and defects." },
+          { id: "reshape_validate_mesh", name: "Validate Mesh", description: "Report mesh validation availability." },
           { id: "reshape_list_skills", name: "List Skills", description: "List anatomy and style skills." },
           { id: "reshape_inspect_anatomy", name: "Inspect Anatomy", description: "Retrieve anatomy construction rules." },
         ]

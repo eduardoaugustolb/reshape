@@ -34,8 +34,24 @@ export default function DocsPage() {
         <div className="section__head"><h2>ReShape skill (Codex)</h2></div>
         <p>
           Install the ReShape package in Codex and invoke <code>$reshape</code> with a brief, image reference, or
-          target 3D asset path. Use <code>$reshape-anatomy-&lt;region&gt;</code> for anatomy-specific guidance and
-          <code>$reshape-styles</code> for style conventions (low-poly, cel shading, cartoon, realism, clay).
+          target 3D asset path. Use the{" "}
+          <a href="https://github.com/eduardoaugustolb/reshape/blob/main/skills/reshape/references/anatomy.md">five anatomy skills</a>{" "}
+          to find the guide for the region you are working on. Use <code>$reshape-styles</code> for style guidance.
+        </p>
+      </section>
+
+      <section className="section">
+        <div className="section__head"><h2>Local mesh audit</h2></div>
+        <p>
+          Open the saved <code>.blend</code> in Blender background mode and pass the mesh object names to the
+          installed audit script. Inspect the reported counts and topology separately from the captured views.
+        </p>
+        <pre><code>{`blender --background --disable-autoexec candidate.blend --python-exit-code 1 \\
+  --python ~/.agents/skills/reshape/scripts/audit-mesh.py -- "Body" "Eyes"`}</code></pre>
+        <p>
+          See the{" "}
+          <a href="https://github.com/eduardoaugustolb/reshape/blob/main/skills/reshape/references/validation.md#verify-mesh-and-intended-use">validation guide</a>{" "}
+          for what the report measures and which checks require additional evidence.
         </p>
       </section>
 
@@ -46,12 +62,13 @@ export default function DocsPage() {
           transport. The manifest is at{" "}
           <a href="/.well-known/mcp.json">/.well-known/mcp.json</a>.
         </p>
+        <p>The hosted service returns sample modeling and comparison responses. Connect Blender MCP to your local Blender session for scene edits and captures.</p>
         <ul className="list">
-          <li><code>reshape_model</code> — create or edit a 3D asset in Blender through modeling passes.</li>
-          <li><code>reshape_compare_views</code> — render matching camera views across iterations.</li>
-          <li><code>reshape_validate_mesh</code> — run topology audits (manifoldness, normals, triangle count).</li>
-          <li><code>reshape_list_skills</code> — list anatomy and style skills.</li>
-          <li><code>reshape_inspect_anatomy</code> — retrieve anatomy construction rules for a region.</li>
+          <li><code>reshape_model</code> returns a sample modeling response for the requested pass.</li>
+          <li><code>reshape_compare_views</code> returns sample view URLs.</li>
+          <li><code>reshape_validate_mesh</code> reports <code>unverified</code> with null measurements.</li>
+          <li><code>reshape_list_skills</code> lists tool entry points.</li>
+          <li><code>reshape_inspect_anatomy</code> returns sample inspection criteria. Use the installed anatomy guides for regional construction rules.</li>
         </ul>
       </section>
 

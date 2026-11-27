@@ -1,7 +1,6 @@
 ---
 name: reshape-anatomy-trunk
-description: >-
-  Model or review the integration of thorax, back, abdomen, and pelvis in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
+description: Model or review the torso and pelvis in Blender. Covers rib cage, chest, back, scapulae, abdomen, hips, gluteal region, and perineum.
 ---
 
 # Whole trunk
@@ -31,14 +30,18 @@ Reject these defects when they conflict with the documented target. An abrupt wa
 
 Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regional skills
+## Local references
 
-Read the relevant regional skills for local criteria.
+Open only the guides for the modeled region or a defect visible in the current pass. Use the integrated checks above when assessing the whole chain.
 
-- [Whole thorax](../reshape-anatomy-thorax/SKILL.md)
-- [Back and surface landmarks of the spine](../reshape-anatomy-back/SKILL.md)
-- [Abdomen and flanks](../reshape-anatomy-abdomen/SKILL.md)
-- [Pelvis and hips](../reshape-anatomy-pelvis/SKILL.md)
+- [Whole thorax](references/thorax.md)
+- [Chest and breasts](references/chest.md)
+- [Back and surface landmarks of the spine](references/back.md)
+- [Scapula and shoulder blade](references/scapula.md)
+- [Abdomen and flanks](references/abdomen.md)
+- [Pelvis and hips](references/pelvis.md)
+- [Gluteal region](references/glutes.md)
+- [Perineum and external genital anatomy](references/perineum.md)
 
 ## Anatomy sources
 

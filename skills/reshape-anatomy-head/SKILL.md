@@ -1,7 +1,6 @@
 ---
 name: reshape-anatomy-head
-description: >-
-  Model or review the portrait, skull, and neck attachment in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
+description: Model or review the head, neck, and facial likeness in Blender. Covers skull, eyes, nose, ears, cheeks, jaw, lips, teeth, and tongue.
 ---
 
 # Whole head
@@ -31,14 +30,26 @@ Reject these defects when they conflict with the documented target. A flattened 
 
 Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regional skills
+## Local references
 
-Read the relevant regional skills for local criteria.
+Open only the guides for the modeled region or a defect visible in the current pass. Use the integrated checks above when assessing the whole chain.
 
-- [Skull and cranial vault](../reshape-anatomy-skull/SKILL.md)
-- [Whole face](../reshape-anatomy-face/SKILL.md)
-- [External ear](../reshape-anatomy-ear/SKILL.md)
-- [Neck](../reshape-anatomy-neck/SKILL.md)
+- [Skull and cranial vault](references/skull.md)
+- [Whole face](references/face.md)
+- [Forehead and eyebrows](references/forehead-and-eyebrows.md)
+- [Eyes and eyelids](references/eyes.md)
+- [Eyelids and canthi](references/eyelids.md)
+- [Globe and corneal profile](references/eyeball.md)
+- [Nose](references/nose.md)
+- [External ear](references/ear.md)
+- [Cheekbones and cheeks](references/cheeks.md)
+- [Mandible and chin](references/jaw.md)
+- [Mouth and lips](references/mouth.md)
+- [Lips and vermilion](references/lips.md)
+- [Teeth, gums, and tongue](references/teeth-and-tongue.md)
+- [Dentition and gingiva](references/teeth.md)
+- [Tongue and oral floor](references/tongue.md)
+- [Neck](references/neck.md)
 
 ## Anatomy sources
 

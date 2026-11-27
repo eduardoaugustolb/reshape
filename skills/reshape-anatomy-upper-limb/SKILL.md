@@ -1,7 +1,6 @@
 ---
 name: reshape-anatomy-upper-limb
-description: >-
-  Model or review the shoulder, upper arm, elbow, forearm, wrist, and hand as a chain in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
+description: Model or review the shoulder, arm, elbow, forearm, wrist, palm, fingers, thumb, and fingernails in Blender.
 ---
 
 # Whole upper limb
@@ -31,16 +30,19 @@ Reject these defects when they conflict with the documented target. Twist concen
 
 Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regional skills
+## Local references
 
-Read the relevant regional skills for local criteria.
+Open only the guides for the modeled region or a defect visible in the current pass. Use the integrated checks above when assessing the whole chain.
 
-- [Shoulder and axilla](../reshape-anatomy-shoulder-and-axilla/SKILL.md)
-- [Upper arm](../reshape-anatomy-upper-arm/SKILL.md)
-- [Elbow](../reshape-anatomy-elbow/SKILL.md)
-- [Forearm](../reshape-anatomy-forearm/SKILL.md)
-- [Wrist](../reshape-anatomy-wrist/SKILL.md)
-- [Whole hand](../reshape-anatomy-hand/SKILL.md)
+- [Shoulder and axilla](references/shoulder-and-axilla.md)
+- [Upper arm](references/upper-arm.md)
+- [Elbow](references/elbow.md)
+- [Forearm](references/forearm.md)
+- [Wrist](references/wrist.md)
+- [Whole hand](references/hand.md)
+- [Thumb and opposition](references/thumb.md)
+- [Fingers and fingernails](references/fingers.md)
+- [Fingernails and toenails](references/nails.md)
 
 ## Anatomy sources
 

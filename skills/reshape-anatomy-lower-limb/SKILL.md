@@ -1,7 +1,6 @@
 ---
 name: reshape-anatomy-lower-limb
-description: >-
-  Model or review the pelvis, thigh, knee, lower leg, ankle, and foot as a chain in human anatomy with Blender or ReShape. Use when this region is in scope for 3D modeling or visual review.
+description: Model or review the hip-to-foot chain in Blender. Covers thigh, knee, calf, ankle, foot, toes, and ground contact.
 ---
 
 # Whole lower limb
@@ -31,16 +30,18 @@ Reject these defects when they conflict with the documented target. A foot twist
 
 Apply the saved-file review in [ReShape](../reshape/SKILL.md). Record the view and discrepancy, correct the cause, and recapture. Missing evidence for a required criterion blocks regional approval.
 
-## Regional skills
+## Local references
 
-Read the relevant regional skills for local criteria.
+Open only the guides for the modeled region or a defect visible in the current pass. Use the integrated checks above when assessing the whole chain.
 
-- [Pelvis and hips](../reshape-anatomy-pelvis/SKILL.md)
-- [Thigh](../reshape-anatomy-thigh/SKILL.md)
-- [Knee](../reshape-anatomy-knee/SKILL.md)
-- [Lower leg and calf](../reshape-anatomy-lower-leg/SKILL.md)
-- [Ankle](../reshape-anatomy-ankle/SKILL.md)
-- [Whole foot](../reshape-anatomy-foot/SKILL.md)
+- [Pelvis and hips](../reshape-anatomy-trunk/references/pelvis.md)
+- [Thigh](references/thigh.md)
+- [Knee](references/knee.md)
+- [Lower leg and calf](references/lower-leg.md)
+- [Ankle](references/ankle.md)
+- [Whole foot](references/foot.md)
+- [Toes](references/toes.md)
+- [Toenails](../reshape-anatomy-upper-limb/references/nails.md)
 
 ## Anatomy sources
 

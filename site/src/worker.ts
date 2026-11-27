@@ -9,6 +9,8 @@
  * - MCP Streamable HTTP server at /mcp.
  */
 
+import { unverifiedMesh } from "./lib/mesh-validation";
+
 interface Env {
   ASSETS: Fetcher;
 }
@@ -224,9 +226,9 @@ const OPENAI_SPEC = JSON.stringify({
       post: {
         operationId: "reshape_validate_mesh",
         tags: ["validation"],
-        summary: "Run automated mesh topology audit",
+        summary: "Report mesh validation availability",
         description:
-          "Run automated topology and defect audits: manifoldness, normals, triangle count, watertightness.",
+          "Use the local ReShape mesh audit in Blender for actual measurements.",
         requestBody: {
           required: true,
           content: {
@@ -237,7 +239,7 @@ const OPENAI_SPEC = JSON.stringify({
         },
         responses: {
           "200": {
-            description: "Mesh validation completed.",
+            description: "Mesh validation is unverified because the service has no Blender scene.",
             content: {
               "application/json": {
                 schema: { $ref: "#/components/schemas/ValidateMeshResponse" },
@@ -260,7 +262,7 @@ const OPENAI_SPEC = JSON.stringify({
         operationId: "reshape_list_skills",
         tags: ["catalog"],
         summary: "List anatomy and style skills",
-        description: "Query the catalog of 44 anatomy skills and 10 style profiles available in ReShape.",
+        description: "List ReShape tool entry points by category.",
         parameters: [
           {
             name: "category",
@@ -416,12 +418,12 @@ const OPENAI_SPEC = JSON.stringify({
       ValidateMeshResponse: {
         type: "object",
         properties: {
-          status: { type: "string", description: "Validation outcome." },
-          manifold: { type: "boolean", description: "Whether the mesh is manifold." },
-          triangleCount: { type: "integer", description: "Number of triangles in the mesh." },
+          status: { type: "string", enum: ["unverified"] },
+          manifold: { type: "boolean", nullable: true, description: "Null when no mesh was inspected." },
+          triangleCount: { type: "integer", nullable: true, description: "Null when no mesh was inspected." },
           issues: {
             type: "array",
-            items: { type: "string", description: "Detected topology or defect issues." },
+            items: { type: "string", description: "Reasons validation could not run." },
           },
         },
       },
@@ -598,12 +600,7 @@ export async function handleValidateMesh(request: Request): Promise<Response> {
       "Set targetUse to a valid downstream application.",
     );
   }
-  return jsonApiOk({
-    status: "ok",
-    manifold: true,
-    triangleCount: 1240,
-    issues: [],
-  });
+  return jsonApiOk(unverifiedMesh);
 }
 
 export function handleListSkills(request: Request): Response {
@@ -622,7 +619,7 @@ export function handleListSkills(request: Request): Response {
       ? [
           { id: "reshape_model", name: "Model", description: "Create or edit a 3D asset in Blender." },
           { id: "reshape_compare_views", name: "Compare Views", description: "Render matching camera views." },
-          { id: "reshape_validate_mesh", name: "Validate Mesh", description: "Audit mesh topology and defects." },
+          { id: "reshape_validate_mesh", name: "Validate Mesh", description: "Report mesh validation availability." },
           { id: "reshape_list_skills", name: "List Skills", description: "List anatomy and style skills." },
           { id: "reshape_inspect_anatomy", name: "Inspect Anatomy", description: "Retrieve anatomy construction rules." },
         ]
@@ -704,7 +701,7 @@ const MCP_TOOLS = [
   },
   {
     name: "reshape_validate_mesh",
-    description: "Run automated topology audits (manifoldness, normals, triangle count, watertightness).",
+    description: "Report validation availability. Run the local ReShape mesh audit for actual measurements.",
     inputSchema: {
       type: "object",
       required: ["targetUse"],
@@ -852,12 +849,7 @@ export async function handleMcp(request: Request): Promise<Response> {
           views: ["https://reshape.eduardoaugusto.work/reshape/front.webp"],
         });
       case "reshape_validate_mesh":
-        return jsonRpcResult(id, {
-          status: "ok",
-          manifold: true,
-          triangleCount: 1240,
-          issues: [],
-        });
+        return jsonRpcResult(id, unverifiedMesh);
       case "reshape_list_skills":
         return jsonRpcResult(id, {
           category: (args as Record<string, unknown>).category ?? "all",

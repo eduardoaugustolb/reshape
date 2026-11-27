@@ -3,6 +3,8 @@
  * Used by Vercel Edge Functions in src/app/api/*.
  */
 
+import { unverifiedMesh } from "./mesh-validation";
+
 export interface JsonApiErrorBody {
   error: {
     code: string;
@@ -100,7 +102,7 @@ export const MCP_TOOLS = [
   {
     name: "reshape_validate_mesh",
     description:
-      "Run automated topology audits (manifoldness, normals, triangle count, watertightness).",
+      "Report validation availability. Run the local ReShape mesh audit for actual measurements.",
     inputSchema: {
       type: "object",
       required: ["targetUse"],
@@ -248,12 +250,7 @@ export async function handleMcp(request: Request): Promise<Response> {
           views: ["https://reshape.eduardoaugusto.work/reshape/front.webp"],
         });
       case "reshape_validate_mesh":
-        return jsonRpcResult(id, {
-          status: "ok",
-          manifold: true,
-          triangleCount: 1240,
-          issues: [],
-        });
+        return jsonRpcResult(id, unverifiedMesh);
       case "reshape_list_skills":
         return jsonRpcResult(id, {
           category: (args as Record<string, unknown>).category ?? "all",

@@ -78,7 +78,7 @@ export default function Home({ locale }: { locale: Locale }) {
           <dl className="checks">
             <div>
               <dt>{t("Anatomia", "Anatomy")}</dt>
-              <dd>{t("44 skills com marcos anatômicos, vistas de revisão e critérios de reprovação. Use ", "44 skills with anatomical landmarks, inspection views, and rejection criteria. Use ")}<code>$reshape-anatomy-head</code>{t(" para a cabeça inteira, ", " for the whole head, ")}<code>$reshape-anatomy-face</code>{t(" para integrar os traços ou ", " to integrate facial features, or ")}<code>$reshape-anatomy-eyes</code>{t(" para revisar olhos e pálpebras.", " to review eyes and eyelids.")}</dd>
+              <dd>{t("Cinco skills por região com guias locais de construção e revisão. Use ", "Five regional skills with local construction and review guides. Use ")}<code>$reshape-anatomy-head</code>{t(" para a cabeça e consulte o guia de olhos e pálpebras quando precisar revisar essa região.", " for the head and open the eyes and eyelids guide when reviewing that area.")}</dd>
             </div>
             <div>
               <dt>{t("Estilos", "Styles")}</dt>
@@ -90,9 +90,10 @@ export default function Home({ locale }: { locale: Locale }) {
 
         <section id="instalacao" className="section">
           <div className="section__head"><h2>{t("Instalar", "Install")}</h2></div>
-          <p>{t("O pacote inclui a ReShape, as 10 skills de estilo e as 44 skills de anatomia em inglês. Baixe e extraia na pasta de skills do Codex. Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao seu agente.", "The package contains ReShape, 10 specialized style skills, and all 44 anatomy skills in US English. Download and extract it to the Codex skills folder. To edit through MCP, open Blender and connect the Blender MCP server to your agent.")}</p>
+          <p>{t("O pacote inclui a ReShape, 10 skills de estilo e cinco skills de anatomia em inglês. Baixe e extraia na pasta de skills do Codex. Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao seu agente.", "The package contains ReShape, 10 style skills, and five anatomy skills in US English. Download and extract it to the Codex skills folder. To edit through MCP, open Blender and connect the Blender MCP server to your agent.")}</p>
           <a className="download icon-action" href="/reshape/reshape-skill.tar.gz" download><DownloadSimpleIcon aria-hidden="true" />{t("Baixar pacote ReShape", "Download ReShape package")}</a>
           <CopyCommand command={INSTALL} locale={locale} />
+          <p>{t("Se estiver atualizando, mova as pastas antigas de anatomia para um backup fora do diretório de skills e reinicie o Codex após instalar o pacote.", "For upgrades, move the old anatomy folders to a backup outside the skills directory and restart Codex after installing the package.")}</p>
           <p>{t("No Codex, invoque ", "In Codex, invoke ")}<code>$reshape</code>{t(" junto com o briefing, a imagem ou o arquivo que você quer revisar.", " with the brief, image, or file you want to review.")}</p>
           <div className="prompts">
             <div><span className="prompt__label">{t("Da referência", "From a reference")}</span><span className="prompt__text"><code>$reshape</code>{t(" Modele este vaso e compare a silhueta na frente e em três quartos.", " Model this vase and compare the silhouette from the front and in three-quarter view.")}</span></div>

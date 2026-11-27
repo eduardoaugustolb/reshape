@@ -70,7 +70,7 @@
     },
     {
       "name": "reshape_validate_mesh",
-      "description": "Run automated topology audits (manifoldness, normals, triangle count, watertightness)",
+      "description": "Report validation availability. Run the local ReShape mesh audit for actual measurements.",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -88,7 +88,7 @@
     },
     {
       "name": "reshape_list_skills",
-      "description": "List all 44 anatomy and 10 style skills available in ReShape",
+      "description": "List ReShape tool entry points by category",
       "inputSchema": {
         "type": "object",
         "properties": {

@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
 import { jsonApiError, jsonApiOk, readJsonBody, asRecord } from "@/lib/api";
+import { unverifiedMesh } from "@/lib/mesh-validation";
 
 export async function POST(request: Request): Promise<Response> {
   const body = asRecord(await readJsonBody(request));
@@ -16,12 +16,7 @@ export async function POST(request: Request): Promise<Response> {
       "Set targetUse to a valid downstream application.",
     );
   }
-  return jsonApiOk({
-    status: "ok",
-    manifold: true,
-    triangleCount: 1240,
-    issues: [],
-  });
+  return jsonApiOk(unverifiedMesh);
 }
 
 export async function GET(): Promise<Response> {

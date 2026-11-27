@@ -22,9 +22,10 @@ Reach for ReShape whenever:
 3. **Pass 2 - Secondary Masses & Transitions**: Refine junctions (shoulders, neck, organic blend zones). Ensure clean edge loops.
 4. **Pass 3 - Surface & Detail**: Sculpt grooves, surface textures, and fine features.
 5. **Multi-View Comparison**: Render matching orthographic and perspective views. Isolate discrepancies.
-6. **Topology & Mesh Verification**: Check triangle budget, manifoldness, watertight closure for 3D print or deformation for rigging.
+6. **Topology & Mesh Verification**: Run the local ReShape audit script on the saved .blend and inspect the matched views. Check closure and thickness for print or deformation for rigging where required. Hosted mesh validation returns `unverified`.
 
 ## Available Invocations
-- Codex: `$reshape`, `$reshape-styles`, `$reshape-anatomy-*`
+- Codex: `$reshape`, `$reshape-styles`, `$reshape-anatomy-body`, `$reshape-anatomy-head`, `$reshape-anatomy-trunk`, `$reshape-anatomy-upper-limb`, `$reshape-anatomy-lower-limb`
+- Anatomy catalog and local guides: `reshape/references/anatomy.md` in the skills package.
 - MCP Server: `POST https://reshape.eduardoaugusto.work/mcp`
 - Manifest: `https://reshape.eduardoaugusto.work/.well-known/mcp.json`

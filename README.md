@@ -40,7 +40,11 @@ Deliver the editable mesh, comparative views, and documented validation results.
 
 ## Anatomy and style
 
-The [anatomy catalog](skills/reshape/references/anatomy.md) includes 44 skills, from the whole body to individual features and joints. Each skill gives construction rules, inspection views, rejection criteria, and anatomy sources. Use `$reshape-anatomy-face` to integrate facial features or `$reshape-anatomy-nose` to review a nose.
+The [anatomy catalog](skills/reshape/references/anatomy.md) has five skills for the figure, head and neck, torso, upper limb, and lower limb. Local guides retain construction rules, views, rejection criteria, and anatomy sources. For a nose correction, invoke `$reshape-anatomy-head` and open its nose guide.
+
+When upgrading, move obsolete `reshape-anatomy-*` folders from your skills directory to a backup outside it. Keep the five folders listed in the catalog and restart Codex to refresh the list.
+
+Use the [local Blender audit](skills/reshape/references/validation.md#verify-mesh-and-intended-use) for topology counts from the saved candidate. Review the matching views separately to approve the shape.
 
 Use [`$reshape-styles`](skills/reshape-styles/SKILL.md) to choose among 10 specialized modeling styles, each with visual references and approval checks. For example, use `$reshape-style-faceted-low-poly` to review faceted geometry or `$reshape-style-cel-shading` to review shadow bands and linework. The skills use US English. Invocation names are the same in both versions of the site.
 

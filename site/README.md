@@ -2,7 +2,7 @@
 
 [Português (Brasil)](README.pt-BR.md)
 
-The site presents the [ReShape skill](../skills/reshape/SKILL.md) and demonstrates modeling passes with Blender renders of an original vase. It uses a static Next.js export. US English is available at `/` and Brazilian Portuguese at `/pt-br/`, with a language switcher in the header.
+The site presents the [ReShape skill](../skills/reshape/SKILL.md) and demonstrates modeling passes with Blender renders of an original vase. US English is available at `/` and Brazilian Portuguese at `/pt-br/`, with a language switcher in the header.
 
 ## Develop
 
@@ -12,10 +12,10 @@ bun run dev
 bun run build
 ```
 
-The build produces `out/` and packages ReShape and its anatomy and style skills from `../skills/` for download. All ReShape skills are in US English. The WebP images in `public/reshape/` show the blockout, volumes, and surface from fixed views.
+The build serves the checked-in [download package](public/reshape/reshape-skill.tar.gz). It includes ReShape, the [five anatomy skills and their local guides](../skills/reshape/references/anatomy.md), the style skills, and the [Blender audit script](../skills/reshape/references/validation.md#verify-mesh-and-intended-use). The WebP images in `public/reshape/` show the blockout, volumes, and surface from fixed views.
 
 ## Host
 
-Set `SITE_URL` to the public ReShape URL in the build environment to generate canonical URLs and sharing metadata. Run `bun run deploy` with an authenticated Cloudflare account to use the Worker settings in `wrangler.jsonc`. You can also host the static files directly from `out/`.
+The Next.js deployment uses `site/` as its project root. It serves the pages, JSON API, and MCP endpoints. For mesh validation, the hosted endpoints return `unverified` with null counts. Run the local audit script against the saved `.blend` for measurements.
 
 The original Reanimate showcase assets are in `public/examples/`, `public/media/`, and [video/](video/README.md).

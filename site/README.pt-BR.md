@@ -1,7 +1,8 @@
 # Site da ReShape
 
 [English](README.md)
-A página apresenta a [skill ReShape](../skills/reshape/SKILL.md) e demonstra suas passagens de modelagem com renders de um vaso original feitos no Blender. O Next.js exporta a página como site estático.
+
+A página apresenta a [skill ReShape](../skills/reshape/SKILL.md) e demonstra suas passagens de modelagem com renders de um vaso original feitos no Blender.
 
 ## Desenvolver
 
@@ -13,11 +14,11 @@ bun run build
 
 A página está disponível em inglês dos EUA em `/` e em português em `/pt-br/`, com seletor no cabeçalho. As skills distribuídas no pacote estão em inglês dos EUA.
 
-O build gera `out/` e inclui um pacote para download montado diretamente das pastas da ReShape e das skills de anatomia e estilo em `../skills/`. As imagens WebP em `public/reshape/` mostram o bloqueio, os volumes e a superfície em vistas fixas.
+O build serve o [pacote para download](public/reshape/reshape-skill.tar.gz) versionado no repositório. Ele inclui a ReShape, as [cinco skills de anatomia e seus guias locais](../skills/reshape/references/anatomy.md), as skills de estilo e o [script de auditoria do Blender](../skills/reshape/references/validation.md#verify-mesh-and-intended-use). As imagens WebP em `public/reshape/` mostram o bloqueio, os volumes e a superfície em vistas fixas.
 
 ## Hospedar
 
-Defina `SITE_URL` com a URL pública da ReShape no ambiente de build para incluir a URL canônica e os metadados de compartilhamento. O comando `bun run deploy` usa a conta Cloudflare autenticada localmente e a configuração do Worker em `wrangler.jsonc`. Os arquivos estáticos também podem ser hospedados diretamente de `out/`.
+A implantação Next.js usa `site/` como raiz do projeto e serve as páginas e os endpoints JSON e MCP. A validação de malha hospedada retorna `unverified` com contagens nulas. Para obter as medições, execute a auditoria local no `.blend` salvo.
 
 A vitrine antiga permanece em `public/examples/`, `public/media/` e [video/](video/README.md).
 

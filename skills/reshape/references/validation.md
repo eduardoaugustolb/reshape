@@ -21,6 +21,15 @@ For each decisive region, record the target, what the view shows, and the most s
 
 ## Verify mesh and intended use
 
+Use the [local audit script](../scripts/audit-mesh.py) from the skill folder on the saved candidate. Pass the exact mesh object names for the intended delivery:
+
+```sh
+blender --background --disable-autoexec candidate.blend --python-exit-code 1 \
+  --python scripts/audit-mesh.py -- "Body" "Eyes"
+```
+
+The `RESHAPE_MESH_AUDIT` line contains one JSON report for the active view layer and saved frame, using viewport-evaluated mesh data and local-space triangle areas. It reports counts, open edges, loose geometry, edges shared by more than two faces, adjacent winding conflicts, and zero-area triangles. Compare the counts to the brief and distinguish intentional openings. Check islands, global normal orientation, intersections, render-only modifiers, unconverted instances, exports, thickness, deformation, and visual quality where applicable. Use evidence from the local Blender scene for approval. The public ReShape REST and MCP validation endpoints report `unverified` because they have no Blender scene to inspect.
+
 - Count vertices, triangles, and objects. Include the evaluated mesh after modifiers when that is what ships. Inspect normals, degenerate faces, intersections, islands, and open edges where they would be defects. Document intentional layers, panels, and openings.
 - For real-time use, check relevant triangle, material, texture, and memory limits in the export or target application. Report measured frame rate or timing only with the test scene, hardware, and conditions recorded. If no budget was given, report counts and observed cost and leave the limit open.
 - For rigging, test representative joint poses for deformation and interpenetration. For printing, check closure, thickness, and scale. For rendering, check artifacts and viewport or render costs where relevant. Reopen or reimport requested exports into an isolated scene and check scale, orientation, meshes, and required resources.
