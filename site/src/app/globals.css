@@ -167,7 +167,7 @@ body { background: #faf7f2; }
 .masthead__context, .reshape .masthead > a { color: var(--muted); font-weight: 400; }
 .hero-title {
   margin: 30px 0 0;
-  font: italic 400 clamp(4rem, 9vw, 7rem) / .89 var(--font-serif), Georgia, serif;
+  font: italic 400 clamp(2.75rem, 7vw, 5.75rem) / .94 var(--font-serif), Georgia, serif;
   letter-spacing: -.035em;
 }
 .reshape .lede { margin-top: 22px; max-width: 36rem; font-size: 1.075rem; }

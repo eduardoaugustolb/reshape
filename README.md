@@ -2,7 +2,7 @@
 
 <h1 align="center">ReShape</h1>
 
-<p align="center"><strong>Model, sculpt, and review 3D assets in Blender with Codex and Blender MCP.</strong></p>
+<p align="center"><strong>A Blender 3D modeling skill for AI agents. Model, sculpt, and review meshes with Codex, Claude Code, Cursor, Antigravity, and other agents that support skills.</strong></p>
 <p align="center">Create realistic, stylized, or low-poly assets from scratch, or refine an existing mesh. Use visual references to guide the form and check each pass.</p>
 <p align="center"><a href="#install-in-codex">Install</a> · <a href="skills/reshape/references/anatomy.md">Anatomy</a> · <a href="skills/reshape-styles/SKILL.md">Styles</a> · <a href="#website">Website</a> · <a href="README.pt-BR.md" lang="pt-BR">Português (Brasil)</a></p>
 
@@ -50,7 +50,7 @@ Use [`$reshape-styles`](skills/reshape-styles/SKILL.md) to choose among 10 speci
 
 ## Website
 
-The [ReShape site](site/README.md) shows three modeling passes and lets you compare the blockout and surface in front, profile, and three-quarter views. US English is the default, with Brazilian Portuguese at `/pt-br/`.
+The [ReShape 3D modeling skill website](https://reshape.eduardoaugusto.work/) shows three modeling passes and lets you compare the blockout and surface in front, profile, and three-quarter views. US English is the default, with Brazilian Portuguese at `/pt-br`.
 
 ```sh
 cd site

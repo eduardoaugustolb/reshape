@@ -1,6 +1,6 @@
 # ReShape
 
-> ReShape is a 3D modeling, sculpting, and mesh review skill and Model Context Protocol (MCP) server for Blender. It enables autonomous AI agents, Codex, and 3D artists to model in passes, capture matched camera angles, and validate topology for 3D printing, game engines, and animation.
+> ReShape is a 3D modeling, sculpting, and mesh review skill and Model Context Protocol (MCP) server for Blender. It enables AI agents and 3D artists to model in passes, capture matched camera angles, and validate topology for 3D printing, game engines, and animation.
 
 ## When to use this
 Use ReShape when:

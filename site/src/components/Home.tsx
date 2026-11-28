@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BookOpenIcon, CubeFocusIcon, DownloadSimpleIcon, TranslateIcon } from "@phosphor-icons/react/ssr";
 import { HeaderMotion } from "@/components/HeaderMotion";
 import { translate, type Locale } from "@/i18n";
@@ -33,14 +34,14 @@ export default function Home({ locale }: { locale: Locale }) {
           <span className="masthead__brand"><SculptMark /><span>ReShape <span className="masthead__context">{t("· skill para Blender", "· Blender skill")}</span></span></span>
           <div className="masthead__actions">
             <HeaderMotion locale={locale} />
-            <a className="icon-action" href={t("/", "/pt-br/")} hrefLang={t("en-US", "pt-BR")} lang={t("en-US", "pt-BR")}><TranslateIcon aria-hidden="true" />{t("English", "Português")}</a>
-            <a className="icon-action" href="/docs"><BookOpenIcon aria-hidden="true" />{t("Documentação", "Documentation")}</a>
+            <a className="icon-action" href={t("/", "/pt-br")} hrefLang={t("en-US", "pt-BR")} lang={t("en-US", "pt-BR")}><TranslateIcon aria-hidden="true" />{t("English", "Português")}</a>
+            <Link className="icon-action" href="/docs"><BookOpenIcon aria-hidden="true" />{t("Documentação", "Documentation")}</Link>
             <a className="icon-action" href="#instalacao"><DownloadSimpleIcon aria-hidden="true" />{t("Instalar", "Install")}</a>
           </div>
         </header>
 
-        <h1 className="hero-title">{t("Da silhueta", "From silhouette")}<br />{t("à superfície.", "to surface.")}</h1>
-        <p className="lede">{t("Crie modelos 3D do zero, esculpa formas realistas ou low-poly e revise malhas existentes no Blender com referências visuais.", "Create 3D models from scratch, sculpt realistic or low-poly forms, and review existing meshes in Blender with visual references.")}</p>
+        <h1 className="hero-title">ReShape<br />{t("Skill de modelagem 3D", "3D modeling skill")}</h1>
+        <p className="lede">{t("Modele no Blender com seu agente de IA. Crie modelos 3D a partir de referências visuais, esculpa formas realistas ou low-poly e revise malhas existentes.", "Use your AI agent for 3D modeling in Blender. Create models from visual references, sculpt realistic or low-poly forms, and review existing meshes.")}</p>
 
         <SculptPasses locale={locale} />
 
@@ -88,9 +89,10 @@ export default function Home({ locale }: { locale: Locale }) {
         </section>
 
         <section id="instalacao" className="section">
-          <div className="section__head"><h2>{t("Instalar", "Install")}</h2></div>
-          <p>{t("O pacote inclui a ReShape, 10 skills de estilo e cinco skills de anatomia em inglês. Baixe e extraia na pasta de skills do Codex. Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao seu agente.", "The package contains ReShape, 10 style skills, and five anatomy skills in US English. Download and extract it to the Codex skills folder. To edit through MCP, open Blender and connect the Blender MCP server to your agent.")}</p>
+          <div className="section__head"><h2>{t("Instalar a skill ReShape", "Install the ReShape skill")}</h2></div>
+          <p>{t("O pacote inclui a ReShape, 10 skills de estilo e cinco skills de anatomia em inglês. Use a ReShape com Codex, Claude Code, Cursor, Antigravity ou outro agente que carregue skills. Instale o pacote na pasta de skills do seu agente. Para editar pelo MCP, abra o Blender e conecte o servidor Blender MCP ao seu agente.", "The package contains ReShape, 10 style skills, and five anatomy skills in US English. Use ReShape with Codex, Claude Code, Cursor, Antigravity, or another agent that can load skills. Extract the package to your agent’s skills directory. To edit through MCP, open Blender and connect the Blender MCP server to your agent.")}</p>
           <a className="download icon-action" href="/reshape/reshape-skill.tar.gz" download><DownloadSimpleIcon aria-hidden="true" />{t("Baixar pacote ReShape", "Download ReShape package")}</a>
+          <h3>{t("Instalação no Codex", "Install in Codex")}</h3>
           <CopyCommand command={INSTALL} locale={locale} />
           <p>{t("Se estiver atualizando, mova as pastas antigas de anatomia para um backup fora do diretório de skills e reinicie o Codex após instalar o pacote.", "For upgrades, move the old anatomy folders to a backup outside the skills directory and restart Codex after installing the package.")}</p>
           <p>{t("No Codex, invoque ", "In Codex, invoke ")}<code>$reshape</code>{t(" junto com o briefing, a imagem ou o arquivo que você quer revisar.", " with the brief, image, or file you want to review.")}</p>

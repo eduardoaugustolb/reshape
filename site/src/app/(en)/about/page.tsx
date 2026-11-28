@@ -27,14 +27,14 @@ export default function AboutPage() {
       <h1>About ReShape</h1>
       <p className="lede">
         ReShape is an agent-native 3D modeling, sculpting, and mesh review system for Blender. It enables
-        autonomous AI agents, Codex, and 3D artists to model in passes, capture matched camera angles, and
+        AI agents and 3D artists to model in passes, capture matched camera angles, and
         validate topology for 3D printing, game engines, and animation.
       </p>
 
       <section className="section">
         <div className="section__head"><h2>What ReShape is</h2></div>
         <p>
-          ReShape is both a Codex skill and a Model Context Protocol (MCP) server. The skill ($reshape and the
+          ReShape is both a skill for AI agents and a Model Context Protocol (MCP) server. The skill ($reshape and the
           $reshape-anatomy-* / $reshape-styles modules) gives agents structured guidance for modeling, sculpting,
           and reviewing 3D assets from scratch or from an existing mesh. The workflow uses visual references
           from blockout through final comparison. Scene editing and captures run through a local Blender MCP

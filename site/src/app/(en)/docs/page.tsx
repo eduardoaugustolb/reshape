@@ -1,12 +1,13 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ReShape API Documentation",
-  description: "ReShape API reference for the Blender 3D modeling skill and Model Context Protocol (MCP) server.",
+  title: "ReShape Docs — 3D Modeling in Blender with AI Agents",
+  description: "Learn to model from a reference image in Blender with the ReShape skill for AI agents, then compare renders and audit the mesh. Includes MCP and API documentation.",
   alternates: { canonical: "https://reshape.eduardoaugusto.work/docs" },
   openGraph: {
-    title: "ReShape API Documentation",
-    description: "ReShape API reference for the Blender 3D modeling skill and Model Context Protocol (MCP) server.",
+    title: "ReShape Docs — 3D Modeling in Blender with AI Agents",
+    description: "Learn to model from a reference image in Blender with the ReShape skill for AI agents, then compare renders and audit the mesh. Includes MCP and API documentation.",
     type: "website",
     url: "https://reshape.eduardoaugusto.work/docs",
   },
@@ -18,22 +19,22 @@ export default function DocsPage() {
       <header className="masthead">
         <span className="masthead__brand">ReShape</span>
         <div className="masthead__links">
-          <a href="/">Home</a>
-          <a href="/mcp">MCP Server</a>
-          <a href="/about">About</a>
+          <Link href="/">Home</Link>
+          <Link href="/mcp">MCP Server</Link>
+          <Link href="/about">About</Link>
         </div>
       </header>
 
-      <h1>ReShape API Documentation</h1>
+      <h1>3D modeling in Blender with AI agents</h1>
       <p className="lede">
         Reference for the ReShape 3D modeling skill and the ReShape Model Context Protocol (MCP) server for
         Blender. Use these docs to integrate ReShape into your AI agent workflows.
       </p>
 
       <section className="section">
-        <div className="section__head"><h2>ReShape skill (Codex)</h2></div>
+        <div className="section__head"><h2>ReShape skill setup</h2></div>
         <p>
-          Install the ReShape package in Codex and invoke <code>$reshape</code> with a brief, image reference, or
+          <Link href="/#instalacao">Install the ReShape skill</Link> in your agent’s skills directory. ReShape works with agents that can load skills, including Codex, Claude Code, Cursor, and Antigravity. Ask your agent to use ReShape with a brief, image reference, or
           target 3D asset path. Use the{" "}
           <a href="https://github.com/eduardoaugustolb/reshape/blob/main/skills/reshape/references/anatomy.md">five anatomy skills</a>{" "}
           to find the guide for the region you are working on. Use <code>$reshape-styles</code> for style guidance.
@@ -43,6 +44,17 @@ export default function DocsPage() {
           Attach a visual reference or authorize the agent to search for one before it starts modeling.
           The review pairs each matching render with its reference and uses overlays for alignable views.
         </p>
+      </section>
+
+      <section className="section">
+        <div className="section__head"><h2>Model a 3D object from a reference image</h2></div>
+        <ol className="list">
+          <li>Open a Blender scene and connect your agent to your local session through Blender MCP.</li>
+          <li>Share a reference image with your agent and ask it to use ReShape to block out the object and capture a matching view.</li>
+          <li>Compare the blockout with the reference. For a vase, check the widest point, the height of the neck, and the shape of the opening before adding surface details.</li>
+          <li>Capture the same view after each correction. Save the Blender file and use the mesh audit below for topology checks.</li>
+        </ol>
+        <p><Link href="/#comparacao">Compare a vase blockout and the finished surface</Link> from front, side, and three-quarter views.</p>
       </section>
 
       <section className="section">

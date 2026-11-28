@@ -12,15 +12,15 @@ const siteUrl = process.env.SITE_URL || "https://reshape.eduardoaugusto.work";
 export function siteMetadata(locale: Locale): Metadata {
   const t = translate(locale);
   const title = t(
-    "ReShape · Modelagem 3D e escultura no Blender",
-    "ReShape · 3D Modeling and Sculpting in Blender",
+    "ReShape — Skill de modelagem 3D no Blender para agentes de IA",
+    "ReShape — Blender 3D Modeling Skill for AI Agents",
   );
   const description = t(
-    "Modele, compare vistas e valide a malha de ativos 3D no Blender com a ReShape.",
-    "Model, compare views, and validate 3D meshes in Blender with ReShape.",
+    "Modele, esculpa e revise malhas no Blender com a skill ReShape para agentes de IA como Codex, Claude Code, Cursor e Antigravity.",
+    "Model, sculpt, and review 3D meshes in Blender with ReShape, an AI agent skill for Codex, Claude Code, Cursor, Antigravity, and other agents.",
   );
   const path = t("/pt-br", "/");
-  const canonicalUrl = path === "/" ? siteUrl : `${siteUrl}${path}`;
+  const canonicalUrl = new URL(path, siteUrl).href;
   const sharingImage = {
     url: `${siteUrl}/reshape/og.jpg`,
     width: 1200,
@@ -35,15 +35,6 @@ export function siteMetadata(locale: Locale): Metadata {
     metadataBase: new URL(siteUrl),
     title,
     description,
-    keywords: [
-      "ReShape",
-      "Blender 3D modeling",
-      "Blender MCP",
-      "3D sculpting",
-      "mesh validation",
-      "Codex skill",
-      "3D assets",
-    ],
     icons: { icon: "/reshape/icon.svg" },
     alternates: {
       canonical: canonicalUrl,
@@ -80,7 +71,7 @@ export function SiteLayout({ children, locale }: { children: React.ReactNode; lo
         applicationCategory: "DesignApplication",
         operatingSystem: "Blender 4.x, Linux, macOS, Windows",
         description:
-          "Model, sculpt, and review 3D assets in Blender with Codex and Blender MCP. Compare matching views each round to decide what to correct.",
+          "Model, sculpt, and review 3D assets in Blender with AI agents and Blender MCP. Compare matching views each round to decide what to correct.",
         url: `${siteUrl}/`,
         image: `${siteUrl}/reshape/og.jpg`,
         keywords: "ReShape, Blender 3D modeling, Blender MCP, 3D sculpting, mesh validation, 3D assets",

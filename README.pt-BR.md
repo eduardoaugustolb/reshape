@@ -2,7 +2,7 @@
 
 <h1 align="center">ReShape</h1>
 
-<p align="center"><strong>Crie, esculpa e revise modelos 3D no Blender com o Codex e o Blender MCP.</strong></p>
+<p align="center"><strong>Skill de modelagem 3D no Blender para agentes de IA. Modele, esculpa e revise malhas com Codex, Claude Code, Cursor, Antigravity e outros agentes com suporte a skills.</strong></p>
 <p align="center">Crie modelos realistas, estilizados ou low-poly do zero ou refine uma malha existente. Use referências visuais para orientar a forma e conferir cada passagem.</p>
 <p align="center"><a href="#instalação-no-codex">Instalar</a> · <a href="skills/reshape/references/anatomy.md">Anatomia</a> · <a href="skills/reshape-styles/SKILL.md">Estilos</a> · <a href="#site">Site</a> · <a href="README.md" lang="en-US">English</a></p>
 
@@ -52,7 +52,7 @@ Use [`$reshape-styles`](skills/reshape-styles/SKILL.md) para escolher entre 10 s
 
 ## Site
 
-O [site da ReShape](site/README.pt-BR.md) demonstra três passagens de modelagem de um vaso e permite comparar bloqueio e superfície em frente, perfil e três quartos.
+O [site da ReShape, skill de modelagem 3D](https://reshape.eduardoaugusto.work/pt-br) demonstra três passagens de modelagem de um vaso e permite comparar bloqueio e superfície em frente, perfil e três quartos.
 
 ```sh
 cd site

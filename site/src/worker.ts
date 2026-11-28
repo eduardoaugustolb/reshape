@@ -70,7 +70,7 @@ export function shouldServeMarkdown(accept: string): boolean {
 const HOMEPAGE_MARKDOWN = `# ReShape
 
 ReShape is an agent-native 3D modeling, sculpting, and mesh review system for Blender. It enables autonomous AI
-agents, Codex, and 3D artists to model in passes, capture matched camera angles, and validate topology for 3D
+agents and 3D artists to model in passes, capture matched camera angles, and validate topology for 3D
 printing, game engines, and animation.
 
 ## When to use this
